@@ -35,7 +35,7 @@ function changeBGBlue() {
   document.getElementById("changeBG").style.backgroundImage =
     "url(img/bluebg.png)";
 }
-function changeBGRed() {
+function changeBGWhite() {
   document.getElementById("changeBG").style.backgroundImage =
     "url(img/whitebg.png)";
 }
