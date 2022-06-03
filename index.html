@@ -9,8 +9,8 @@
     <link rel="shortcut icon" href="./img/pepsi.png" />
   </head>
   <body>
-    <!-- ------------------Header---------------------- -->
     <main>
+      <!-- ------------------Header------------------------- -->
       <section id="header">
         <div class="header container">
           <div class="nav-bar">
@@ -37,13 +37,14 @@
           </div>
         </div>
       </section>
-      <!-- ------------------End Header---------------------- -->
+      <!-- ------------------End Header--------------------- -->
 
+      <!-- ------------------Page 1------------------------- -->
       <section id="content page_1">
-        <div class="content">
+        <div class="content" id="changeBG">
           <div class="content_layout">
             <div class="content_right">
-              <img src="img/pepsi-can-background.png" alt="" />
+              <img class="pepsi_can" src="./img/pepsi-can-blue.png" alt="" />
             </div>
             <div class="content_left">
               <h1>
@@ -64,7 +65,6 @@
                     </span>
                   </span>
                 </button>
-                <br />
               </div>
 
               <svg
@@ -93,14 +93,87 @@
                   </filter>
                 </defs>
               </svg>
-              <!-- ----------------------End Button--------------------- -->
+              <!-- ----------------------End Button----------------- -->
+              <ul class="pick">
+                <li>
+                  <img
+                    onclick="changeCan('img/pepsi-can-blue.png'); changeBGBlue()"
+                    src="img/pepsi001.png"
+                    alt=""
+                  />
+                </li>
+                <li>
+                  <img
+                    onclick="changeCan('img/pepsi-can-white.png'); changeBGWhite()"
+                    src="img/pepsi002.png"
+                    alt=""
+                  />
+                </li>
+                <li>
+                  <img
+                    onclick="changeCan('img/pepsi-can-black.png'); changeBGBlack()"
+                    src="img/pepsi003.png"
+                    alt=""
+                  />
+                </li>
+                <script src="https://cdn.lordicon.com/xdjxvujz.js"></script>
+                <lord-icon
+                  src="https://cdn.lordicon.com/iifryyua.json"
+                  trigger="loop"
+                  colors="primary:#ffffff"
+                  style="width: 80px; height: 80px; transform: scale(-1)"
+                >
+                </lord-icon>
+              </ul>
             </div>
           </div>
         </div>
       </section>
-      <div style="height: 1000px"></div>
+      <!-- ------------------End Page 1--------------------- -->
+
+      <!-- ------------------Page 2------------------------- -->
+      <section id="content page_2">
+        <div class="content_2">
+          <!-- ------------------Left---------------------- -->
+          <div class="cover_left">
+            <div class="content_2-left">
+              <div class="shanghai_hover">
+                <div class="shanghai_word">
+                  <p class="text_shanghai">PEPSI SHANGHAI FASHION WEEK</p>
+                  <p class="text_shanghai-2">
+                    New, elevated designs every year, made for changing themes
+                    and times.
+                  </p>
+                  <p class="text_shanghai-3">View Case Study</p>
+                </div>
+              </div>
+            </div>
+            <h3>PEPSI SHANGHAI FASHION WEEK</h3>
+          </div>
+          <!-- ------------------End Left------------------ -->
+
+          <!-- ------------------Right------------------------- -->
+          <div class="cover_right">
+            <div class="content_2-right">
+              <div class="LA_hover">
+                <div class="LA_word">
+                  <p class="text_LA">PEPSI LOS ANGELES LIMITED-EDITION</p>
+                  <p class="text_LA-2">
+                    Brought the heartbeat of the city to a Pepsi can
+                  </p>
+                  <p class="text_LA-3">View Case Study</p>
+                </div>
+              </div>
+            </div>
+            <h3>PEPSI LOS ANGELES LIMITED-EDITION</h3>
+          </div>
+          <!-- ------------------End Right--------------------- -->
+        </div>
+      </section>
+      <!-- ------------------End Page 2--------------------- -->
     </main>
 
+    <!-- --------------------Footer------------------------- -->
     <footer class="footer">
       <div class="footer_container">
         <div class="footer_logo">
@@ -213,7 +286,10 @@
         </div>
       </div>
     </footer>
-    <!-- ------------------------------- -->
+    <!-- --------------------End Footer--------------------- -->
+
+    <!-- --------------------Link Script-------------------- -->
     <script src="./js/index.js"></script>
+    <!-- --------------------End Link Script---------------- -->
   </body>
 </html>
