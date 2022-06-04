@@ -1,9 +1,24 @@
 @import "css-reset";
 
+@import "scrollbar";
+
 /* -----------------Setup fonts------------------ */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,900&family=Ubuntu:wght@300;400;500;700&display=swap");
 /* ----------------\/\/\/\/\/\/----------------- */
+
+@font-face {
+  font-family: "mediasansextended-bold";
+  src: url("../fonts/mediasansextended-bold-TRIAL.otf") format("opentype");
+}
+@font-face {
+  font-family: "mediasansextended-black";
+  src: url("../fonts/mediasansextended-black-TRIAL.otf") format("opentype");
+}
+@font-face {
+  font-family: "maisonneueextended-extrabold";
+  src: url("../fonts/MaisonNeueExtendedExtra-Bold.otf") format("opentype");
+}
 
 $white: #ffffff;
 $borderW: 2px;
@@ -15,7 +30,6 @@ body {
 
 html {
   font-size: 10px;
-  font-family: "Montserrat", sans-serif;
   scroll-behavior: smooth;
 }
 
@@ -27,11 +41,7 @@ a {
 @import "header-section";
 /* --------------End Header section----------- */
 
-/* -----------Media Query For Tablet---------- */
-@import "media-responsive";
-/* ---------End Media Query For Desktop------- */
-
-/* -----------Content Page 1-------------- */
+/* -----------Content Page 1------------------ */
 .content {
   background-image: url("../img/bluebg.png");
   width: 100%;
@@ -39,6 +49,7 @@ a {
   background-size: cover;
   background-position: center center;
   overflow: hidden;
+  transition: 0.5s;
 
   .content_layout {
     display: flex;
@@ -58,12 +69,15 @@ a {
           elastic-ease-out-left,
         0.9s cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s forwards linear-fade-in;
       h1 {
-        font-size: 130px;
-        font-family: "Popins", sans-serif;
+        font-size: 100px;
         color: white;
         font-weight: 900;
-        line-height: 1;
-        width: 520px;
+        line-height: 1.1;
+        width: 530px;
+        user-select: none;
+        font-family: "mediasansextended-bold";
+        letter-spacing: 7px;
+        word-spacing: -5px;
 
         .that_word {
           animation: blinker 4s;
@@ -81,6 +95,25 @@ a {
           animation-delay: 0.8s;
         }
       }
+
+      .pick {
+        list-style: none;
+        width: 390px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        user-select: none;
+        li {
+          transition: 0.5s ease;
+          cursor: pointer;
+          &:hover {
+            transform: translateY(-15px);
+          }
+        }
+        img {
+          max-width: 60px;
+        }
+      }
     }
   }
 }
@@ -91,6 +124,399 @@ a {
 
 /* ---------------End Content Page 1--------------- */
 
+/* --------------- Content Page 2--------------- */
+.content_2 {
+  display: flex;
+  overflow: hidden;
+
+  .cover_left {
+    width: 50%;
+    height: fit-content;
+    overflow: hidden;
+
+    h3 {
+      color: #20186d;
+      font-size: 30px;
+      font-family: "mediasansextended-black";
+      letter-spacing: 1.49px;
+      line-height: 1.15;
+      margin: 20px 0 20px 40px;
+    }
+  }
+
+  .content_2-left {
+    position: relative;
+    width: 100%;
+    height: 900px;
+    background-size: cover;
+    background-position: center center;
+    background-image: url("../img/pepsishanghai.png");
+
+    .shanghai_hover {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 0;
+      z-index: 2;
+      background-color: #3ce2cc00;
+      transition: 0.7s cubic-bezier(0.19, 1, 0.22, 1);
+      backdrop-filter: blur(26px);
+      opacity: 0;
+
+      .shanghai_word {
+        display: none;
+        .text_shanghai {
+          opacity: 0;
+          color: white;
+          font-size: 14px;
+          letter-spacing: 1.34px;
+          font-family: "mediasansextended-bold";
+          margin-bottom: 30px;
+          transition: opacity 3s cubic-bezier(0.19, 1, 0.22, 1) 0.05s;
+          padding-left: 2px;
+        }
+
+        .text_shanghai-2 {
+          width: 590px;
+          opacity: 0;
+          color: white;
+          font-size: 38.5px;
+          line-height: 1.19;
+          letter-spacing: -0.5px;
+          font-family: "maisonneueextended-extrabold";
+          font-weight: 500;
+          margin-bottom: 200px;
+          transition: opacity 3s cubic-bezier(0.19, 1, 0.22, 1) 0.05s;
+        }
+
+        .text_shanghai-3 {
+          position: relative;
+          width: fit-content;
+          color: white;
+          font-size: 18px;
+          font-family: "maisonneueextended-extrabold";
+          line-height: normal;
+          letter-spacing: 1px;
+          cursor: pointer;
+          opacity: 0;
+
+          &::after {
+            content: "";
+            position: absolute;
+            height: 2.5px;
+            width: 100%;
+            bottom: -2px;
+            left: 0;
+            background-color: white;
+          }
+        }
+      }
+    }
+
+    &:hover {
+      .shanghai_hover {
+        width: 100%;
+        height: 100%;
+        padding: 228px 0px 0px 40px;
+        opacity: 1;
+
+        .shanghai_word {
+          display: block;
+          .text_shanghai {
+            opacity: 1;
+          }
+          .text_shanghai-2 {
+            opacity: 1;
+          }
+          .text_shanghai-3 {
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+  //-----------------------------RIGHT
+  .cover_right {
+    width: 50%;
+    height: fit-content;
+    overflow: hidden;
+
+    h3 {
+      color: #20186d;
+      font-size: 30px;
+      font-family: "mediasansextended-black";
+      letter-spacing: 1.49px;
+      line-height: 1.15;
+      margin: 20px 0 20px 40px;
+    }
+  }
+
+  .content_2-right {
+    position: relative;
+    width: 100%;
+    height: 900px;
+    background-size: cover;
+    background-position: center center;
+    background-image: url("../img/pepsiLA.jpeg");
+
+    .LA_hover {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 0;
+      z-index: 2;
+      background-color: #fee50900;
+      transition: 0.7s cubic-bezier(0.19, 1, 0.22, 1);
+      backdrop-filter: blur(26px);
+      opacity: 0;
+
+      .LA_word {
+        display: none;
+        .text_LA {
+          opacity: 0;
+          color: white;
+          font-size: 14px;
+          letter-spacing: 1.34px;
+          font-family: "mediasansextended-bold";
+          margin-bottom: 30px;
+          transition: opacity 0.5s cubic-bezier(0.19, 1, 0.22, 1) 0.05s;
+          padding-left: 2px;
+        }
+
+        .text_LA-2 {
+          width: 590px;
+          opacity: 0;
+          color: white;
+          font-size: 38.5px;
+          line-height: 1.19;
+          letter-spacing: -0.5px;
+          font-family: "maisonneueextended-extrabold";
+          font-weight: 500;
+          margin-bottom: 200px;
+          transition: opacity 0.5s cubic-bezier(0.19, 1, 0.22, 1) 0.05s;
+        }
+
+        .text_LA-3 {
+          position: relative;
+          width: fit-content;
+          color: white;
+          font-size: 18px;
+          font-family: "maisonneueextended-extrabold";
+          line-height: normal;
+          letter-spacing: 1px;
+          cursor: pointer;
+          opacity: 0;
+
+          &::after {
+            content: "";
+            position: absolute;
+            height: 2.5px;
+            width: 100%;
+            bottom: -2px;
+            left: 0;
+            background-color: white;
+          }
+        }
+      }
+    }
+    &:hover {
+      .LA_hover {
+        width: 100%;
+        height: 100%;
+        padding: 228px 0px 0px 40px;
+        opacity: 1;
+
+        .LA_word {
+          display: block;
+          .text_LA {
+            opacity: 1;
+          }
+          .text_LA-2 {
+            opacity: 1;
+          }
+          .text_LA-3 {
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+}
+/* ---------------End Content Page 2------------- */
+
+/* --------------- Content Page 3--------------- */
+.content_3 {
+  width: calc(100% - 80px);
+  display: flex;
+  margin-left: 40px;
+  margin-top: 100px;
+  overflow: hidden;
+  .content_3-left {
+    background-color: rgb(255, 255, 255);
+    width: 50%;
+    height: inherit;
+    overflow: hidden;
+
+    video {
+      width: 100%;
+      height: inherit;
+    }
+  }
+  .content_3-right {
+    background-color: #ffffff;
+    width: 50%;
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+
+    .content_3-word {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      color: #20186d;
+      font-size: 119px;
+      font-family: "mediasansextended-black";
+      letter-spacing: 1.5px;
+      line-height: 1.5;
+
+      .pogba {
+        position: relative;
+        &::after {
+          content: "";
+          position: absolute;
+          height: 10px;
+          width: 20%;
+          top: 32px;
+          left: 0px;
+          background-image: linear-gradient(90deg, #6548ff, #3ebdff);
+        }
+      }
+
+      .pepsi_3-word {
+        position: relative;
+        &::after {
+          content: "";
+          position: absolute;
+          height: 10px;
+          width: 20%;
+          bottom: 22px;
+          right: 0px;
+          background-image: linear-gradient(90deg, #ff02dc, #ff1c48);
+        }
+      }
+    }
+
+    .trademark {
+      list-style: none;
+      display: flex;
+      width: 30%;
+      justify-content: space-around;
+      align-items: center;
+
+      .pepsi_tm {
+        display: flex;
+        flex-direction: column;
+        width: 50px;
+        align-items: center;
+      }
+    }
+  }
+}
+/* ---------------End Content Page 3------------- */
+
+/* --------------- Content Page 4--------------- */
+.content_4 {
+  width: calc(100% - 80px);
+  display: flex;
+  margin-left: 40px;
+  align-items: flex-start;
+  margin-top: 120px;
+  overflow: hidden;
+
+  .content_4-right {
+    background-color: rgb(255, 255, 255);
+    width: 50%;
+    height: inherit;
+    padding-left: 20px;
+    overflow: hidden;
+
+    video {
+      width: 100%;
+      height: 309px;
+      object-fit: cover;
+    }
+
+    .content_4-word {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      color: #20186d;
+      font-size: 30px;
+      font-family: "mediasansextended-black";
+      letter-spacing: 1.5px;
+      line-height: 1.2;
+      position: relative;
+      padding-left: 15px;
+
+      &::after {
+        content: "";
+        position: absolute;
+        height: 94%;
+        width: 10px;
+        top: 3px;
+        left: 0px;
+        background-image: linear-gradient(181deg, #2953f7, #ff00e4);
+      }
+    }
+
+    .hoodie {
+      height: 311px;
+      background: rgba(255, 0, 0, 0);
+      background-image: url("../img/pepsi_hoodie.jpeg");
+      object-fit: cover;
+      background-size: cover;
+    }
+  }
+
+  .content_4-left {
+    background-color: #f6000000;
+    width: 50%;
+    height: inherit;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    grid-auto-rows: minmax(354px, auto);
+    overflow: hidden;
+
+    .left-1 {
+      background-image: url("../img/light_topleft.jpeg");
+      object-fit: cover;
+      background-size: cover;
+    }
+    .left-2 {
+      background-image: url("../img/light_topright.jpeg");
+      object-fit: cover;
+      background-size: cover;
+    }
+    .left-3 {
+      background-image: url("../img/light_botleft.jpeg");
+      object-fit: cover;
+      background-size: cover;
+    }
+    .left-4 {
+      background-image: url("../img/light_botright.jpeg");
+      object-fit: cover;
+      background-size: cover;
+    }
+  }
+}
+/* ---------------End Content Page 4------------- */
+
 /* ---------------Footer Content--------------- */
 @import "footer";
 /* ---------------End Footer Content--------------- */
@@ -98,5 +524,9 @@ a {
 /* ---------------Keyframe--------------- */
 @import "keyframe";
 /* ---------------End Keyframe----------- */
+
+/* -----------Media Query For Tablet---------- */
+@import "media-responsive";
+/* ---------End Media Query For Desktop------- */
 
 /* sass ./scss/index.scss ./css/index.css --watch */
