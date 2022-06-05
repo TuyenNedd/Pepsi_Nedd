@@ -1,4 +1,33 @@
 /* -----------Media Query For Tablet------------------ */
+// @media only screen and (min-width: 390px) {
+//   body {
+//     background: red;
+//   }
+//   .cta {
+//     font-size: 2.5rem;
+//     padding: 10px 20px;
+//   }
+
+//   h1.section-title {
+//     font-size: 6rem;
+//   }
+
+//   .content .content_layout {
+//     display: flex;
+//     flex-direction: column-reverse;
+//     align-items: center;
+//   }
+
+//   .content {
+//     background-image: url(../img/bluebg.png);
+//     width: 100%;
+//     height: fit-content;
+//     background-size: cover;
+//     background-position: center center;
+//     overflow: hidden;
+//     transition: 0.5s;
+//   }
+// }
 @media only screen and (min-width: 768px) {
   .cta {
     font-size: 2.5rem;
@@ -9,16 +38,7 @@
     font-size: 6rem;
   }
 }
-@media only screen and (min-width: 480px) {
-  .cta {
-    font-size: 2.5rem;
-    padding: 10px 20px;
-  }
 
-  h1.section-title {
-    font-size: 6rem;
-  }
-}
 /* --------------End Media Query For Tablet-------------- */
 
 /* ---------------Media Query For Desktop--------------- */
