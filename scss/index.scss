@@ -365,7 +365,7 @@ a {
     }
   }
   .content_3-right {
-    background-color: #ffffff;
+    background-color: #20186d;
     width: 50%;
     height: inherit;
     display: flex;
@@ -378,7 +378,7 @@ a {
       display: flex;
       flex-direction: column;
       align-items: center;
-      color: #20186d;
+      color: #ffffff;
       font-size: 119px;
       font-family: "mediasansextended-black";
       letter-spacing: 1.5px;
@@ -461,25 +461,26 @@ a {
       letter-spacing: 1.5px;
       line-height: 1.2;
       position: relative;
-      padding-left: 15px;
+      padding: 10px 10px 10px 15px;
 
       &::after {
         content: "";
         position: absolute;
-        height: 94%;
-        width: 10px;
-        top: 3px;
+        height: 76%;
+        width: 7px;
+        top: 16px;
         left: 0px;
         background-image: linear-gradient(181deg, #2953f7, #ff00e4);
       }
     }
 
     .hoodie {
-      height: 311px;
+      height: 290px;
       background: rgba(255, 0, 0, 0);
       background-image: url("../img/pepsi_hoodie.jpeg");
       object-fit: cover;
       background-size: cover;
+      margin-bottom: 1px;
     }
   }
 
@@ -530,4 +531,3 @@ a {
 /* ---------End Media Query For Desktop------- */
 
 /* sass ./scss/index.scss ./css/index.css --watch */
-
