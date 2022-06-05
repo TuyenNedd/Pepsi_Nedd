@@ -668,6 +668,7 @@ a {
   align-items: center;
   flex-direction: column;
   overflow: hidden;
+  position: relative;
 }
 .content_3 .content_3-right .content_3-word {
   display: flex;
@@ -678,6 +679,28 @@ a {
   font-family: "mediasansextended-black";
   letter-spacing: 1.5px;
   line-height: 1.5;
+}
+.content_3 .content_3-right .content_3-word::before {
+  position: absolute;
+  content: "";
+  border-right: 30px solid #ffffff00;
+  border-left: 30px solid #ff000000;
+  width: 362px;
+  height: 0;
+  left: 180px;
+  border-top: 30px solid #fff;
+  top: 0px;
+}
+.content_3 .content_3-right .content_3-word::after {
+  position: absolute;
+  content: "";
+  border-right: 30px solid #ff000000;
+  border-left: 30px solid #ff000000;
+  width: 362px;
+  height: 0;
+  left: 180px;
+  border-bottom: 30px solid #fff;
+  bottom: 0px;
 }
 .content_3 .content_3-right .content_3-word .pogba {
   position: relative;
@@ -702,6 +725,12 @@ a {
   bottom: 22px;
   right: 0px;
   background-image: linear-gradient(90deg, #ff02dc, #ff1c48);
+}
+.content_3 .content_3-right .content_3-word .x_3-word {
+  transition: 1s ease;
+}
+.content_3 .content_3-right .content_3-word .x_3-word:hover {
+  transform: rotate(360deg);
 }
 .content_3 .content_3-right .trademark {
   list-style: none;
