@@ -1,12 +1,11 @@
 @import "css-reset";
 
-@import "scrollbar";
-
 /* -----------------Setup fonts------------------ */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,900&family=Ubuntu:wght@300;400;500;700&display=swap");
-/* ----------------\/\/\/\/\/\/----------------- */
+/* ----------------\/\/\/\/\/\/------------------ */
 
+/* -----------------Setup FontFace------------------ */
 @font-face {
   font-family: "mediasansextended-bold";
   src: url("../fonts/mediasansextended-bold-TRIAL.otf") format("opentype");
@@ -19,9 +18,17 @@
   font-family: "maisonneueextended-extrabold";
   src: url("../fonts/MaisonNeueExtendedExtra-Bold.otf") format("opentype");
 }
+/* -----------------End Setup FontFace--------------- */
 
+/* --------------Variable--------------- */
 $white: #ffffff;
 $borderW: 2px;
+$primaryBlue: #0065c3;
+$secondaryBlue: #20186d;
+/* --------------End Variable----------- */
+
+@import "scrollbar";
+@import "cursor";
 
 body {
   overflow-x: hidden;
@@ -42,6 +49,16 @@ a {
 /* --------------End Header section----------- */
 
 /* -----------Content Page 1------------------ */
+#page_1 {
+  h3 {
+    color: $secondaryBlue;
+    font-size: 88px;
+    font-family: "mediasansextended-black";
+    letter-spacing: 1.49px;
+    line-height: 1.15;
+    margin: 20px 128px 20px 128px;
+  }
+}
 .content {
   background-image: url("../img/bluebg.png");
   width: 100%;
@@ -128,6 +145,7 @@ a {
 .content_2 {
   display: flex;
   overflow: hidden;
+  margin-top: 100px;
 
   .cover_left {
     width: 50%;
@@ -135,7 +153,7 @@ a {
     overflow: hidden;
 
     h3 {
-      color: #20186d;
+      color: $secondaryBlue;
       font-size: 30px;
       font-family: "mediasansextended-black";
       letter-spacing: 1.49px;
@@ -151,6 +169,7 @@ a {
     background-size: cover;
     background-position: center center;
     background-image: url("../img/pepsishanghai.png");
+    overflow: hidden;
 
     .shanghai_hover {
       position: absolute;
@@ -243,7 +262,7 @@ a {
     overflow: hidden;
 
     h3 {
-      color: #20186d;
+      color: $secondaryBlue;
       font-size: 30px;
       font-family: "mediasansextended-black";
       letter-spacing: 1.49px;
@@ -259,6 +278,7 @@ a {
     background-size: cover;
     background-position: center center;
     background-image: url("../img/pepsiLA.jpeg");
+    overflow: hidden;
 
     .LA_hover {
       position: absolute;
@@ -365,7 +385,7 @@ a {
     }
   }
   .content_3-right {
-    background-color: #20186d;
+    background-color: $secondaryBlue;
     width: 50%;
     height: inherit;
     display: flex;
@@ -439,6 +459,7 @@ a {
         transition: 1s ease;
         &:hover {
           transform: rotate(360deg);
+          font-size: 150px;
         }
       }
     }
@@ -467,7 +488,7 @@ a {
   display: flex;
   margin-left: 40px;
   align-items: flex-start;
-  margin-top: 120px;
+  margin-top: 100px;
   overflow: hidden;
 
   .content_4-right {
@@ -487,7 +508,7 @@ a {
       display: flex;
       flex-direction: column;
       align-items: center;
-      color: #20186d;
+      color: $secondaryBlue;
       font-size: 30px;
       font-family: "mediasansextended-black";
       letter-spacing: 1.5px;
@@ -549,6 +570,138 @@ a {
   }
 }
 /* ---------------End Content Page 4------------- */
+
+/* --------------- Content Page 5--------------- */
+#page_5 {
+  margin-top: 100px;
+  h1 {
+    color: #20186d;
+    font-size: 88px;
+    font-family: "mediasansextended-black";
+    letter-spacing: 1.49px;
+    line-height: 1.15;
+    margin: 20px 40px 20px 40px;
+  }
+
+  .content_5 {
+    display: flex;
+    overflow: hidden;
+
+    .slider_left {
+      background-color: red;
+      width: 50%;
+      height: 900px;
+      overflow: hidden;
+      cursor: url("../img/swipecursor.svg"), auto;
+
+      .swiper {
+        width: 100%;
+        height: 100%;
+
+        .swiper-slide {
+          text-align: center;
+          font-size: 18px;
+          background: rgba(221, 255, 0, 0);
+
+          /* Center slide text vertically */
+          display: -webkit-box;
+          display: flex;
+          -webkit-box-pack: center;
+          justify-content: center;
+          -webkit-box-align: center;
+          align-items: center;
+
+          img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+        }
+      }
+    }
+
+    .slider_right {
+      background-color: rgba(0, 0, 255, 0);
+      width: 50%;
+      height: 900px;
+      overflow: hidden;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 0px;
+      grid-auto-rows: minmax(430px, auto);
+      cursor: url("../img/swipecursor.svg"), auto;
+
+      .swiper {
+        width: 100%;
+        height: 100%;
+
+        .swiper-slide {
+          text-align: center;
+          font-size: 18px;
+          background: rgba(221, 255, 0, 0);
+
+          /* Center slide text vertically */
+          display: -webkit-box;
+          display: flex;
+          -webkit-box-pack: center;
+          justify-content: center;
+          -webkit-box-align: center;
+          align-items: center;
+
+          img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+        }
+      }
+    }
+  }
+}
+/* ---------------End Content Page 5------------- */
+
+/* --------------- Content Page 6--------------- */
+#page_6 {
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 100%;
+  height: 80%;
+  color: #0065c3;
+  margin-top: 100px;
+
+  .title_content {
+    margin: auto;
+    text-align: center;
+
+    h1 {
+      font-size: 60px;
+      opacity: 1;
+      font-weight: 400;
+      margin: 0;
+      line-height: 5rem;
+      font-family: "maisonneueextended-extrabold";
+    }
+  }
+
+  .item_content {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    flex-flow: row nowrap;
+    width: 90%;
+    height: auto;
+    margin: auto;
+    margin-top: 0;
+    font-size: 0;
+  }
+}
+/* ---------------End Content Page 6------------- */
 
 /* ---------------Footer Content--------------- */
 @import "footer";

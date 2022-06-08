@@ -46,22 +46,9 @@ h6 {
 }
 
 /* ---------------------------------------------- */
-body::-webkit-scrollbar {
-  width: 10px;
-}
-
-body::-webkit-scrollbar-thumb {
-  background-image: linear-gradient(to bottom, #1fa2ff, #12d8fa, #a6ffcb);
-  background-image: linear-gradient(to bottom, #0065c3, #12d8fa, #a6ffcb);
-  background-image: linear-gradient(to bottom, #0065c3, #0065c3, #a6ffcb);
-}
-
-body::-webkit-scrollbar-track {
-  background-color: #0065c3;
-}
-
 /* -----------------Setup fonts------------------ */
-/* ----------------\/\/\/\/\/\/----------------- */
+/* ----------------\/\/\/\/\/\/------------------ */
+/* -----------------Setup FontFace------------------ */
 @font-face {
   font-family: "mediasansextended-bold";
   src: url("../fonts/mediasansextended-bold-TRIAL.otf") format("opentype");
@@ -74,6 +61,37 @@ body::-webkit-scrollbar-track {
   font-family: "maisonneueextended-extrabold";
   src: url("../fonts/MaisonNeueExtendedExtra-Bold.otf") format("opentype");
 }
+/* -----------------End Setup FontFace--------------- */
+/* --------------Variable--------------- */
+/* --------------End Variable----------- */
+body::-webkit-scrollbar {
+  width: 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-image: linear-gradient(to bottom, #0065c3, #0065c3, #a6ffcb);
+}
+
+body::-webkit-scrollbar-track {
+  background-color: #0065c3;
+}
+
+.g-cursor__circle {
+  position: fixed;
+  top: 5px;
+  left: 6px;
+  width: 17px;
+  height: 17px;
+  pointer-events: none;
+  user-select: none;
+  border-radius: 100%;
+  background: #ff00ea;
+  background-size: cover;
+  z-index: 999999999;
+  backface-visibility: hidden;
+  will-change: transform;
+}
+
 body {
   overflow-x: hidden;
   font-family: sans-serif;
@@ -147,7 +165,7 @@ a {
 #header .nav-list ul {
   list-style: none;
   position: absolute;
-  background-color: #1f1e1e;
+  background-color: #0065c3;
   width: 100vw;
   height: 100vh;
   left: 100%;
@@ -194,7 +212,7 @@ a {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(0);
-  color: rgba(240, 248, 255, 0.021);
+  color: #20186d;
   font-size: 13rem;
   letter-spacing: 50px;
   z-index: -1;
@@ -207,7 +225,6 @@ a {
   height: 40px;
   width: 40px;
   display: inline-block;
-  border: 3px solid white;
   border-radius: 50%;
   position: relative;
   display: flex;
@@ -273,6 +290,15 @@ a {
 /* -------------------End Header section---------------- */
 /* --------------End Header section----------- */
 /* -----------Content Page 1------------------ */
+#page_1 h3 {
+  color: #20186d;
+  font-size: 88px;
+  font-family: "mediasansextended-black";
+  letter-spacing: 1.49px;
+  line-height: 1.15;
+  margin: 20px 128px 20px 128px;
+}
+
 .content {
   background-image: url("../img/bluebg.png");
   width: 100%;
@@ -446,6 +472,7 @@ a {
 .content_2 {
   display: flex;
   overflow: hidden;
+  margin-top: 100px;
 }
 .content_2 .cover_left {
   width: 50%;
@@ -467,6 +494,7 @@ a {
   background-size: cover;
   background-position: center center;
   background-image: url("../img/pepsishanghai.png");
+  overflow: hidden;
 }
 .content_2 .content_2-left .shanghai_hover {
   position: absolute;
@@ -563,6 +591,7 @@ a {
   background-size: cover;
   background-position: center center;
   background-image: url("../img/pepsiLA.jpeg");
+  overflow: hidden;
 }
 .content_2 .content_2-right .LA_hover {
   position: absolute;
@@ -731,6 +760,7 @@ a {
 }
 .content_3 .content_3-right .content_3-word .x_3-word:hover {
   transform: rotate(360deg);
+  font-size: 150px;
 }
 .content_3 .content_3-right .trademark {
   list-style: none;
@@ -753,7 +783,7 @@ a {
   display: flex;
   margin-left: 40px;
   align-items: flex-start;
-  margin-top: 120px;
+  margin-top: 100px;
   overflow: hidden;
 }
 .content_4 .content_4-right {
@@ -829,6 +859,124 @@ a {
 }
 
 /* ---------------End Content Page 4------------- */
+/* --------------- Content Page 5--------------- */
+#page_5 {
+  margin-top: 100px;
+}
+#page_5 h1 {
+  color: #20186d;
+  font-size: 88px;
+  font-family: "mediasansextended-black";
+  letter-spacing: 1.49px;
+  line-height: 1.15;
+  margin: 20px 40px 20px 40px;
+}
+#page_5 .content_5 {
+  display: flex;
+  overflow: hidden;
+}
+#page_5 .content_5 .slider_left {
+  background-color: red;
+  width: 50%;
+  height: 900px;
+  overflow: hidden;
+  cursor: url("../img/swipecursor.svg"), auto;
+}
+#page_5 .content_5 .slider_left .swiper {
+  width: 100%;
+  height: 100%;
+}
+#page_5 .content_5 .slider_left .swiper .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: rgba(221, 255, 0, 0);
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+}
+#page_5 .content_5 .slider_left .swiper .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+#page_5 .content_5 .slider_right {
+  background-color: rgba(0, 0, 255, 0);
+  width: 50%;
+  height: 900px;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0px;
+  grid-auto-rows: minmax(430px, auto);
+  cursor: url("../img/swipecursor.svg"), auto;
+}
+#page_5 .content_5 .slider_right .swiper {
+  width: 100%;
+  height: 100%;
+}
+#page_5 .content_5 .slider_right .swiper .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: rgba(221, 255, 0, 0);
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+}
+#page_5 .content_5 .slider_right .swiper .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ---------------End Content Page 5------------- */
+/* --------------- Content Page 6--------------- */
+#page_6 {
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 100%;
+  height: 80%;
+  color: #0065c3;
+  margin-top: 100px;
+}
+#page_6 .title_content {
+  margin: auto;
+  text-align: center;
+}
+#page_6 .title_content h1 {
+  font-size: 60px;
+  opacity: 1;
+  font-weight: 400;
+  margin: 0;
+  line-height: 5rem;
+  font-family: "maisonneueextended-extrabold";
+}
+#page_6 .item_content {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  flex-flow: row nowrap;
+  width: 90%;
+  height: auto;
+  margin: auto;
+  margin-top: 0;
+  font-size: 0;
+}
+
+/* ---------------End Content Page 6------------- */
 /* ---------------Footer Content--------------- */
 /* ---------------Footer Content--------------- */
 .footer {
@@ -860,7 +1008,7 @@ a {
   -webkit-box-align: center;
   align-items: center;
   -webkit-box-pack: justify;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 .footer .footer_container .footer_container-right .buttons {
   margin-top: 0px;

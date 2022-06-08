@@ -105,4 +105,10 @@ document.getElementById("test").style.backgroundImage = "url(img/pepsishanghai.p
     }
     ---------- End Second Soloution ---------
     
+    color: #20186d;
+    font-size: 88px;
+    font-family: "mediasansextended-black";
+    letter-spacing: 1.49px;
+    line-height: 1.15;
+    margin: 20px 40px 20px 40px;
                 
