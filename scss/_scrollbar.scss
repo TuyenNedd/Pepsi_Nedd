@@ -2,12 +2,12 @@ body::-webkit-scrollbar {
   width: 10px;
 }
 body::-webkit-scrollbar-thumb {
-  background-image: linear-gradient(to bottom, #1fa2ff, #12d8fa, #a6ffcb);
-  background-image: linear-gradient(to bottom, #0065c3, #12d8fa, #a6ffcb);
-  background-image: linear-gradient(to bottom, #0065c3, #0065c3, #a6ffcb);
+  // background-image: linear-gradient(to bottom, #1fa2ff, #12d8fa, #a6ffcb);
+  // background-image: linear-gradient(to bottom, #0065c3, #12d8fa, #a6ffcb);
+  background-image: linear-gradient(to bottom, $primaryBlue, $primaryBlue, #a6ffcb);
   // border-radius: 25px;
 }
 body::-webkit-scrollbar-track {
-  background-color: #0065c3;
+  background-color: $primaryBlue;
   // border-radius: 25px;
 }

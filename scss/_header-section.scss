@@ -63,7 +63,7 @@
     ul {
       list-style: none;
       position: absolute;
-      background-color: rgb(31, 30, 30);
+      background-color: $primaryBlue;
       width: 100vw;
       height: 100vh;
       left: 100%;
@@ -113,7 +113,7 @@
           top: 50%;
           left: 50%;
           transform: translate(-50%, -50%) scale(0);
-          color: rgba(240, 248, 255, 0.021);
+          color: $secondaryBlue;
           font-size: 13rem;
           letter-spacing: 50px;
           z-index: -1;
@@ -131,7 +131,7 @@
     height: 40px;
     width: 40px;
     display: inline-block;
-    border: 3px solid white;
+    // border: 3px solid white;
     border-radius: 50%;
     position: relative;
     display: flex;

@@ -5,7 +5,7 @@
   width: auto;
   height: 29rem;
   flex-direction: column;
-  background-color: #0065c3;
+  background-color: $primaryBlue;
   overflow-x: hidden;
 
   .footer_logo {
@@ -31,7 +31,7 @@
     -webkit-box-align: center;
     align-items: center;
     -webkit-box-pack: justify;
-    justify-content: space-around;
+    justify-content: space-evenly;
 
     .footer_container-right {
       .buttons {
