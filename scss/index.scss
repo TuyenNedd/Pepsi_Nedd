@@ -373,6 +373,7 @@ a {
   margin-left: 40px;
   margin-top: 100px;
   overflow: hidden;
+
   .content_3-left {
     background-color: rgb(255, 255, 255);
     width: 50%;
@@ -395,6 +396,28 @@ a {
     overflow: hidden;
     position: relative;
 
+    &::before {
+      position: absolute;
+      content: "";
+      border-right: 30px solid #ffffff00;
+      border-left: 30px solid #ff000000;
+      width: 362px;
+      height: 0;
+      border-top: 30px solid #fff;
+      top: 0px;
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+      border-right: 30px solid #ff000000;
+      border-left: 30px solid #ff000000;
+      width: 362px;
+      height: 0;
+      border-bottom: 30px solid #fff;
+      bottom: 0px;
+    }
+
     .content_3-word {
       display: flex;
       flex-direction: column;
@@ -404,30 +427,6 @@ a {
       font-family: "mediasansextended-black";
       letter-spacing: 1.5px;
       line-height: 1.5;
-
-      &::before {
-        position: absolute;
-        content: "";
-        border-right: 30px solid #ffffff00;
-        border-left: 30px solid #ff000000;
-        width: 362px;
-        height: 0;
-        left: 180px;
-        border-top: 30px solid #fff;
-        top: 0px;
-      }
-
-      &::after {
-        position: absolute;
-        content: "";
-        border-right: 30px solid #ff000000;
-        border-left: 30px solid #ff000000;
-        width: 362px;
-        height: 0;
-        left: 180px;
-        border-bottom: 30px solid #fff;
-        bottom: 0px;
-      }
 
       .pogba {
         position: relative;
@@ -798,6 +797,11 @@ a {
   }
 }
 /* ---------------End Content Page 6------------- */
+
+/* ---------------Products------------------- */
+@import "products";
+/* ---------------End Products--------------- */
+
 
 /* ---------------Footer Content--------------- */
 @import "footer";

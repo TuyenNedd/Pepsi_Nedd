@@ -218,6 +218,20 @@ a {
   z-index: -1;
   transition: 0.3s ease letter-spacing;
 }
+#header .nav-list ul .stand a {
+  color: #20186d;
+}
+#header .nav-list ul .stand::before {
+  content: "";
+  position: absolute;
+  background: #adddf3;
+  width: 100%;
+  height: 3px;
+  bottom: 0px;
+  left: 0px;
+  transition: 0.3s ease;
+  border-radius: 25px;
+}
 #header .nav-list ul.active {
   left: 0%;
 }
@@ -699,6 +713,26 @@ a {
   overflow: hidden;
   position: relative;
 }
+.content_3 .content_3-right::before {
+  position: absolute;
+  content: "";
+  border-right: 30px solid #ffffff00;
+  border-left: 30px solid #ff000000;
+  width: 362px;
+  height: 0;
+  border-top: 30px solid #fff;
+  top: 0px;
+}
+.content_3 .content_3-right::after {
+  position: absolute;
+  content: "";
+  border-right: 30px solid #ff000000;
+  border-left: 30px solid #ff000000;
+  width: 362px;
+  height: 0;
+  border-bottom: 30px solid #fff;
+  bottom: 0px;
+}
 .content_3 .content_3-right .content_3-word {
   display: flex;
   flex-direction: column;
@@ -708,28 +742,6 @@ a {
   font-family: "mediasansextended-black";
   letter-spacing: 1.5px;
   line-height: 1.5;
-}
-.content_3 .content_3-right .content_3-word::before {
-  position: absolute;
-  content: "";
-  border-right: 30px solid #ffffff00;
-  border-left: 30px solid #ff000000;
-  width: 362px;
-  height: 0;
-  left: 180px;
-  border-top: 30px solid #fff;
-  top: 0px;
-}
-.content_3 .content_3-right .content_3-word::after {
-  position: absolute;
-  content: "";
-  border-right: 30px solid #ff000000;
-  border-left: 30px solid #ff000000;
-  width: 362px;
-  height: 0;
-  left: 180px;
-  border-bottom: 30px solid #fff;
-  bottom: 0px;
 }
 .content_3 .content_3-right .content_3-word .pogba {
   position: relative;
@@ -1061,6 +1073,246 @@ a {
 }
 
 /* ---------------End Content Page 6------------- */
+/* ---------------Products------------------- */
+.bar2 {
+  height: 2px;
+  width: 20px;
+  position: relative;
+  background-color: black;
+  z-index: -1;
+}
+.bar2::after, .bar2::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  background-color: #20186d;
+  transition: 0.3s ease;
+  transition-property: top, bottom;
+}
+.bar2::after {
+  top: 8px;
+}
+.bar2::before {
+  bottom: 8px;
+}
+
+.active .bar2::before {
+  bottom: 0;
+}
+
+.active .bar2::after {
+  top: 0;
+}
+
+#header .nav-list .pdt a {
+  color: #20186d;
+}
+
+#products {
+  font-family: "Poppins", sans-serif;
+  margin-top: 90px;
+  padding: 40px;
+  overflow: hidden;
+}
+#products .products_container {
+  --spacing: 50px;
+  --columns: 4;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: calc(-1 * var(--spacing));
+  transform-style: preserve-3d;
+}
+#products .products_container .product {
+  width: calc(100% / var(--columns) - var(--spacing));
+  margin-left: var(--spacing);
+  margin-bottom: var(--spacing);
+  height: 400px;
+  position: relative;
+  background-color: #ffffff;
+  border-radius: 20px;
+  transform-style: preserve-3d;
+  box-shadow: 0px 20px 69px 0px rgba(131, 143, 203, 0.42);
+}
+#products .products_container .product:hover::after {
+  opacity: 0.1;
+}
+#products .products_container .product:hover::before {
+  opacity: 0.1;
+}
+#products .products_container .product::before {
+  content: "PEPSI";
+  position: absolute;
+  top: 20px;
+  left: 35px;
+  font-size: 9em;
+  font-weight: 900;
+  color: white;
+  font-style: italic;
+  opacity: 0;
+  transition: 0.5s;
+}
+#products .products_container .product::after {
+  content: "CAN";
+  position: absolute;
+  bottom: 20px;
+  right: 70px;
+  font-size: 8rem;
+  font-weight: 900;
+  color: white;
+  font-style: italic;
+  opacity: 0;
+  transition: 0.5s;
+}
+#products .products_container .product .name {
+  position: absolute;
+  top: 0;
+  left: 0px;
+  text-align: center;
+  color: white;
+  width: 100%;
+  transform-style: preserve-3d;
+  transform: translate3d(0, 0, 75px);
+  transition: 0.5s;
+  opacity: 0;
+  z-index: 10;
+  font-size: 17px;
+}
+#products .products_container .product:hover .name {
+  top: 40px;
+  opacity: 1;
+}
+#products .products_container .product .buy {
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  transform-style: preserve-3d;
+  transform: translate3d(-50%, 0, 75px);
+  color: white;
+  background-color: #333;
+  padding: 10px 25px;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: 0.5s;
+  opacity: 0;
+  z-index: 10;
+  font-size: 15px;
+  border: 4px white solid;
+}
+#products .products_container .product:hover .buy {
+  bottom: 30px;
+  opacity: 1;
+}
+#products .products_container .product .circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  transition: 0.5s;
+  background-color: white;
+  transform-style: preserve-3d;
+  z-index: 10;
+  opacity: 1;
+  transform: translate3d(-50%, -50%, 50px);
+  border: 8px white solid;
+}
+#products .products_container .product .item_prd {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  max-width: 125px;
+  transition: 0.5s;
+  z-index: 11;
+  transition: 0.5s;
+  transform-style: preserve-3d;
+  transform: translate3d(-50%, -50%, 50px) rotate(0deg);
+}
+#products .products_container .product:hover .item_prd {
+  transform: translate3d(-50%, -50%, 100px) rotate(-15deg);
+}
+#products .products_container .product:nth-child(1) .circle, #products .products_container .product:nth-child(1) .buy {
+  background-color: #1974c9;
+}
+#products .products_container .product:nth-child(2) .circle, #products .products_container .product:nth-child(2) .buy {
+  background-color: #333333;
+}
+#products .products_container .product:nth-child(3) .circle, #products .products_container .product:nth-child(3) .buy {
+  background-color: #939393;
+}
+#products .products_container .product:nth-child(4) .circle, #products .products_container .product:nth-child(4) .buy {
+  background-color: #cbc2a3;
+}
+#products .products_container .product:nth-child(5) .circle, #products .products_container .product:nth-child(5) .buy {
+  background-color: #3955a3;
+}
+#products .products_container .product:nth-child(6) .circle, #products .products_container .product:nth-child(6) .buy {
+  background-color: #ff9a32;
+}
+#products .products_container .product:nth-child(7) .circle, #products .products_container .product:nth-child(7) .buy {
+  background-color: #ff9f3c;
+}
+#products .products_container .product:nth-child(8) .circle, #products .products_container .product:nth-child(8) .buy {
+  background-color: #cb2b43;
+}
+#products .products_container .product:nth-child(9) .circle, #products .products_container .product:nth-child(9) .buy {
+  background-color: #939393;
+}
+#products .products_container .product:nth-child(10) .circle, #products .products_container .product:nth-child(10) .buy {
+  background-color: #d74389;
+}
+#products .products_container .product:nth-child(11) .circle, #products .products_container .product:nth-child(11) .buy {
+  background-color: #1974c9;
+}
+#products .products_container .product:nth-child(12) .circle, #products .products_container .product:nth-child(12) .buy {
+  background-color: #c9a961;
+}
+#products .products_container .product:nth-child(13) .circle, #products .products_container .product:nth-child(13) .buy {
+  background-color: #cbcbcb;
+}
+#products .products_container .item-1:hover {
+  background-color: #1974c9;
+}
+#products .products_container .item-2:hover {
+  background-color: #333333;
+}
+#products .products_container .item-3:hover {
+  background-color: #939393;
+}
+#products .products_container .item-4:hover {
+  background-color: #cbc2a3;
+}
+#products .products_container .item-5:hover {
+  background-color: #3955a3;
+}
+#products .products_container .item-6:hover {
+  background-color: #ff9a32;
+}
+#products .products_container .item-7:hover {
+  background-color: #ff9f3c;
+}
+#products .products_container .item-8:hover {
+  background-color: #cb2b43;
+}
+#products .products_container .item-9:hover {
+  background-color: #939393;
+}
+#products .products_container .item-10:hover {
+  background-color: #d74389;
+}
+#products .products_container .item-11:hover {
+  background-color: #1974c9;
+}
+#products .products_container .item-12:hover {
+  background-color: #c9a961;
+}
+#products .products_container .item13:hover {
+  background-color: #cbcbcb;
+}
+
+/* ---------------End Products--------------- */
 /* ---------------Footer Content--------------- */
 /* ---------------Footer Content--------------- */
 .footer {
