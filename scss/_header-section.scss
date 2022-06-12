@@ -120,6 +120,24 @@
           transition: 0.3s ease letter-spacing;
         }
       }
+
+      .stand {
+        a {
+          color: $secondaryBlue;
+        }
+
+        &::before {
+          content: "";
+          position: absolute;
+          background: #adddf3;
+          width: 100%;
+          height: 3px;
+          bottom: 0px;
+          left: 0px;
+          transition: 0.3s ease;
+          border-radius: 25px;
+        }
+      }
     }
 
     ul.active {
