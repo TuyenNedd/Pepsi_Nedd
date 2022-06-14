@@ -52,7 +52,7 @@ a {
 #page_1 {
   h3 {
     color: $secondaryBlue;
-    font-size: 88px;
+    font-size: 87px;
     font-family: "mediasansextended-black";
     letter-spacing: 1.49px;
     line-height: 1.15;
@@ -79,6 +79,11 @@ a {
       animation: 0.9s cubic-bezier(0.455, 0.03, 0.515, 0.955) 0.5s forwards
           elastic-ease-out-right,
         0.9s cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s forwards linear-fade-in;
+
+      .pepsi_can {
+        max-width: 100%;
+        height: auto;
+      }
     }
 
     .content_left {
@@ -477,6 +482,9 @@ a {
         align-items: center;
       }
     }
+    .mobile {
+      display: none;
+    }
   }
 }
 /* ---------------End Content Page 3------------- */
@@ -546,6 +554,15 @@ a {
     grid-auto-rows: minmax(354px, auto);
     overflow: hidden;
 
+    .bright{
+      transition: 0.3s linear;
+      &:hover {
+        filter: brightness(1.7);
+        cursor: pointer;
+    }
+    
+    }
+
     .left-1 {
       background-image: url("../img/light_topleft.jpeg");
       object-fit: cover;
@@ -587,7 +604,7 @@ a {
     overflow: hidden;
 
     .slider_left {
-      background-color: red;
+      background-color: rgba(255, 0, 0, 0);
       width: 50%;
       height: 900px;
       overflow: hidden;
@@ -656,6 +673,10 @@ a {
           }
         }
       }
+    }
+
+    .mobile-active {
+      display: none;
     }
   }
 }
@@ -802,6 +823,9 @@ a {
 @import "products";
 /* ---------------End Products--------------- */
 
+/* ---------------About---------------------- */
+@import "about";
+/* ---------------End About------------------ */
 
 /* ---------------Footer Content--------------- */
 @import "footer";
