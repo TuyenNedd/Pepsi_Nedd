@@ -38,7 +38,7 @@
                 <li class="stand">
                   <a href="products.html" data-after="Products">PRODUCTS</a>
                 </li>
-                <li><a href="#about" data-after="About">ABOUT</a></li>
+                <li><a href="about.html" data-after="About">ABOUT</a></li>
                 <li><a href="#services" data-after="Service">SERVICES</a></li>
                 <li><a href="#contact" data-after="Contact">CONTACT</a></li>
               </ul>
@@ -47,7 +47,7 @@
         </div>
       </section>
 
-      <section id="products">
+      <section id="products" style="user-select: none">
         <div class="products_container">
           <div class="product item-1">
             <h2 class="name">PEPSI</h2>
@@ -236,6 +236,28 @@
                 </span>
               </span>
             </button>
+            <svg
+              style="height: 0px; display: none"
+              xmlns="http://www.w3.org/2000/svg"
+              version="1.1"
+            >
+              <defs>
+                <filter id="goo">
+                  <feGaussianBlur
+                    in="SourceGraphic"
+                    result="blur"
+                    stdDeviation="10"
+                  ></feGaussianBlur>
+                  <feColorMatrix
+                    in="blur"
+                    mode="matrix"
+                    values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 21 -7"
+                    result="goo"
+                  ></feColorMatrix>
+                  <feBlend in2="goo" in="SourceGraphic" result="mix"></feBlend>
+                </filter>
+              </defs>
+            </svg>
             <br />
           </div>
           <div class="footer__social-container">
@@ -305,17 +327,12 @@
 
     <!-- --------------------Link Script-------------------- -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.21/vue.min.js"></script>
-    <!-- Swiper JS -->
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script src="./js/products.js"></script>
 
+    <!-- Vanilla JS -->
     <script type="text/javascript" src="./js/vanilla-tilt.min.js"></script>
-    <script>
-      VanillaTilt.init(document.querySelectorAll(".product"), {
-        max: 40,
-        speed: 5000,
-      });
-    </script>
+    <!--End Vanilla JS -->
+
+    <script src="./js/products.js"></script>
     <!-- --------------------End Link Script---------------- -->
   </body>
 </html>
