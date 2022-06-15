@@ -1875,6 +1875,7 @@ a {
   #products {
     margin-top: 90px;
     padding: 20px;
+    padding-top: 30px;
   }
   #products .products_container {
     --spacing: 25px;
