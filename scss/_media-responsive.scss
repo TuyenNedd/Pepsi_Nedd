@@ -88,7 +88,7 @@
       column-count: 1;
       text-align: center;
       padding: 60px;
-      font-size: 12px;
+      font-size: 15px;
       .footer__link-item {
       }
     }
@@ -401,7 +401,7 @@
   .footer {
     height: 60%;
     min-height: 29rem;
-    justify-content: space-around;
+    justify-content: center;
     .footer_logo {
       img {
         width: 40px;
@@ -416,6 +416,11 @@
       .footer_container-right {
         .buttons {
           margin-top: 0px;
+
+          .blob-btn {
+            margin-bottom: 15px;
+            font-size: 12px;
+          }
         }
       }
     }
@@ -423,8 +428,9 @@
     .footer__linklist {
       column-count: 1;
       text-align: center;
-      padding: 60px;
+      padding: 30px;
       font-size: 12px;
+      line-height: 1.3;
       .footer__link-item {
       }
     }
