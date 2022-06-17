@@ -24,6 +24,7 @@
     bottom: 8px;
   }
 }
+
 .active .bar2::before {
   bottom: 0;
 }
@@ -34,10 +35,13 @@
 
 #body_product {
   // padding: 40px;
+  overflow-x: hidden;
 }
+
 #header .nav-list .pdt a {
   color: $secondaryBlue;
 }
+
 #products {
   font-family: "Poppins", sans-serif;
   margin-top: 90px;
@@ -50,6 +54,9 @@
     flex-wrap: wrap;
     margin-left: calc(-1 * var(--spacing));
     transform-style: preserve-3d;
+    animation: 0.9s cubic-bezier(0.455, 0.03, 0.515, 0.955) 0.5s forwards
+        elastic-ease-out-left,
+      0.9s cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s forwards linear-fade-in;
 
     .product {
       width: calc(calc(100% / var(--columns)) - var(--spacing));
@@ -139,6 +146,28 @@
         .buy {
           bottom: 30px;
           opacity: 1;
+        }
+      }
+
+      .lord {
+        transition: 0.5s;
+        opacity: 0;
+        position: absolute;
+        bottom: -25px;
+        left: 50%;
+        transform-style: preserve-3d;
+        transform: translate3d(-50%, 0, 75px);
+        color: white;
+        font-size: 51px;
+        z-index: 10;
+      }
+
+      &:hover {
+        .lord {
+          bottom: 0px;
+          left: 50%;
+          opacity: 1;
+          cursor: pointer;
         }
       }
 
@@ -292,6 +321,2517 @@
     .item13 {
       &:hover {
         background-color: #cbcbcb;
+      }
+    }
+  }
+}
+
+.products_preview_1 {
+  position: fixed;
+  width: 0;
+  height: fit-content;
+  background-color: $primaryBlue;
+  z-index: -1;
+  top: 57px;
+  left: 0px;
+  // opacity: 0;
+  transition: all 1s ease;
+
+  ion-icon {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    color: white;
+    font-size: 40px;
+    opacity: 1;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  .productdetail_container {
+    display: flex;
+    width: 80%;
+    height: 100vh;
+    margin: auto;
+    transition: 1s ease;
+
+    .nutrition_detail_1 {
+      width: 50%;
+      max-width: 48rem;
+      height: 57.6rem;
+      position: relative;
+      margin: 40px auto;
+      font-family: "Poppins";
+      font-size: 1.4rem;
+      opacity: 0;
+      transition: 0.5s ease;
+
+      .nutrition__border_1 {
+        display: none;
+        border: 1px solid #fff;
+        padding: 6px;
+        background-color: white;
+
+        .nutrition__table {
+          width: 100%;
+          padding: 4px;
+          border-collapse: collapse;
+          line-height: 1;
+
+          tr {
+            border: 1px solid #000;
+          }
+
+          td {
+            padding: 0.4em 0.5em !important;
+          }
+
+          .title {
+            font-size: 38px;
+            padding: 0;
+            padding-bottom: 24px;
+            font-weight: 900;
+            text-transform: uppercase;
+          }
+
+          .line3 {
+            border-bottom: 11px solid #000 !important;
+
+            .subtitle {
+              font-size: 21px;
+              font-weight: 800;
+              text-transform: uppercase;
+            }
+          }
+
+          .line2 {
+            border-bottom: 1px solid #000 !important;
+
+            .right {
+              text-align: right;
+            }
+          }
+
+          .right {
+            text-align: right;
+          }
+
+          .line5 {
+            border-bottom: 5px solid #000 !important;
+          }
+
+          .line8 {
+            border-bottom: 5px solid #000 !important;
+          }
+        }
+        .nutrition__table > * {
+          color: #000;
+        }
+
+        .nutrition__ingredients {
+          width: 100%;
+          max-width: 48rem;
+          margin: 1rem auto;
+
+          .nutrition__ingredient {
+            display: inline-block;
+            text-transform: uppercase;
+            margin: 0;
+            margin-right: 0.25rem;
+            padding-bottom: 1px;
+            border-bottom: 1px solid;
+            font-size: 10px;
+            opacity: 0.8;
+            color: #000;
+          }
+        }
+
+        .nutrition__lastupdated {
+          text-align: right;
+          font-size: 10px;
+          margin: auto;
+          opacity: 0;
+        }
+      }
+
+      .buttons {
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+
+        .blob-btn {
+          font-size: 14px;
+
+          &:hover {
+            color: $primaryBlue;
+          }
+        }
+
+        a {
+          transition: opacity 0.2s ease-out;
+          cursor: pointer;
+          color: white;
+          font-family: "Poppins";
+          font-size: 14px;
+          font-weight: 700;
+          margin-bottom: 26px;
+
+          &:hover {
+            opacity: 0.8;
+          }
+        }
+      }
+
+      .btn-1 {
+        display: none;
+      }
+    }
+
+    .product_image_1 {
+      width: 50%;
+      max-width: 48rem;
+      height: 57.6rem;
+      margin: 40px auto;
+      position: relative;
+      display: flex;
+      -webkit-box-align: start;
+      align-items: flex-start;
+      -webkit-box-pack: center;
+      justify-content: center;
+      opacity: 0;
+      background: url(../img/product-shadow.png) no-repeat bottom;
+      user-select: none;
+      transition: 0.5s ease;
+
+      img {
+        height: 80%;
+        object-fit: contain;
+        transform-origin: 50% 33%;
+      }
+
+      .img_preview_1 {
+        opacity: 0;
+        width: 0;
+      }
+    }
+  }
+}
+.products_preview_2 {
+  position: fixed;
+  width: 0;
+  height: fit-content;
+  background-color: #333333;
+  z-index: -1;
+  top: 57px;
+  left: 0px;
+  // opacity: 0;
+  transition: all 1s ease;
+
+  ion-icon {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    color: white;
+    font-size: 40px;
+    opacity: 1;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  .productdetail_container {
+    display: flex;
+    width: 80%;
+    height: 100vh;
+    margin: auto;
+    transition: 1s ease;
+
+    .nutrition_detail_2 {
+      width: 50%;
+      max-width: 48rem;
+      height: 57.6rem;
+      position: relative;
+      margin: 40px auto;
+      font-family: "Poppins";
+      font-size: 1.4rem;
+      opacity: 0;
+      transition: 0.5s ease;
+
+      .nutrition__border_2 {
+        display: none;
+        border: 1px solid #fff;
+        padding: 6px;
+        background-color: white;
+
+        .nutrition__table {
+          width: 100%;
+          padding: 4px;
+          border-collapse: collapse;
+          line-height: 1;
+
+          tr {
+            border: 1px solid #000;
+          }
+
+          td {
+            padding: 0.4em 0.5em !important;
+          }
+
+          .title {
+            font-size: 38px;
+            padding: 0;
+            padding-bottom: 24px;
+            font-weight: 900;
+            text-transform: uppercase;
+          }
+
+          .line3 {
+            border-bottom: 11px solid #000 !important;
+
+            .subtitle {
+              font-size: 21px;
+              font-weight: 800;
+              text-transform: uppercase;
+            }
+          }
+
+          .line2 {
+            border-bottom: 1px solid #000 !important;
+
+            .right {
+              text-align: right;
+            }
+          }
+
+          .right {
+            text-align: right;
+          }
+
+          .line5 {
+            border-bottom: 5px solid #000 !important;
+          }
+
+          .line8 {
+            border-bottom: 5px solid #000 !important;
+          }
+        }
+        .nutrition__table > * {
+          color: #000;
+        }
+
+        .nutrition__ingredients {
+          width: 100%;
+          max-width: 48rem;
+          margin: 1rem auto;
+
+          .nutrition__ingredient {
+            display: inline-block;
+            text-transform: uppercase;
+            margin: 0;
+            margin-right: 0.25rem;
+            padding-bottom: 1px;
+            border-bottom: 1px solid;
+            font-size: 10px;
+            opacity: 0.8;
+            color: #000;
+          }
+        }
+
+        .nutrition__lastupdated {
+          text-align: right;
+          font-size: 10px;
+          margin: auto;
+          opacity: 0;
+        }
+      }
+
+      .buttons {
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+
+        .blob-btn {
+          font-size: 14px;
+
+          &:hover {
+            color: #333333;
+          }
+        }
+
+        a {
+          transition: opacity 0.2s ease-out;
+          cursor: pointer;
+          color: white;
+          font-family: "Poppins";
+          font-size: 14px;
+          font-weight: 700;
+          margin-bottom: 26px;
+
+          &:hover {
+            opacity: 0.8;
+          }
+        }
+      }
+
+      .btn-2 {
+        display: none;
+      }
+    }
+
+    .product_image_2 {
+      width: 50%;
+      max-width: 48rem;
+      height: 57.6rem;
+      margin: 40px auto;
+      position: relative;
+      display: flex;
+      -webkit-box-align: start;
+      align-items: flex-start;
+      -webkit-box-pack: center;
+      justify-content: center;
+      opacity: 0;
+      background: url(../img/product-shadow.png) no-repeat bottom;
+      user-select: none;
+      transition: 0.5s ease;
+
+      img {
+        height: 80%;
+        object-fit: contain;
+        transform-origin: 50% 33%;
+      }
+
+      .img_preview_2 {
+        opacity: 0;
+        width: 0;
+      }
+    }
+  }
+}
+.products_preview_3 {
+  position: fixed;
+  width: 0;
+  height: fit-content;
+  background-color: #939393;
+  z-index: -1;
+  top: 57px;
+  left: 0px;
+  // opacity: 0;
+  transition: all 1s ease;
+
+  ion-icon {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    color: white;
+    font-size: 40px;
+    opacity: 1;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  .productdetail_container {
+    display: flex;
+    width: 80%;
+    height: 100vh;
+    margin: auto;
+    transition: 1s ease;
+
+    .nutrition_detail_3 {
+      width: 50%;
+      max-width: 48rem;
+      height: 57.6rem;
+      position: relative;
+      margin: 40px auto;
+      font-family: "Poppins";
+      font-size: 1.4rem;
+      opacity: 0;
+      transition: 0.5s ease;
+
+      .nutrition__border_3 {
+        display: none;
+        border: 1px solid #fff;
+        padding: 6px;
+        background-color: white;
+
+        .nutrition__table {
+          width: 100%;
+          padding: 4px;
+          border-collapse: collapse;
+          line-height: 1;
+
+          tr {
+            border: 1px solid #000;
+          }
+
+          td {
+            padding: 0.4em 0.5em !important;
+          }
+
+          .title {
+            font-size: 38px;
+            padding: 0;
+            padding-bottom: 24px;
+            font-weight: 900;
+            text-transform: uppercase;
+          }
+
+          .line3 {
+            border-bottom: 11px solid #000 !important;
+
+            .subtitle {
+              font-size: 21px;
+              font-weight: 800;
+              text-transform: uppercase;
+            }
+          }
+
+          .line2 {
+            border-bottom: 1px solid #000 !important;
+
+            .right {
+              text-align: right;
+            }
+          }
+
+          .right {
+            text-align: right;
+          }
+
+          .line5 {
+            border-bottom: 5px solid #000 !important;
+          }
+
+          .line8 {
+            border-bottom: 5px solid #000 !important;
+          }
+        }
+        .nutrition__table > * {
+          color: #000;
+        }
+
+        .nutrition__ingredients {
+          width: 100%;
+          max-width: 48rem;
+          margin: 1rem auto;
+
+          .nutrition__ingredient {
+            display: inline-block;
+            text-transform: uppercase;
+            margin: 0;
+            margin-right: 0.25rem;
+            padding-bottom: 1px;
+            border-bottom: 1px solid;
+            font-size: 10px;
+            opacity: 0.8;
+            color: #000;
+          }
+        }
+
+        .nutrition__lastupdated {
+          text-align: right;
+          font-size: 10px;
+          margin: auto;
+          opacity: 0;
+        }
+      }
+
+      .buttons {
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+
+        .blob-btn {
+          font-size: 14px;
+
+          &:hover {
+            color: #939393;
+          }
+        }
+
+        a {
+          transition: opacity 0.2s ease-out;
+          cursor: pointer;
+          color: white;
+          font-family: "Poppins";
+          font-size: 14px;
+          font-weight: 700;
+          margin-bottom: 26px;
+
+          &:hover {
+            opacity: 0.8;
+          }
+        }
+      }
+
+      .btn-3 {
+        display: none;
+      }
+    }
+
+    .product_image_3 {
+      width: 50%;
+      max-width: 48rem;
+      height: 57.6rem;
+      margin: 40px auto;
+      position: relative;
+      display: flex;
+      -webkit-box-align: start;
+      align-items: flex-start;
+      -webkit-box-pack: center;
+      justify-content: center;
+      opacity: 0;
+      background: url(../img/product-shadow.png) no-repeat bottom;
+      user-select: none;
+      transition: 0.5s ease;
+
+      img {
+        height: 80%;
+        object-fit: contain;
+        transform-origin: 50% 33%;
+      }
+
+      .img_preview_3 {
+        opacity: 0;
+        width: 0;
+      }
+    }
+  }
+}
+.products_preview_4 {
+  position: fixed;
+  width: 0;
+  height: fit-content;
+  background-color: #cbc2a3;
+  z-index: -1;
+  top: 57px;
+  left: 0px;
+  // opacity: 0;
+  transition: all 1s ease;
+
+  ion-icon {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    color: white;
+    font-size: 40px;
+    opacity: 1;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  .productdetail_container {
+    display: flex;
+    width: 80%;
+    height: 100vh;
+    margin: auto;
+    transition: 1s ease;
+
+    .nutrition_detail_4 {
+      width: 50%;
+      max-width: 48rem;
+      height: 57.6rem;
+      position: relative;
+      margin: 40px auto;
+      font-family: "Poppins";
+      font-size: 1.4rem;
+      opacity: 0;
+      transition: 0.5s ease;
+
+      .nutrition__border_4 {
+        display: none;
+        border: 1px solid #fff;
+        padding: 6px;
+        background-color: white;
+
+        .nutrition__table {
+          width: 100%;
+          padding: 4px;
+          border-collapse: collapse;
+          line-height: 1;
+
+          tr {
+            border: 1px solid #000;
+          }
+
+          td {
+            padding: 0.4em 0.5em !important;
+          }
+
+          .title {
+            font-size: 38px;
+            padding: 0;
+            padding-bottom: 24px;
+            font-weight: 900;
+            text-transform: uppercase;
+          }
+
+          .line3 {
+            border-bottom: 11px solid #000 !important;
+
+            .subtitle {
+              font-size: 21px;
+              font-weight: 800;
+              text-transform: uppercase;
+            }
+          }
+
+          .line2 {
+            border-bottom: 1px solid #000 !important;
+
+            .right {
+              text-align: right;
+            }
+          }
+
+          .right {
+            text-align: right;
+          }
+
+          .line5 {
+            border-bottom: 5px solid #000 !important;
+          }
+
+          .line8 {
+            border-bottom: 5px solid #000 !important;
+          }
+        }
+        .nutrition__table > * {
+          color: #000;
+        }
+
+        .nutrition__ingredients {
+          width: 100%;
+          max-width: 48rem;
+          margin: 1rem auto;
+
+          .nutrition__ingredient {
+            display: inline-block;
+            text-transform: uppercase;
+            margin: 0;
+            margin-right: 0.25rem;
+            padding-bottom: 1px;
+            border-bottom: 1px solid;
+            font-size: 10px;
+            opacity: 0.8;
+            color: #000;
+          }
+        }
+
+        .nutrition__lastupdated {
+          text-align: right;
+          font-size: 10px;
+          margin: auto;
+          opacity: 0;
+        }
+      }
+
+      .buttons {
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+
+        .blob-btn {
+          font-size: 14px;
+
+          &:hover {
+            color: #de8052;
+          }
+        }
+
+        a {
+          transition: opacity 0.2s ease-out;
+          cursor: pointer;
+          color: white;
+          font-family: "Poppins";
+          font-size: 14px;
+          font-weight: 700;
+          margin-bottom: 26px;
+
+          &:hover {
+            opacity: 0.8;
+          }
+        }
+      }
+
+      .btn-4 {
+        display: none;
+      }
+    }
+
+    .product_image_4 {
+      width: 50%;
+      max-width: 48rem;
+      height: 57.6rem;
+      margin: 40px auto;
+      position: relative;
+      display: flex;
+      -webkit-box-align: start;
+      align-items: flex-start;
+      -webkit-box-pack: center;
+      justify-content: center;
+      opacity: 0;
+      background: url(../img/product-shadow.png) no-repeat bottom;
+      user-select: none;
+      transition: 0.5s ease;
+
+      img {
+        height: 80%;
+        object-fit: contain;
+        transform-origin: 50% 33%;
+      }
+
+      .img_preview_4 {
+        width: 0;
+        opacity: 0;
+      }
+    }
+  }
+}
+.products_preview_5 {
+  position: fixed;
+  width: 0;
+  height: fit-content;
+  background-color: #3955a3;
+  z-index: -1;
+  top: 57px;
+  left: 0px;
+  // opacity: 0;
+  transition: all 1s ease;
+
+  ion-icon {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    color: white;
+    font-size: 40px;
+    opacity: 1;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  .productdetail_container {
+    display: flex;
+    width: 80%;
+    height: 100vh;
+    margin: auto;
+    transition: 1s ease;
+
+    .nutrition_detail_5 {
+      width: 50%;
+      max-width: 48rem;
+      height: 57.6rem;
+      position: relative;
+      margin: 40px auto;
+      font-family: "Poppins";
+      font-size: 1.4rem;
+      opacity: 0;
+      transition: 0.5s ease;
+
+      .nutrition__border_5 {
+        display: none;
+        border: 1px solid #fff;
+        padding: 6px;
+        background-color: white;
+
+        .nutrition__table {
+          width: 100%;
+          padding: 4px;
+          border-collapse: collapse;
+          line-height: 1;
+
+          tr {
+            border: 1px solid #000;
+          }
+
+          td {
+            padding: 0.4em 0.5em !important;
+          }
+
+          .title {
+            font-size: 38px;
+            padding: 0;
+            padding-bottom: 24px;
+            font-weight: 900;
+            text-transform: uppercase;
+          }
+
+          .line3 {
+            border-bottom: 11px solid #000 !important;
+
+            .subtitle {
+              font-size: 21px;
+              font-weight: 800;
+              text-transform: uppercase;
+            }
+          }
+
+          .line2 {
+            border-bottom: 1px solid #000 !important;
+
+            .right {
+              text-align: right;
+            }
+          }
+
+          .right {
+            text-align: right;
+          }
+
+          .line5 {
+            border-bottom: 5px solid #000 !important;
+          }
+
+          .line8 {
+            border-bottom: 5px solid #000 !important;
+          }
+        }
+        .nutrition__table > * {
+          color: #000;
+        }
+
+        .nutrition__ingredients {
+          width: 100%;
+          max-width: 48rem;
+          margin: 1rem auto;
+
+          .nutrition__ingredient {
+            display: inline-block;
+            text-transform: uppercase;
+            margin: 0;
+            margin-right: 0.25rem;
+            padding-bottom: 1px;
+            border-bottom: 1px solid;
+            font-size: 10px;
+            opacity: 0.8;
+            color: #000;
+          }
+        }
+
+        .nutrition__lastupdated {
+          text-align: right;
+          font-size: 10px;
+          margin: auto;
+          opacity: 0;
+        }
+      }
+
+      .buttons {
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+
+        .blob-btn {
+          font-size: 14px;
+
+          &:hover {
+            color: #de8052;
+          }
+        }
+
+        a {
+          transition: opacity 0.2s ease-out;
+          cursor: pointer;
+          color: white;
+          font-family: "Poppins";
+          font-size: 14px;
+          font-weight: 700;
+          margin-bottom: 26px;
+
+          &:hover {
+            opacity: 0.8;
+          }
+        }
+      }
+
+      .btn-5 {
+        display: none;
+      }
+    }
+
+    .product_image_5 {
+      width: 50%;
+      max-width: 48rem;
+      height: 57.6rem;
+      margin: 40px auto;
+      position: relative;
+      display: flex;
+      -webkit-box-align: start;
+      align-items: flex-start;
+      -webkit-box-pack: center;
+      justify-content: center;
+      opacity: 0;
+      background: url(../img/product-shadow.png) no-repeat bottom;
+      user-select: none;
+      transition: 0.5s ease;
+
+      img {
+        height: 80%;
+        object-fit: contain;
+        transform-origin: 50% 33%;
+      }
+
+      .img_preview_5 {
+        width: 0;
+        opacity: 0;
+      }
+    }
+  }
+}
+.products_preview_6 {
+  position: fixed;
+  width: 0;
+  height: fit-content;
+  background-color: #ff9a32;
+  z-index: -1;
+  top: 57px;
+  left: 0px;
+  // opacity: 0;
+  transition: all 1s ease;
+
+  ion-icon {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    color: white;
+    font-size: 40px;
+    opacity: 1;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  .productdetail_container {
+    display: flex;
+    width: 80%;
+    height: 100vh;
+    margin: auto;
+    transition: 1s ease;
+
+    .nutrition_detail_6 {
+      width: 50%;
+      max-width: 48rem;
+      height: 57.6rem;
+      position: relative;
+      margin: 40px auto;
+      font-family: "Poppins";
+      font-size: 1.4rem;
+      opacity: 0;
+      transition: 0.5s ease;
+
+      .nutrition__border_6 {
+        display: none;
+        border: 1px solid #fff;
+        padding: 6px;
+        background-color: white;
+
+        .nutrition__table {
+          width: 100%;
+          padding: 4px;
+          border-collapse: collapse;
+          line-height: 1;
+
+          tr {
+            border: 1px solid #000;
+          }
+
+          td {
+            padding: 0.4em 0.5em !important;
+          }
+
+          .title {
+            font-size: 38px;
+            padding: 0;
+            padding-bottom: 24px;
+            font-weight: 900;
+            text-transform: uppercase;
+          }
+
+          .line3 {
+            border-bottom: 11px solid #000 !important;
+
+            .subtitle {
+              font-size: 21px;
+              font-weight: 800;
+              text-transform: uppercase;
+            }
+          }
+
+          .line2 {
+            border-bottom: 1px solid #000 !important;
+
+            .right {
+              text-align: right;
+            }
+          }
+
+          .right {
+            text-align: right;
+          }
+
+          .line5 {
+            border-bottom: 5px solid #000 !important;
+          }
+
+          .line8 {
+            border-bottom: 5px solid #000 !important;
+          }
+        }
+        .nutrition__table > * {
+          color: #000;
+        }
+
+        .nutrition__ingredients {
+          width: 100%;
+          max-width: 48rem;
+          margin: 1rem auto;
+
+          .nutrition__ingredient {
+            display: inline-block;
+            text-transform: uppercase;
+            margin: 0;
+            margin-right: 0.25rem;
+            padding-bottom: 1px;
+            border-bottom: 1px solid;
+            font-size: 10px;
+            opacity: 0.8;
+            color: #000;
+          }
+        }
+
+        .nutrition__lastupdated {
+          text-align: right;
+          font-size: 10px;
+          margin: auto;
+          opacity: 0;
+        }
+      }
+
+      .buttons {
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+
+        .blob-btn {
+          font-size: 14px;
+
+          &:hover {
+            color: #ff9a32;
+          }
+        }
+
+        a {
+          transition: opacity 0.2s ease-out;
+          cursor: pointer;
+          color: white;
+          font-family: "Poppins";
+          font-size: 14px;
+          font-weight: 700;
+          margin-bottom: 26px;
+
+          &:hover {
+            opacity: 0.8;
+          }
+        }
+      }
+
+      .btn-6 {
+        display: none;
+      }
+    }
+
+    .product_image_6 {
+      width: 50%;
+      max-width: 48rem;
+      height: 57.6rem;
+      margin: 40px auto;
+      position: relative;
+      display: flex;
+      -webkit-box-align: start;
+      align-items: flex-start;
+      -webkit-box-pack: center;
+      justify-content: center;
+      opacity: 0;
+      background: url(../img/product-shadow.png) no-repeat bottom;
+      user-select: none;
+      transition: 0.5s ease;
+
+      img {
+        height: 80%;
+        object-fit: contain;
+        transform-origin: 50% 33%;
+      }
+
+      .img_preview_6 {
+        width: 0;
+        opacity: 0;
+      }
+    }
+  }
+}
+.products_preview_7 {
+  position: fixed;
+  width: 0;
+  height: fit-content;
+  background-color: #ff9f3c;
+  z-index: -1;
+  top: 57px;
+  left: 0px;
+  // opacity: 0;
+  transition: all 1s ease;
+
+  ion-icon {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    color: white;
+    font-size: 40px;
+    opacity: 1;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  .productdetail_container {
+    display: flex;
+    width: 80%;
+    height: 100vh;
+    margin: auto;
+    transition: 1s ease;
+
+    .nutrition_detail_7 {
+      width: 50%;
+      max-width: 48rem;
+      height: 57.6rem;
+      position: relative;
+      margin: 40px auto;
+      font-family: "Poppins";
+      font-size: 1.4rem;
+      opacity: 0;
+      transition: 0.5s ease;
+
+      .nutrition__border_7 {
+        display: none;
+        border: 1px solid #fff;
+        padding: 6px;
+        background-color: white;
+
+        .nutrition__table {
+          width: 100%;
+          padding: 4px;
+          border-collapse: collapse;
+          line-height: 1;
+
+          tr {
+            border: 1px solid #000;
+          }
+
+          td {
+            padding: 0.4em 0.5em !important;
+          }
+
+          .title {
+            font-size: 31px;
+            padding: 0;
+            padding-bottom: 24px;
+            font-weight: 900;
+            text-transform: uppercase;
+          }
+
+          .line3 {
+            border-bottom: 11px solid #000 !important;
+
+            .subtitle {
+              font-size: 21px;
+              font-weight: 800;
+              text-transform: uppercase;
+            }
+          }
+
+          .line2 {
+            border-bottom: 1px solid #000 !important;
+
+            .right {
+              text-align: right;
+            }
+          }
+
+          .right {
+            text-align: right;
+          }
+
+          .line5 {
+            border-bottom: 5px solid #000 !important;
+          }
+
+          .line8 {
+            border-bottom: 5px solid #000 !important;
+          }
+        }
+        .nutrition__table > * {
+          color: #000;
+        }
+
+        .nutrition__ingredients {
+          width: 100%;
+          max-width: 48rem;
+          margin: 1rem auto;
+
+          .nutrition__ingredient {
+            display: inline-block;
+            text-transform: uppercase;
+            margin: 0;
+            margin-right: 0.25rem;
+            padding-bottom: 1px;
+            border-bottom: 1px solid;
+            font-size: 10px;
+            opacity: 0.8;
+            color: #000;
+          }
+        }
+
+        .nutrition__lastupdated {
+          text-align: right;
+          font-size: 10px;
+          margin: auto;
+          opacity: 0;
+        }
+      }
+
+      .buttons {
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+
+        .blob-btn {
+          font-size: 14px;
+
+          &:hover {
+            color: #ff9f3c;
+          }
+        }
+
+        a {
+          transition: opacity 0.2s ease-out;
+          cursor: pointer;
+          color: white;
+          font-family: "Poppins";
+          font-size: 14px;
+          font-weight: 700;
+          margin-bottom: 26px;
+
+          &:hover {
+            opacity: 0.8;
+          }
+        }
+      }
+
+      .btn-7 {
+        display: none;
+      }
+    }
+
+    .product_image_7 {
+      width: 50%;
+      max-width: 48rem;
+      height: 57.6rem;
+      margin: 40px auto;
+      position: relative;
+      display: flex;
+      -webkit-box-align: start;
+      align-items: flex-start;
+      -webkit-box-pack: center;
+      justify-content: center;
+      opacity: 0;
+      background: url(../img/product-shadow.png) no-repeat bottom;
+      user-select: none;
+      transition: 0.5s ease;
+
+      img {
+        height: 80%;
+        object-fit: contain;
+        transform-origin: 50% 33%;
+      }
+
+      .img_preview_7 {
+        width: 0;
+        opacity: 0;
+      }
+    }
+  }
+}
+.products_preview_8 {
+  position: fixed;
+  width: 0;
+  height: fit-content;
+  background-color: #cb2b43;
+  z-index: -1;
+  top: 57px;
+  left: 0px;
+  // opacity: 0;
+  transition: all 1s ease;
+
+  ion-icon {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    color: white;
+    font-size: 40px;
+    opacity: 1;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  .productdetail_container {
+    display: flex;
+    width: 80%;
+    height: 100vh;
+    margin: auto;
+    transition: 1s ease;
+
+    .nutrition_detail_8 {
+      width: 50%;
+      max-width: 48rem;
+      height: 57.6rem;
+      position: relative;
+      margin: 40px auto;
+      font-family: "Poppins";
+      font-size: 1.4rem;
+      opacity: 0;
+      transition: 0.5s ease;
+
+      .nutrition__border_8 {
+        display: none;
+        border: 1px solid #fff;
+        padding: 6px;
+        background-color: white;
+
+        .nutrition__table {
+          width: 100%;
+          padding: 4px;
+          border-collapse: collapse;
+          line-height: 1;
+
+          tr {
+            border: 1px solid #000;
+          }
+
+          td {
+            padding: 0.4em 0.5em !important;
+          }
+
+          .title {
+            font-size: 38px;
+            padding: 0;
+            padding-bottom: 24px;
+            font-weight: 900;
+            text-transform: uppercase;
+          }
+
+          .line3 {
+            border-bottom: 11px solid #000 !important;
+
+            .subtitle {
+              font-size: 21px;
+              font-weight: 800;
+              text-transform: uppercase;
+            }
+          }
+
+          .line2 {
+            border-bottom: 1px solid #000 !important;
+
+            .right {
+              text-align: right;
+            }
+          }
+
+          .right {
+            text-align: right;
+          }
+
+          .line5 {
+            border-bottom: 5px solid #000 !important;
+          }
+
+          .line8 {
+            border-bottom: 5px solid #000 !important;
+          }
+        }
+        .nutrition__table > * {
+          color: #000;
+        }
+
+        .nutrition__ingredients {
+          width: 100%;
+          max-width: 48rem;
+          margin: 1rem auto;
+
+          .nutrition__ingredient {
+            display: inline-block;
+            text-transform: uppercase;
+            margin: 0;
+            margin-right: 0.25rem;
+            padding-bottom: 1px;
+            border-bottom: 1px solid;
+            font-size: 10px;
+            opacity: 0.8;
+            color: #000;
+          }
+        }
+
+        .nutrition__lastupdated {
+          text-align: right;
+          font-size: 10px;
+          margin: auto;
+          opacity: 0;
+        }
+      }
+
+      .buttons {
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+
+        .blob-btn {
+          font-size: 14px;
+
+          &:hover {
+            color: #cb2b43;
+          }
+        }
+
+        a {
+          transition: opacity 0.2s ease-out;
+          cursor: pointer;
+          color: white;
+          font-family: "Poppins";
+          font-size: 14px;
+          font-weight: 700;
+          margin-bottom: 26px;
+
+          &:hover {
+            opacity: 0.8;
+          }
+        }
+      }
+
+      .btn-8 {
+        display: none;
+      }
+    }
+
+    .product_image_8 {
+      width: 50%;
+      max-width: 48rem;
+      height: 57.6rem;
+      margin: 40px auto;
+      position: relative;
+      display: flex;
+      -webkit-box-align: start;
+      align-items: flex-start;
+      -webkit-box-pack: center;
+      justify-content: center;
+      opacity: 0;
+      background: url(../img/product-shadow.png) no-repeat bottom;
+      user-select: none;
+      transition: 0.5s ease;
+
+      img {
+        height: 80%;
+        object-fit: contain;
+        transform-origin: 50% 33%;
+      }
+
+      .img_preview_8 {
+        width: 0;
+        opacity: 0;
+      }
+    }
+  }
+}
+.products_preview_9 {
+  position: fixed;
+  width: 0;
+  height: fit-content;
+  background-color: #939393;
+  z-index: -1;
+  top: 57px;
+  left: 0px;
+  // opacity: 0;
+  transition: all 1s ease;
+
+  ion-icon {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    color: white;
+    font-size: 40px;
+    opacity: 1;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  .productdetail_container {
+    display: flex;
+    width: 80%;
+    height: 100vh;
+    margin: auto;
+    transition: 1s ease;
+
+    .nutrition_detail_9 {
+      width: 50%;
+      max-width: 48rem;
+      height: 57.6rem;
+      position: relative;
+      margin: 40px auto;
+      font-family: "Poppins";
+      font-size: 1.4rem;
+      opacity: 0;
+      transition: 0.5s ease;
+
+      .nutrition__border_9 {
+        display: none;
+        border: 1px solid #fff;
+        padding: 6px;
+        background-color: white;
+
+        .nutrition__table {
+          width: 100%;
+          padding: 4px;
+          border-collapse: collapse;
+          line-height: 1;
+
+          tr {
+            border: 1px solid #000;
+          }
+
+          td {
+            padding: 0.4em 0.5em !important;
+          }
+
+          .title {
+            font-size: 34px;
+            padding: 0;
+            padding-bottom: 24px;
+            font-weight: 900;
+            text-transform: uppercase;
+          }
+
+          .line3 {
+            border-bottom: 11px solid #000 !important;
+
+            .subtitle {
+              font-size: 21px;
+              font-weight: 800;
+              text-transform: uppercase;
+            }
+          }
+
+          .line2 {
+            border-bottom: 1px solid #000 !important;
+
+            .right {
+              text-align: right;
+            }
+          }
+
+          .right {
+            text-align: right;
+          }
+
+          .line5 {
+            border-bottom: 5px solid #000 !important;
+          }
+
+          .line8 {
+            border-bottom: 5px solid #000 !important;
+          }
+        }
+        .nutrition__table > * {
+          color: #000;
+        }
+
+        .nutrition__ingredients {
+          width: 100%;
+          max-width: 48rem;
+          margin: 1rem auto;
+
+          .nutrition__ingredient {
+            display: inline-block;
+            text-transform: uppercase;
+            margin: 0;
+            margin-right: 0.25rem;
+            padding-bottom: 1px;
+            border-bottom: 1px solid;
+            font-size: 10px;
+            opacity: 0.8;
+            color: #000;
+          }
+        }
+
+        .nutrition__lastupdated {
+          text-align: right;
+          font-size: 10px;
+          margin: auto;
+          opacity: 0;
+        }
+      }
+
+      .buttons {
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+
+        .blob-btn {
+          font-size: 14px;
+
+          &:hover {
+            color: #cd1223;
+          }
+        }
+
+        a {
+          transition: opacity 0.2s ease-out;
+          cursor: pointer;
+          color: white;
+          font-family: "Poppins";
+          font-size: 14px;
+          font-weight: 700;
+          margin-bottom: 26px;
+
+          &:hover {
+            opacity: 0.8;
+          }
+        }
+      }
+
+      .btn-9 {
+        display: none;
+      }
+    }
+
+    .product_image_9 {
+      width: 50%;
+      max-width: 48rem;
+      height: 57.6rem;
+      margin: 40px auto;
+      position: relative;
+      display: flex;
+      -webkit-box-align: start;
+      align-items: flex-start;
+      -webkit-box-pack: center;
+      justify-content: center;
+      opacity: 0;
+      background: url(../img/product-shadow.png) no-repeat bottom;
+      user-select: none;
+      transition: 0.5s ease;
+
+      img {
+        height: 80%;
+        object-fit: contain;
+        transform-origin: 50% 33%;
+      }
+
+      .img_preview_9 {
+        width: 0;
+        opacity: 0;
+      }
+    }
+  }
+}
+.products_preview_10 {
+  position: fixed;
+  width: 0;
+  height: fit-content;
+  background-color: #d74389;
+  z-index: -1;
+  top: 57px;
+  left: 0px;
+  // opacity: 0;
+  transition: all 1s ease;
+
+  ion-icon {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    color: white;
+    font-size: 40px;
+    opacity: 1;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  .productdetail_container {
+    display: flex;
+    width: 80%;
+    height: 100vh;
+    margin: auto;
+    transition: 1s ease;
+
+    .nutrition_detail_10 {
+      width: 50%;
+      max-width: 48rem;
+      height: 57.6rem;
+      position: relative;
+      margin: 40px auto;
+      font-family: "Poppins";
+      font-size: 1.4rem;
+      opacity: 0;
+      transition: 0.5s ease;
+
+      .nutrition__border_10 {
+        display: none;
+        border: 1px solid #fff;
+        padding: 6px;
+        padding-bottom: 1px;
+        background-color: white;
+
+        .nutrition__table {
+          width: 100%;
+          padding: 4px;
+          border-collapse: collapse;
+          line-height: 1;
+
+          tr {
+            border: 1px solid #000;
+          }
+
+          td {
+            padding: 0.4em 0.5em !important;
+          }
+
+          .title {
+            font-size: 27px;
+            padding: 0;
+            padding-bottom: 24px;
+            font-weight: 900;
+            text-transform: uppercase;
+          }
+
+          .line3 {
+            border-bottom: 11px solid #000 !important;
+
+            .subtitle {
+              font-size: 21px;
+              font-weight: 800;
+              text-transform: uppercase;
+            }
+          }
+
+          .line2 {
+            border-bottom: 1px solid #000 !important;
+
+            .right {
+              text-align: right;
+            }
+          }
+
+          .right {
+            text-align: right;
+          }
+
+          .line5 {
+            border-bottom: 5px solid #000 !important;
+          }
+
+          .line8 {
+            border-bottom: 5px solid #000 !important;
+          }
+        }
+        .nutrition__table > * {
+          color: #000;
+        }
+
+        .nutrition__ingredients {
+          width: 100%;
+          max-width: 48rem;
+          margin: 1rem auto;
+
+          .nutrition__ingredient {
+            display: inline-block;
+            text-transform: uppercase;
+            margin: 0;
+            margin-right: 0.25rem;
+            padding-bottom: 1px;
+            border-bottom: 1px solid;
+            font-size: 10px;
+            opacity: 0.8;
+            color: #000;
+          }
+        }
+
+        .nutrition__lastupdated {
+          text-align: right;
+          font-size: 10px;
+          margin: auto;
+          opacity: 0;
+        }
+      }
+
+      .buttons {
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+
+        .blob-btn {
+          font-size: 14px;
+
+          &:hover {
+            color: #d74389;
+          }
+        }
+
+        a {
+          transition: opacity 0.2s ease-out;
+          cursor: pointer;
+          color: white;
+          font-family: "Poppins";
+          font-size: 14px;
+          font-weight: 700;
+          margin-bottom: 26px;
+
+          &:hover {
+            opacity: 0.8;
+          }
+        }
+      }
+
+      .btn-10 {
+        display: none;
+      }
+    }
+
+    .product_image_10 {
+      width: 50%;
+      max-width: 48rem;
+      height: 57.6rem;
+      margin: 40px auto;
+      position: relative;
+      display: flex;
+      -webkit-box-align: start;
+      align-items: flex-start;
+      -webkit-box-pack: center;
+      justify-content: center;
+      opacity: 0;
+      background: url(../img/product-shadow.png) no-repeat bottom;
+      user-select: none;
+      transition: 0.5s ease;
+
+      img {
+        height: 80%;
+        object-fit: contain;
+        transform-origin: 50% 33%;
+      }
+
+      .img_preview_10 {
+        width: 0;
+        opacity: 0;
+      }
+    }
+  }
+}
+.products_preview_11 {
+  position: fixed;
+  width: 0;
+  height: fit-content;
+  background-color: #1974c9;
+  z-index: -1;
+  top: 57px;
+  left: 0px;
+  // opacity: 0;
+  transition: all 1s ease;
+
+  ion-icon {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    color: white;
+    font-size: 40px;
+    opacity: 1;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  .productdetail_container {
+    display: flex;
+    width: 80%;
+    height: 100vh;
+    margin: auto;
+    transition: 1s ease;
+
+    .nutrition_detail_11 {
+      width: 50%;
+      max-width: 48rem;
+      height: 57.6rem;
+      position: relative;
+      margin: 40px auto;
+      font-family: "Poppins";
+      font-size: 1.4rem;
+      opacity: 0;
+      transition: 0.5s ease;
+
+      .nutrition__border_11 {
+        display: none;
+        border: 1px solid #fff;
+        padding: 6px;
+        background-color: white;
+
+        .nutrition__table {
+          width: 100%;
+          padding: 4px;
+          border-collapse: collapse;
+          line-height: 1;
+
+          tr {
+            border: 1px solid #000;
+          }
+
+          td {
+            padding: 0.4em 0.5em !important;
+          }
+
+          .title {
+            font-size: 38px;
+            padding: 0;
+            padding-bottom: 24px;
+            font-weight: 900;
+            text-transform: uppercase;
+          }
+
+          .line3 {
+            border-bottom: 11px solid #000 !important;
+
+            .subtitle {
+              font-size: 21px;
+              font-weight: 800;
+              text-transform: uppercase;
+            }
+          }
+
+          .line2 {
+            border-bottom: 1px solid #000 !important;
+
+            .right {
+              text-align: right;
+            }
+          }
+
+          .right {
+            text-align: right;
+          }
+
+          .line5 {
+            border-bottom: 5px solid #000 !important;
+          }
+
+          .line8 {
+            border-bottom: 5px solid #000 !important;
+          }
+        }
+        .nutrition__table > * {
+          color: #000;
+        }
+
+        .nutrition__ingredients {
+          width: 100%;
+          max-width: 48rem;
+          margin: 1rem auto;
+
+          .nutrition__ingredient {
+            display: inline-block;
+            text-transform: uppercase;
+            margin: 0;
+            margin-right: 0.25rem;
+            padding-bottom: 1px;
+            border-bottom: 1px solid;
+            font-size: 10px;
+            opacity: 0.8;
+            color: #000;
+          }
+        }
+
+        .nutrition__lastupdated {
+          text-align: right;
+          font-size: 10px;
+          margin: auto;
+          opacity: 0;
+        }
+      }
+
+      .buttons {
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+
+        .blob-btn {
+          font-size: 14px;
+
+          &:hover {
+            color: #1974c9;
+          }
+        }
+
+        a {
+          transition: opacity 0.2s ease-out;
+          cursor: pointer;
+          color: white;
+          font-family: "Poppins";
+          font-size: 14px;
+          font-weight: 700;
+          margin-bottom: 26px;
+
+          &:hover {
+            opacity: 0.8;
+          }
+        }
+      }
+
+      .btn-11 {
+        display: none;
+      }
+    }
+
+    .product_image_11 {
+      width: 50%;
+      max-width: 48rem;
+      height: 57.6rem;
+      margin: 40px auto;
+      position: relative;
+      display: flex;
+      -webkit-box-align: start;
+      align-items: flex-start;
+      -webkit-box-pack: center;
+      justify-content: center;
+      opacity: 0;
+      background: url(../img/product-shadow.png) no-repeat bottom;
+      user-select: none;
+      transition: 0.5s ease;
+
+      img {
+        height: 80%;
+        object-fit: contain;
+        transform-origin: 50% 33%;
+      }
+
+      .img_preview_11 {
+        width: 0;
+        opacity: 0;
+      }
+    }
+  }
+}
+.products_preview_12 {
+  position: fixed;
+  width: 0;
+  height: fit-content;
+  background-color: #c9a961;
+  z-index: -1;
+  top: 57px;
+  left: 0px;
+  // opacity: 0;
+  transition: all 1s ease;
+
+  ion-icon {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    color: white;
+    font-size: 40px;
+    opacity: 1;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  .productdetail_container {
+    display: flex;
+    width: 80%;
+    height: 100vh;
+    margin: auto;
+    transition: 1s ease;
+
+    .nutrition_detail_12 {
+      width: 50%;
+      max-width: 48rem;
+      height: 57.6rem;
+      position: relative;
+      margin: 40px auto;
+      font-family: "Poppins";
+      font-size: 1.4rem;
+      opacity: 0;
+      transition: 0.5s ease;
+
+      .nutrition__border_12 {
+        display: none;
+        border: 1px solid #fff;
+        padding: 6px;
+        background-color: white;
+
+        .nutrition__table {
+          width: 100%;
+          padding: 4px;
+          border-collapse: collapse;
+          line-height: 1;
+
+          tr {
+            border: 1px solid #000;
+          }
+
+          td {
+            padding: 0.4em 0.5em !important;
+          }
+
+          .title {
+            font-size: 38px;
+            padding: 0;
+            padding-bottom: 24px;
+            font-weight: 900;
+            text-transform: uppercase;
+          }
+
+          .line3 {
+            border-bottom: 11px solid #000 !important;
+
+            .subtitle {
+              font-size: 21px;
+              font-weight: 800;
+              text-transform: uppercase;
+            }
+          }
+
+          .line2 {
+            border-bottom: 1px solid #000 !important;
+
+            .right {
+              text-align: right;
+            }
+          }
+
+          .right {
+            text-align: right;
+          }
+
+          .line5 {
+            border-bottom: 5px solid #000 !important;
+          }
+
+          .line8 {
+            border-bottom: 5px solid #000 !important;
+          }
+        }
+        .nutrition__table > * {
+          color: #000;
+        }
+
+        .nutrition__ingredients {
+          width: 100%;
+          max-width: 48rem;
+          margin: 1rem auto;
+
+          .nutrition__ingredient {
+            display: inline-block;
+            text-transform: uppercase;
+            margin: 0;
+            margin-right: 0.25rem;
+            padding-bottom: 1px;
+            border-bottom: 1px solid;
+            font-size: 10px;
+            opacity: 0.8;
+            color: #000;
+          }
+        }
+
+        .nutrition__lastupdated {
+          text-align: right;
+          font-size: 10px;
+          margin: auto;
+          opacity: 0;
+        }
+      }
+
+      .buttons {
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+
+        .blob-btn {
+          font-size: 14px;
+
+          &:hover {
+            color: #c9a961;
+          }
+        }
+
+        a {
+          transition: opacity 0.2s ease-out;
+          cursor: pointer;
+          color: white;
+          font-family: "Poppins";
+          font-size: 14px;
+          font-weight: 700;
+          margin-bottom: 26px;
+
+          &:hover {
+            opacity: 0.8;
+          }
+        }
+      }
+
+      .btn-12 {
+        display: none;
+      }
+    }
+
+    .product_image_12 {
+      width: 50%;
+      max-width: 48rem;
+      height: 57.6rem;
+      margin: 40px auto;
+      position: relative;
+      display: flex;
+      -webkit-box-align: start;
+      align-items: flex-start;
+      -webkit-box-pack: center;
+      justify-content: center;
+      opacity: 0;
+      background: url(../img/product-shadow.png) no-repeat bottom;
+      user-select: none;
+      transition: 0.5s ease;
+
+      img {
+        height: 80%;
+        object-fit: contain;
+        transform-origin: 50% 33%;
+      }
+
+      .img_preview_12 {
+        width: 0;
+        opacity: 0;
+      }
+    }
+  }
+}
+.products_preview_13 {
+  position: fixed;
+  width: 0;
+  height: fit-content;
+  background-color: #cbcbcb;
+  z-index: -1;
+  top: 57px;
+  left: 0px;
+  // opacity: 0;
+  transition: all 1s ease;
+
+  ion-icon {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    color: white;
+    font-size: 40px;
+    opacity: 1;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  .productdetail_container {
+    display: flex;
+    width: 80%;
+    height: 100vh;
+    margin: auto;
+    transition: 1s ease;
+
+    .nutrition_detail_13 {
+      width: 50%;
+      max-width: 48rem;
+      height: 57.6rem;
+      position: relative;
+      margin: 40px auto;
+      font-family: "Poppins";
+      font-size: 1.4rem;
+      opacity: 0;
+      transition: 0.5s ease;
+
+      .nutrition__border_13 {
+        display: none;
+        border: 1px solid #fff;
+        padding: 6px;
+        background-color: white;
+
+        .nutrition__table {
+          width: 100%;
+          padding: 4px;
+          border-collapse: collapse;
+          line-height: 1;
+
+          tr {
+            border: 1px solid #000;
+          }
+
+          td {
+            padding: 0.4em 0.5em !important;
+          }
+
+          .title {
+            font-size: 33px;
+            padding: 0;
+            padding-bottom: 24px;
+            font-weight: 900;
+            text-transform: uppercase;
+          }
+
+          .line3 {
+            border-bottom: 11px solid #000 !important;
+
+            .subtitle {
+              font-size: 21px;
+              font-weight: 800;
+              text-transform: uppercase;
+            }
+          }
+
+          .line2 {
+            border-bottom: 1px solid #000 !important;
+
+            .right {
+              text-align: right;
+            }
+          }
+
+          .right {
+            text-align: right;
+          }
+
+          .line5 {
+            border-bottom: 5px solid #000 !important;
+          }
+
+          .line8 {
+            border-bottom: 5px solid #000 !important;
+          }
+        }
+        .nutrition__table > * {
+          color: #000;
+        }
+
+        .nutrition__ingredients {
+          width: 100%;
+          max-width: 48rem;
+          margin: 1rem auto;
+
+          .nutrition__ingredient {
+            display: inline-block;
+            text-transform: uppercase;
+            margin: 0;
+            margin-right: 0.25rem;
+            padding-bottom: 1px;
+            border-bottom: 1px solid;
+            font-size: 10px;
+            opacity: 0.8;
+            color: #000;
+          }
+        }
+
+        .nutrition__lastupdated {
+          text-align: right;
+          font-size: 10px;
+          margin: auto;
+          opacity: 0;
+        }
+      }
+
+      .buttons {
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+
+        .blob-btn {
+          font-size: 14px;
+
+          &:hover {
+            color: #f1c23c;
+          }
+        }
+
+        a {
+          transition: opacity 0.2s ease-out;
+          cursor: pointer;
+          color: white;
+          font-family: "Poppins";
+          font-size: 14px;
+          font-weight: 700;
+          margin-bottom: 26px;
+
+          &:hover {
+            opacity: 0.8;
+          }
+        }
+      }
+
+      .btn-13 {
+        display: none;
+      }
+    }
+
+    .product_image_13 {
+      width: 50%;
+      max-width: 48rem;
+      height: 57.6rem;
+      margin: 40px auto;
+      position: relative;
+      display: flex;
+      -webkit-box-align: start;
+      align-items: flex-start;
+      -webkit-box-pack: center;
+      justify-content: center;
+      opacity: 0;
+      background: url(../img/product-shadow.png) no-repeat bottom;
+      user-select: none;
+      transition: 0.5s ease;
+
+      img {
+        height: 80%;
+        object-fit: contain;
+        transform-origin: 50% 33%;
+      }
+
+      .img_preview_13 {
+        width: 0;
+        opacity: 0;
       }
     }
   }

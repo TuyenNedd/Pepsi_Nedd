@@ -1123,6 +1123,10 @@ a {
   top: 0;
 }
 
+#body_product {
+  overflow-x: hidden;
+}
+
 #header .nav-list .pdt a {
   color: #20186d;
 }
@@ -1140,6 +1144,7 @@ a {
   flex-wrap: wrap;
   margin-left: calc(-1 * var(--spacing));
   transform-style: preserve-3d;
+  animation: 0.9s cubic-bezier(0.455, 0.03, 0.515, 0.955) 0.5s forwards elastic-ease-out-left, 0.9s cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s forwards linear-fade-in;
 }
 #products .products_container .product {
   width: calc(100% / var(--columns) - var(--spacing));
@@ -1220,6 +1225,24 @@ a {
 #products .products_container .product:hover .buy {
   bottom: 30px;
   opacity: 1;
+}
+#products .products_container .product .lord {
+  transition: 0.5s;
+  opacity: 0;
+  position: absolute;
+  bottom: -25px;
+  left: 50%;
+  transform-style: preserve-3d;
+  transform: translate3d(-50%, 0, 75px);
+  color: white;
+  font-size: 51px;
+  z-index: 10;
+}
+#products .products_container .product:hover .lord {
+  bottom: 0px;
+  left: 50%;
+  opacity: 1;
+  cursor: pointer;
 }
 #products .products_container .product .circle {
   position: absolute;
@@ -1327,6 +1350,2152 @@ a {
 }
 #products .products_container .item13:hover {
   background-color: #cbcbcb;
+}
+
+.products_preview_1 {
+  position: fixed;
+  width: 0;
+  height: fit-content;
+  background-color: #0065c3;
+  z-index: -1;
+  top: 57px;
+  left: 0px;
+  transition: all 1s ease;
+}
+.products_preview_1 ion-icon {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  color: white;
+  font-size: 40px;
+  opacity: 1;
+}
+.products_preview_1 ion-icon:hover {
+  cursor: pointer;
+}
+.products_preview_1 .productdetail_container {
+  display: flex;
+  width: 80%;
+  height: 100vh;
+  margin: auto;
+  transition: 1s ease;
+}
+.products_preview_1 .productdetail_container .nutrition_detail_1 {
+  width: 50%;
+  max-width: 48rem;
+  height: 57.6rem;
+  position: relative;
+  margin: 40px auto;
+  font-family: "Poppins";
+  font-size: 1.4rem;
+  opacity: 0;
+  transition: 0.5s ease;
+}
+.products_preview_1 .productdetail_container .nutrition_detail_1 .nutrition__border_1 {
+  display: none;
+  border: 1px solid #fff;
+  padding: 6px;
+  background-color: white;
+}
+.products_preview_1 .productdetail_container .nutrition_detail_1 .nutrition__border_1 .nutrition__table {
+  width: 100%;
+  padding: 4px;
+  border-collapse: collapse;
+  line-height: 1;
+}
+.products_preview_1 .productdetail_container .nutrition_detail_1 .nutrition__border_1 .nutrition__table tr {
+  border: 1px solid #000;
+}
+.products_preview_1 .productdetail_container .nutrition_detail_1 .nutrition__border_1 .nutrition__table td {
+  padding: 0.4em 0.5em !important;
+}
+.products_preview_1 .productdetail_container .nutrition_detail_1 .nutrition__border_1 .nutrition__table .title {
+  font-size: 38px;
+  padding: 0;
+  padding-bottom: 24px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+.products_preview_1 .productdetail_container .nutrition_detail_1 .nutrition__border_1 .nutrition__table .line3 {
+  border-bottom: 11px solid #000 !important;
+}
+.products_preview_1 .productdetail_container .nutrition_detail_1 .nutrition__border_1 .nutrition__table .line3 .subtitle {
+  font-size: 21px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+.products_preview_1 .productdetail_container .nutrition_detail_1 .nutrition__border_1 .nutrition__table .line2 {
+  border-bottom: 1px solid #000 !important;
+}
+.products_preview_1 .productdetail_container .nutrition_detail_1 .nutrition__border_1 .nutrition__table .line2 .right {
+  text-align: right;
+}
+.products_preview_1 .productdetail_container .nutrition_detail_1 .nutrition__border_1 .nutrition__table .right {
+  text-align: right;
+}
+.products_preview_1 .productdetail_container .nutrition_detail_1 .nutrition__border_1 .nutrition__table .line5 {
+  border-bottom: 5px solid #000 !important;
+}
+.products_preview_1 .productdetail_container .nutrition_detail_1 .nutrition__border_1 .nutrition__table .line8 {
+  border-bottom: 5px solid #000 !important;
+}
+.products_preview_1 .productdetail_container .nutrition_detail_1 .nutrition__border_1 .nutrition__table > * {
+  color: #000;
+}
+.products_preview_1 .productdetail_container .nutrition_detail_1 .nutrition__border_1 .nutrition__ingredients {
+  width: 100%;
+  max-width: 48rem;
+  margin: 1rem auto;
+}
+.products_preview_1 .productdetail_container .nutrition_detail_1 .nutrition__border_1 .nutrition__ingredients .nutrition__ingredient {
+  display: inline-block;
+  text-transform: uppercase;
+  margin: 0;
+  margin-right: 0.25rem;
+  padding-bottom: 1px;
+  border-bottom: 1px solid;
+  font-size: 10px;
+  opacity: 0.8;
+  color: #000;
+}
+.products_preview_1 .productdetail_container .nutrition_detail_1 .nutrition__border_1 .nutrition__lastupdated {
+  text-align: right;
+  font-size: 10px;
+  margin: auto;
+  opacity: 0;
+}
+.products_preview_1 .productdetail_container .nutrition_detail_1 .buttons {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.products_preview_1 .productdetail_container .nutrition_detail_1 .buttons .blob-btn {
+  font-size: 14px;
+}
+.products_preview_1 .productdetail_container .nutrition_detail_1 .buttons .blob-btn:hover {
+  color: #0065c3;
+}
+.products_preview_1 .productdetail_container .nutrition_detail_1 .buttons a {
+  transition: opacity 0.2s ease-out;
+  cursor: pointer;
+  color: white;
+  font-family: "Poppins";
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 26px;
+}
+.products_preview_1 .productdetail_container .nutrition_detail_1 .buttons a:hover {
+  opacity: 0.8;
+}
+.products_preview_1 .productdetail_container .nutrition_detail_1 .btn-1 {
+  display: none;
+}
+.products_preview_1 .productdetail_container .product_image_1 {
+  width: 50%;
+  max-width: 48rem;
+  height: 57.6rem;
+  margin: 40px auto;
+  position: relative;
+  display: flex;
+  -webkit-box-align: start;
+  align-items: flex-start;
+  -webkit-box-pack: center;
+  justify-content: center;
+  opacity: 0;
+  background: url(../img/product-shadow.png) no-repeat bottom;
+  user-select: none;
+  transition: 0.5s ease;
+}
+.products_preview_1 .productdetail_container .product_image_1 img {
+  height: 80%;
+  object-fit: contain;
+  transform-origin: 50% 33%;
+}
+.products_preview_1 .productdetail_container .product_image_1 .img_preview_1 {
+  opacity: 0;
+  width: 0;
+}
+
+.products_preview_2 {
+  position: fixed;
+  width: 0;
+  height: fit-content;
+  background-color: #333333;
+  z-index: -1;
+  top: 57px;
+  left: 0px;
+  transition: all 1s ease;
+}
+.products_preview_2 ion-icon {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  color: white;
+  font-size: 40px;
+  opacity: 1;
+}
+.products_preview_2 ion-icon:hover {
+  cursor: pointer;
+}
+.products_preview_2 .productdetail_container {
+  display: flex;
+  width: 80%;
+  height: 100vh;
+  margin: auto;
+  transition: 1s ease;
+}
+.products_preview_2 .productdetail_container .nutrition_detail_2 {
+  width: 50%;
+  max-width: 48rem;
+  height: 57.6rem;
+  position: relative;
+  margin: 40px auto;
+  font-family: "Poppins";
+  font-size: 1.4rem;
+  opacity: 0;
+  transition: 0.5s ease;
+}
+.products_preview_2 .productdetail_container .nutrition_detail_2 .nutrition__border_2 {
+  display: none;
+  border: 1px solid #fff;
+  padding: 6px;
+  background-color: white;
+}
+.products_preview_2 .productdetail_container .nutrition_detail_2 .nutrition__border_2 .nutrition__table {
+  width: 100%;
+  padding: 4px;
+  border-collapse: collapse;
+  line-height: 1;
+}
+.products_preview_2 .productdetail_container .nutrition_detail_2 .nutrition__border_2 .nutrition__table tr {
+  border: 1px solid #000;
+}
+.products_preview_2 .productdetail_container .nutrition_detail_2 .nutrition__border_2 .nutrition__table td {
+  padding: 0.4em 0.5em !important;
+}
+.products_preview_2 .productdetail_container .nutrition_detail_2 .nutrition__border_2 .nutrition__table .title {
+  font-size: 38px;
+  padding: 0;
+  padding-bottom: 24px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+.products_preview_2 .productdetail_container .nutrition_detail_2 .nutrition__border_2 .nutrition__table .line3 {
+  border-bottom: 11px solid #000 !important;
+}
+.products_preview_2 .productdetail_container .nutrition_detail_2 .nutrition__border_2 .nutrition__table .line3 .subtitle {
+  font-size: 21px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+.products_preview_2 .productdetail_container .nutrition_detail_2 .nutrition__border_2 .nutrition__table .line2 {
+  border-bottom: 1px solid #000 !important;
+}
+.products_preview_2 .productdetail_container .nutrition_detail_2 .nutrition__border_2 .nutrition__table .line2 .right {
+  text-align: right;
+}
+.products_preview_2 .productdetail_container .nutrition_detail_2 .nutrition__border_2 .nutrition__table .right {
+  text-align: right;
+}
+.products_preview_2 .productdetail_container .nutrition_detail_2 .nutrition__border_2 .nutrition__table .line5 {
+  border-bottom: 5px solid #000 !important;
+}
+.products_preview_2 .productdetail_container .nutrition_detail_2 .nutrition__border_2 .nutrition__table .line8 {
+  border-bottom: 5px solid #000 !important;
+}
+.products_preview_2 .productdetail_container .nutrition_detail_2 .nutrition__border_2 .nutrition__table > * {
+  color: #000;
+}
+.products_preview_2 .productdetail_container .nutrition_detail_2 .nutrition__border_2 .nutrition__ingredients {
+  width: 100%;
+  max-width: 48rem;
+  margin: 1rem auto;
+}
+.products_preview_2 .productdetail_container .nutrition_detail_2 .nutrition__border_2 .nutrition__ingredients .nutrition__ingredient {
+  display: inline-block;
+  text-transform: uppercase;
+  margin: 0;
+  margin-right: 0.25rem;
+  padding-bottom: 1px;
+  border-bottom: 1px solid;
+  font-size: 10px;
+  opacity: 0.8;
+  color: #000;
+}
+.products_preview_2 .productdetail_container .nutrition_detail_2 .nutrition__border_2 .nutrition__lastupdated {
+  text-align: right;
+  font-size: 10px;
+  margin: auto;
+  opacity: 0;
+}
+.products_preview_2 .productdetail_container .nutrition_detail_2 .buttons {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.products_preview_2 .productdetail_container .nutrition_detail_2 .buttons .blob-btn {
+  font-size: 14px;
+}
+.products_preview_2 .productdetail_container .nutrition_detail_2 .buttons .blob-btn:hover {
+  color: #333333;
+}
+.products_preview_2 .productdetail_container .nutrition_detail_2 .buttons a {
+  transition: opacity 0.2s ease-out;
+  cursor: pointer;
+  color: white;
+  font-family: "Poppins";
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 26px;
+}
+.products_preview_2 .productdetail_container .nutrition_detail_2 .buttons a:hover {
+  opacity: 0.8;
+}
+.products_preview_2 .productdetail_container .nutrition_detail_2 .btn-2 {
+  display: none;
+}
+.products_preview_2 .productdetail_container .product_image_2 {
+  width: 50%;
+  max-width: 48rem;
+  height: 57.6rem;
+  margin: 40px auto;
+  position: relative;
+  display: flex;
+  -webkit-box-align: start;
+  align-items: flex-start;
+  -webkit-box-pack: center;
+  justify-content: center;
+  opacity: 0;
+  background: url(../img/product-shadow.png) no-repeat bottom;
+  user-select: none;
+  transition: 0.5s ease;
+}
+.products_preview_2 .productdetail_container .product_image_2 img {
+  height: 80%;
+  object-fit: contain;
+  transform-origin: 50% 33%;
+}
+.products_preview_2 .productdetail_container .product_image_2 .img_preview_2 {
+  opacity: 0;
+  width: 0;
+}
+
+.products_preview_3 {
+  position: fixed;
+  width: 0;
+  height: fit-content;
+  background-color: #939393;
+  z-index: -1;
+  top: 57px;
+  left: 0px;
+  transition: all 1s ease;
+}
+.products_preview_3 ion-icon {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  color: white;
+  font-size: 40px;
+  opacity: 1;
+}
+.products_preview_3 ion-icon:hover {
+  cursor: pointer;
+}
+.products_preview_3 .productdetail_container {
+  display: flex;
+  width: 80%;
+  height: 100vh;
+  margin: auto;
+  transition: 1s ease;
+}
+.products_preview_3 .productdetail_container .nutrition_detail_3 {
+  width: 50%;
+  max-width: 48rem;
+  height: 57.6rem;
+  position: relative;
+  margin: 40px auto;
+  font-family: "Poppins";
+  font-size: 1.4rem;
+  opacity: 0;
+  transition: 0.5s ease;
+}
+.products_preview_3 .productdetail_container .nutrition_detail_3 .nutrition__border_3 {
+  display: none;
+  border: 1px solid #fff;
+  padding: 6px;
+  background-color: white;
+}
+.products_preview_3 .productdetail_container .nutrition_detail_3 .nutrition__border_3 .nutrition__table {
+  width: 100%;
+  padding: 4px;
+  border-collapse: collapse;
+  line-height: 1;
+}
+.products_preview_3 .productdetail_container .nutrition_detail_3 .nutrition__border_3 .nutrition__table tr {
+  border: 1px solid #000;
+}
+.products_preview_3 .productdetail_container .nutrition_detail_3 .nutrition__border_3 .nutrition__table td {
+  padding: 0.4em 0.5em !important;
+}
+.products_preview_3 .productdetail_container .nutrition_detail_3 .nutrition__border_3 .nutrition__table .title {
+  font-size: 38px;
+  padding: 0;
+  padding-bottom: 24px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+.products_preview_3 .productdetail_container .nutrition_detail_3 .nutrition__border_3 .nutrition__table .line3 {
+  border-bottom: 11px solid #000 !important;
+}
+.products_preview_3 .productdetail_container .nutrition_detail_3 .nutrition__border_3 .nutrition__table .line3 .subtitle {
+  font-size: 21px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+.products_preview_3 .productdetail_container .nutrition_detail_3 .nutrition__border_3 .nutrition__table .line2 {
+  border-bottom: 1px solid #000 !important;
+}
+.products_preview_3 .productdetail_container .nutrition_detail_3 .nutrition__border_3 .nutrition__table .line2 .right {
+  text-align: right;
+}
+.products_preview_3 .productdetail_container .nutrition_detail_3 .nutrition__border_3 .nutrition__table .right {
+  text-align: right;
+}
+.products_preview_3 .productdetail_container .nutrition_detail_3 .nutrition__border_3 .nutrition__table .line5 {
+  border-bottom: 5px solid #000 !important;
+}
+.products_preview_3 .productdetail_container .nutrition_detail_3 .nutrition__border_3 .nutrition__table .line8 {
+  border-bottom: 5px solid #000 !important;
+}
+.products_preview_3 .productdetail_container .nutrition_detail_3 .nutrition__border_3 .nutrition__table > * {
+  color: #000;
+}
+.products_preview_3 .productdetail_container .nutrition_detail_3 .nutrition__border_3 .nutrition__ingredients {
+  width: 100%;
+  max-width: 48rem;
+  margin: 1rem auto;
+}
+.products_preview_3 .productdetail_container .nutrition_detail_3 .nutrition__border_3 .nutrition__ingredients .nutrition__ingredient {
+  display: inline-block;
+  text-transform: uppercase;
+  margin: 0;
+  margin-right: 0.25rem;
+  padding-bottom: 1px;
+  border-bottom: 1px solid;
+  font-size: 10px;
+  opacity: 0.8;
+  color: #000;
+}
+.products_preview_3 .productdetail_container .nutrition_detail_3 .nutrition__border_3 .nutrition__lastupdated {
+  text-align: right;
+  font-size: 10px;
+  margin: auto;
+  opacity: 0;
+}
+.products_preview_3 .productdetail_container .nutrition_detail_3 .buttons {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.products_preview_3 .productdetail_container .nutrition_detail_3 .buttons .blob-btn {
+  font-size: 14px;
+}
+.products_preview_3 .productdetail_container .nutrition_detail_3 .buttons .blob-btn:hover {
+  color: #939393;
+}
+.products_preview_3 .productdetail_container .nutrition_detail_3 .buttons a {
+  transition: opacity 0.2s ease-out;
+  cursor: pointer;
+  color: white;
+  font-family: "Poppins";
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 26px;
+}
+.products_preview_3 .productdetail_container .nutrition_detail_3 .buttons a:hover {
+  opacity: 0.8;
+}
+.products_preview_3 .productdetail_container .nutrition_detail_3 .btn-3 {
+  display: none;
+}
+.products_preview_3 .productdetail_container .product_image_3 {
+  width: 50%;
+  max-width: 48rem;
+  height: 57.6rem;
+  margin: 40px auto;
+  position: relative;
+  display: flex;
+  -webkit-box-align: start;
+  align-items: flex-start;
+  -webkit-box-pack: center;
+  justify-content: center;
+  opacity: 0;
+  background: url(../img/product-shadow.png) no-repeat bottom;
+  user-select: none;
+  transition: 0.5s ease;
+}
+.products_preview_3 .productdetail_container .product_image_3 img {
+  height: 80%;
+  object-fit: contain;
+  transform-origin: 50% 33%;
+}
+.products_preview_3 .productdetail_container .product_image_3 .img_preview_3 {
+  opacity: 0;
+  width: 0;
+}
+
+.products_preview_4 {
+  position: fixed;
+  width: 0;
+  height: fit-content;
+  background-color: #cbc2a3;
+  z-index: -1;
+  top: 57px;
+  left: 0px;
+  transition: all 1s ease;
+}
+.products_preview_4 ion-icon {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  color: white;
+  font-size: 40px;
+  opacity: 1;
+}
+.products_preview_4 ion-icon:hover {
+  cursor: pointer;
+}
+.products_preview_4 .productdetail_container {
+  display: flex;
+  width: 80%;
+  height: 100vh;
+  margin: auto;
+  transition: 1s ease;
+}
+.products_preview_4 .productdetail_container .nutrition_detail_4 {
+  width: 50%;
+  max-width: 48rem;
+  height: 57.6rem;
+  position: relative;
+  margin: 40px auto;
+  font-family: "Poppins";
+  font-size: 1.4rem;
+  opacity: 0;
+  transition: 0.5s ease;
+}
+.products_preview_4 .productdetail_container .nutrition_detail_4 .nutrition__border_4 {
+  display: none;
+  border: 1px solid #fff;
+  padding: 6px;
+  background-color: white;
+}
+.products_preview_4 .productdetail_container .nutrition_detail_4 .nutrition__border_4 .nutrition__table {
+  width: 100%;
+  padding: 4px;
+  border-collapse: collapse;
+  line-height: 1;
+}
+.products_preview_4 .productdetail_container .nutrition_detail_4 .nutrition__border_4 .nutrition__table tr {
+  border: 1px solid #000;
+}
+.products_preview_4 .productdetail_container .nutrition_detail_4 .nutrition__border_4 .nutrition__table td {
+  padding: 0.4em 0.5em !important;
+}
+.products_preview_4 .productdetail_container .nutrition_detail_4 .nutrition__border_4 .nutrition__table .title {
+  font-size: 38px;
+  padding: 0;
+  padding-bottom: 24px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+.products_preview_4 .productdetail_container .nutrition_detail_4 .nutrition__border_4 .nutrition__table .line3 {
+  border-bottom: 11px solid #000 !important;
+}
+.products_preview_4 .productdetail_container .nutrition_detail_4 .nutrition__border_4 .nutrition__table .line3 .subtitle {
+  font-size: 21px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+.products_preview_4 .productdetail_container .nutrition_detail_4 .nutrition__border_4 .nutrition__table .line2 {
+  border-bottom: 1px solid #000 !important;
+}
+.products_preview_4 .productdetail_container .nutrition_detail_4 .nutrition__border_4 .nutrition__table .line2 .right {
+  text-align: right;
+}
+.products_preview_4 .productdetail_container .nutrition_detail_4 .nutrition__border_4 .nutrition__table .right {
+  text-align: right;
+}
+.products_preview_4 .productdetail_container .nutrition_detail_4 .nutrition__border_4 .nutrition__table .line5 {
+  border-bottom: 5px solid #000 !important;
+}
+.products_preview_4 .productdetail_container .nutrition_detail_4 .nutrition__border_4 .nutrition__table .line8 {
+  border-bottom: 5px solid #000 !important;
+}
+.products_preview_4 .productdetail_container .nutrition_detail_4 .nutrition__border_4 .nutrition__table > * {
+  color: #000;
+}
+.products_preview_4 .productdetail_container .nutrition_detail_4 .nutrition__border_4 .nutrition__ingredients {
+  width: 100%;
+  max-width: 48rem;
+  margin: 1rem auto;
+}
+.products_preview_4 .productdetail_container .nutrition_detail_4 .nutrition__border_4 .nutrition__ingredients .nutrition__ingredient {
+  display: inline-block;
+  text-transform: uppercase;
+  margin: 0;
+  margin-right: 0.25rem;
+  padding-bottom: 1px;
+  border-bottom: 1px solid;
+  font-size: 10px;
+  opacity: 0.8;
+  color: #000;
+}
+.products_preview_4 .productdetail_container .nutrition_detail_4 .nutrition__border_4 .nutrition__lastupdated {
+  text-align: right;
+  font-size: 10px;
+  margin: auto;
+  opacity: 0;
+}
+.products_preview_4 .productdetail_container .nutrition_detail_4 .buttons {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.products_preview_4 .productdetail_container .nutrition_detail_4 .buttons .blob-btn {
+  font-size: 14px;
+}
+.products_preview_4 .productdetail_container .nutrition_detail_4 .buttons .blob-btn:hover {
+  color: #de8052;
+}
+.products_preview_4 .productdetail_container .nutrition_detail_4 .buttons a {
+  transition: opacity 0.2s ease-out;
+  cursor: pointer;
+  color: white;
+  font-family: "Poppins";
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 26px;
+}
+.products_preview_4 .productdetail_container .nutrition_detail_4 .buttons a:hover {
+  opacity: 0.8;
+}
+.products_preview_4 .productdetail_container .nutrition_detail_4 .btn-4 {
+  display: none;
+}
+.products_preview_4 .productdetail_container .product_image_4 {
+  width: 50%;
+  max-width: 48rem;
+  height: 57.6rem;
+  margin: 40px auto;
+  position: relative;
+  display: flex;
+  -webkit-box-align: start;
+  align-items: flex-start;
+  -webkit-box-pack: center;
+  justify-content: center;
+  opacity: 0;
+  background: url(../img/product-shadow.png) no-repeat bottom;
+  user-select: none;
+  transition: 0.5s ease;
+}
+.products_preview_4 .productdetail_container .product_image_4 img {
+  height: 80%;
+  object-fit: contain;
+  transform-origin: 50% 33%;
+}
+.products_preview_4 .productdetail_container .product_image_4 .img_preview_4 {
+  width: 0;
+  opacity: 0;
+}
+
+.products_preview_5 {
+  position: fixed;
+  width: 0;
+  height: fit-content;
+  background-color: #3955a3;
+  z-index: -1;
+  top: 57px;
+  left: 0px;
+  transition: all 1s ease;
+}
+.products_preview_5 ion-icon {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  color: white;
+  font-size: 40px;
+  opacity: 1;
+}
+.products_preview_5 ion-icon:hover {
+  cursor: pointer;
+}
+.products_preview_5 .productdetail_container {
+  display: flex;
+  width: 80%;
+  height: 100vh;
+  margin: auto;
+  transition: 1s ease;
+}
+.products_preview_5 .productdetail_container .nutrition_detail_5 {
+  width: 50%;
+  max-width: 48rem;
+  height: 57.6rem;
+  position: relative;
+  margin: 40px auto;
+  font-family: "Poppins";
+  font-size: 1.4rem;
+  opacity: 0;
+  transition: 0.5s ease;
+}
+.products_preview_5 .productdetail_container .nutrition_detail_5 .nutrition__border_5 {
+  display: none;
+  border: 1px solid #fff;
+  padding: 6px;
+  background-color: white;
+}
+.products_preview_5 .productdetail_container .nutrition_detail_5 .nutrition__border_5 .nutrition__table {
+  width: 100%;
+  padding: 4px;
+  border-collapse: collapse;
+  line-height: 1;
+}
+.products_preview_5 .productdetail_container .nutrition_detail_5 .nutrition__border_5 .nutrition__table tr {
+  border: 1px solid #000;
+}
+.products_preview_5 .productdetail_container .nutrition_detail_5 .nutrition__border_5 .nutrition__table td {
+  padding: 0.4em 0.5em !important;
+}
+.products_preview_5 .productdetail_container .nutrition_detail_5 .nutrition__border_5 .nutrition__table .title {
+  font-size: 38px;
+  padding: 0;
+  padding-bottom: 24px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+.products_preview_5 .productdetail_container .nutrition_detail_5 .nutrition__border_5 .nutrition__table .line3 {
+  border-bottom: 11px solid #000 !important;
+}
+.products_preview_5 .productdetail_container .nutrition_detail_5 .nutrition__border_5 .nutrition__table .line3 .subtitle {
+  font-size: 21px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+.products_preview_5 .productdetail_container .nutrition_detail_5 .nutrition__border_5 .nutrition__table .line2 {
+  border-bottom: 1px solid #000 !important;
+}
+.products_preview_5 .productdetail_container .nutrition_detail_5 .nutrition__border_5 .nutrition__table .line2 .right {
+  text-align: right;
+}
+.products_preview_5 .productdetail_container .nutrition_detail_5 .nutrition__border_5 .nutrition__table .right {
+  text-align: right;
+}
+.products_preview_5 .productdetail_container .nutrition_detail_5 .nutrition__border_5 .nutrition__table .line5 {
+  border-bottom: 5px solid #000 !important;
+}
+.products_preview_5 .productdetail_container .nutrition_detail_5 .nutrition__border_5 .nutrition__table .line8 {
+  border-bottom: 5px solid #000 !important;
+}
+.products_preview_5 .productdetail_container .nutrition_detail_5 .nutrition__border_5 .nutrition__table > * {
+  color: #000;
+}
+.products_preview_5 .productdetail_container .nutrition_detail_5 .nutrition__border_5 .nutrition__ingredients {
+  width: 100%;
+  max-width: 48rem;
+  margin: 1rem auto;
+}
+.products_preview_5 .productdetail_container .nutrition_detail_5 .nutrition__border_5 .nutrition__ingredients .nutrition__ingredient {
+  display: inline-block;
+  text-transform: uppercase;
+  margin: 0;
+  margin-right: 0.25rem;
+  padding-bottom: 1px;
+  border-bottom: 1px solid;
+  font-size: 10px;
+  opacity: 0.8;
+  color: #000;
+}
+.products_preview_5 .productdetail_container .nutrition_detail_5 .nutrition__border_5 .nutrition__lastupdated {
+  text-align: right;
+  font-size: 10px;
+  margin: auto;
+  opacity: 0;
+}
+.products_preview_5 .productdetail_container .nutrition_detail_5 .buttons {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.products_preview_5 .productdetail_container .nutrition_detail_5 .buttons .blob-btn {
+  font-size: 14px;
+}
+.products_preview_5 .productdetail_container .nutrition_detail_5 .buttons .blob-btn:hover {
+  color: #de8052;
+}
+.products_preview_5 .productdetail_container .nutrition_detail_5 .buttons a {
+  transition: opacity 0.2s ease-out;
+  cursor: pointer;
+  color: white;
+  font-family: "Poppins";
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 26px;
+}
+.products_preview_5 .productdetail_container .nutrition_detail_5 .buttons a:hover {
+  opacity: 0.8;
+}
+.products_preview_5 .productdetail_container .nutrition_detail_5 .btn-5 {
+  display: none;
+}
+.products_preview_5 .productdetail_container .product_image_5 {
+  width: 50%;
+  max-width: 48rem;
+  height: 57.6rem;
+  margin: 40px auto;
+  position: relative;
+  display: flex;
+  -webkit-box-align: start;
+  align-items: flex-start;
+  -webkit-box-pack: center;
+  justify-content: center;
+  opacity: 0;
+  background: url(../img/product-shadow.png) no-repeat bottom;
+  user-select: none;
+  transition: 0.5s ease;
+}
+.products_preview_5 .productdetail_container .product_image_5 img {
+  height: 80%;
+  object-fit: contain;
+  transform-origin: 50% 33%;
+}
+.products_preview_5 .productdetail_container .product_image_5 .img_preview_5 {
+  width: 0;
+  opacity: 0;
+}
+
+.products_preview_6 {
+  position: fixed;
+  width: 0;
+  height: fit-content;
+  background-color: #ff9a32;
+  z-index: -1;
+  top: 57px;
+  left: 0px;
+  transition: all 1s ease;
+}
+.products_preview_6 ion-icon {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  color: white;
+  font-size: 40px;
+  opacity: 1;
+}
+.products_preview_6 ion-icon:hover {
+  cursor: pointer;
+}
+.products_preview_6 .productdetail_container {
+  display: flex;
+  width: 80%;
+  height: 100vh;
+  margin: auto;
+  transition: 1s ease;
+}
+.products_preview_6 .productdetail_container .nutrition_detail_6 {
+  width: 50%;
+  max-width: 48rem;
+  height: 57.6rem;
+  position: relative;
+  margin: 40px auto;
+  font-family: "Poppins";
+  font-size: 1.4rem;
+  opacity: 0;
+  transition: 0.5s ease;
+}
+.products_preview_6 .productdetail_container .nutrition_detail_6 .nutrition__border_6 {
+  display: none;
+  border: 1px solid #fff;
+  padding: 6px;
+  background-color: white;
+}
+.products_preview_6 .productdetail_container .nutrition_detail_6 .nutrition__border_6 .nutrition__table {
+  width: 100%;
+  padding: 4px;
+  border-collapse: collapse;
+  line-height: 1;
+}
+.products_preview_6 .productdetail_container .nutrition_detail_6 .nutrition__border_6 .nutrition__table tr {
+  border: 1px solid #000;
+}
+.products_preview_6 .productdetail_container .nutrition_detail_6 .nutrition__border_6 .nutrition__table td {
+  padding: 0.4em 0.5em !important;
+}
+.products_preview_6 .productdetail_container .nutrition_detail_6 .nutrition__border_6 .nutrition__table .title {
+  font-size: 38px;
+  padding: 0;
+  padding-bottom: 24px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+.products_preview_6 .productdetail_container .nutrition_detail_6 .nutrition__border_6 .nutrition__table .line3 {
+  border-bottom: 11px solid #000 !important;
+}
+.products_preview_6 .productdetail_container .nutrition_detail_6 .nutrition__border_6 .nutrition__table .line3 .subtitle {
+  font-size: 21px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+.products_preview_6 .productdetail_container .nutrition_detail_6 .nutrition__border_6 .nutrition__table .line2 {
+  border-bottom: 1px solid #000 !important;
+}
+.products_preview_6 .productdetail_container .nutrition_detail_6 .nutrition__border_6 .nutrition__table .line2 .right {
+  text-align: right;
+}
+.products_preview_6 .productdetail_container .nutrition_detail_6 .nutrition__border_6 .nutrition__table .right {
+  text-align: right;
+}
+.products_preview_6 .productdetail_container .nutrition_detail_6 .nutrition__border_6 .nutrition__table .line5 {
+  border-bottom: 5px solid #000 !important;
+}
+.products_preview_6 .productdetail_container .nutrition_detail_6 .nutrition__border_6 .nutrition__table .line8 {
+  border-bottom: 5px solid #000 !important;
+}
+.products_preview_6 .productdetail_container .nutrition_detail_6 .nutrition__border_6 .nutrition__table > * {
+  color: #000;
+}
+.products_preview_6 .productdetail_container .nutrition_detail_6 .nutrition__border_6 .nutrition__ingredients {
+  width: 100%;
+  max-width: 48rem;
+  margin: 1rem auto;
+}
+.products_preview_6 .productdetail_container .nutrition_detail_6 .nutrition__border_6 .nutrition__ingredients .nutrition__ingredient {
+  display: inline-block;
+  text-transform: uppercase;
+  margin: 0;
+  margin-right: 0.25rem;
+  padding-bottom: 1px;
+  border-bottom: 1px solid;
+  font-size: 10px;
+  opacity: 0.8;
+  color: #000;
+}
+.products_preview_6 .productdetail_container .nutrition_detail_6 .nutrition__border_6 .nutrition__lastupdated {
+  text-align: right;
+  font-size: 10px;
+  margin: auto;
+  opacity: 0;
+}
+.products_preview_6 .productdetail_container .nutrition_detail_6 .buttons {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.products_preview_6 .productdetail_container .nutrition_detail_6 .buttons .blob-btn {
+  font-size: 14px;
+}
+.products_preview_6 .productdetail_container .nutrition_detail_6 .buttons .blob-btn:hover {
+  color: #ff9a32;
+}
+.products_preview_6 .productdetail_container .nutrition_detail_6 .buttons a {
+  transition: opacity 0.2s ease-out;
+  cursor: pointer;
+  color: white;
+  font-family: "Poppins";
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 26px;
+}
+.products_preview_6 .productdetail_container .nutrition_detail_6 .buttons a:hover {
+  opacity: 0.8;
+}
+.products_preview_6 .productdetail_container .nutrition_detail_6 .btn-6 {
+  display: none;
+}
+.products_preview_6 .productdetail_container .product_image_6 {
+  width: 50%;
+  max-width: 48rem;
+  height: 57.6rem;
+  margin: 40px auto;
+  position: relative;
+  display: flex;
+  -webkit-box-align: start;
+  align-items: flex-start;
+  -webkit-box-pack: center;
+  justify-content: center;
+  opacity: 0;
+  background: url(../img/product-shadow.png) no-repeat bottom;
+  user-select: none;
+  transition: 0.5s ease;
+}
+.products_preview_6 .productdetail_container .product_image_6 img {
+  height: 80%;
+  object-fit: contain;
+  transform-origin: 50% 33%;
+}
+.products_preview_6 .productdetail_container .product_image_6 .img_preview_6 {
+  width: 0;
+  opacity: 0;
+}
+
+.products_preview_7 {
+  position: fixed;
+  width: 0;
+  height: fit-content;
+  background-color: #ff9f3c;
+  z-index: -1;
+  top: 57px;
+  left: 0px;
+  transition: all 1s ease;
+}
+.products_preview_7 ion-icon {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  color: white;
+  font-size: 40px;
+  opacity: 1;
+}
+.products_preview_7 ion-icon:hover {
+  cursor: pointer;
+}
+.products_preview_7 .productdetail_container {
+  display: flex;
+  width: 80%;
+  height: 100vh;
+  margin: auto;
+  transition: 1s ease;
+}
+.products_preview_7 .productdetail_container .nutrition_detail_7 {
+  width: 50%;
+  max-width: 48rem;
+  height: 57.6rem;
+  position: relative;
+  margin: 40px auto;
+  font-family: "Poppins";
+  font-size: 1.4rem;
+  opacity: 0;
+  transition: 0.5s ease;
+}
+.products_preview_7 .productdetail_container .nutrition_detail_7 .nutrition__border_7 {
+  display: none;
+  border: 1px solid #fff;
+  padding: 6px;
+  background-color: white;
+}
+.products_preview_7 .productdetail_container .nutrition_detail_7 .nutrition__border_7 .nutrition__table {
+  width: 100%;
+  padding: 4px;
+  border-collapse: collapse;
+  line-height: 1;
+}
+.products_preview_7 .productdetail_container .nutrition_detail_7 .nutrition__border_7 .nutrition__table tr {
+  border: 1px solid #000;
+}
+.products_preview_7 .productdetail_container .nutrition_detail_7 .nutrition__border_7 .nutrition__table td {
+  padding: 0.4em 0.5em !important;
+}
+.products_preview_7 .productdetail_container .nutrition_detail_7 .nutrition__border_7 .nutrition__table .title {
+  font-size: 31px;
+  padding: 0;
+  padding-bottom: 24px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+.products_preview_7 .productdetail_container .nutrition_detail_7 .nutrition__border_7 .nutrition__table .line3 {
+  border-bottom: 11px solid #000 !important;
+}
+.products_preview_7 .productdetail_container .nutrition_detail_7 .nutrition__border_7 .nutrition__table .line3 .subtitle {
+  font-size: 21px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+.products_preview_7 .productdetail_container .nutrition_detail_7 .nutrition__border_7 .nutrition__table .line2 {
+  border-bottom: 1px solid #000 !important;
+}
+.products_preview_7 .productdetail_container .nutrition_detail_7 .nutrition__border_7 .nutrition__table .line2 .right {
+  text-align: right;
+}
+.products_preview_7 .productdetail_container .nutrition_detail_7 .nutrition__border_7 .nutrition__table .right {
+  text-align: right;
+}
+.products_preview_7 .productdetail_container .nutrition_detail_7 .nutrition__border_7 .nutrition__table .line5 {
+  border-bottom: 5px solid #000 !important;
+}
+.products_preview_7 .productdetail_container .nutrition_detail_7 .nutrition__border_7 .nutrition__table .line8 {
+  border-bottom: 5px solid #000 !important;
+}
+.products_preview_7 .productdetail_container .nutrition_detail_7 .nutrition__border_7 .nutrition__table > * {
+  color: #000;
+}
+.products_preview_7 .productdetail_container .nutrition_detail_7 .nutrition__border_7 .nutrition__ingredients {
+  width: 100%;
+  max-width: 48rem;
+  margin: 1rem auto;
+}
+.products_preview_7 .productdetail_container .nutrition_detail_7 .nutrition__border_7 .nutrition__ingredients .nutrition__ingredient {
+  display: inline-block;
+  text-transform: uppercase;
+  margin: 0;
+  margin-right: 0.25rem;
+  padding-bottom: 1px;
+  border-bottom: 1px solid;
+  font-size: 10px;
+  opacity: 0.8;
+  color: #000;
+}
+.products_preview_7 .productdetail_container .nutrition_detail_7 .nutrition__border_7 .nutrition__lastupdated {
+  text-align: right;
+  font-size: 10px;
+  margin: auto;
+  opacity: 0;
+}
+.products_preview_7 .productdetail_container .nutrition_detail_7 .buttons {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.products_preview_7 .productdetail_container .nutrition_detail_7 .buttons .blob-btn {
+  font-size: 14px;
+}
+.products_preview_7 .productdetail_container .nutrition_detail_7 .buttons .blob-btn:hover {
+  color: #ff9f3c;
+}
+.products_preview_7 .productdetail_container .nutrition_detail_7 .buttons a {
+  transition: opacity 0.2s ease-out;
+  cursor: pointer;
+  color: white;
+  font-family: "Poppins";
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 26px;
+}
+.products_preview_7 .productdetail_container .nutrition_detail_7 .buttons a:hover {
+  opacity: 0.8;
+}
+.products_preview_7 .productdetail_container .nutrition_detail_7 .btn-7 {
+  display: none;
+}
+.products_preview_7 .productdetail_container .product_image_7 {
+  width: 50%;
+  max-width: 48rem;
+  height: 57.6rem;
+  margin: 40px auto;
+  position: relative;
+  display: flex;
+  -webkit-box-align: start;
+  align-items: flex-start;
+  -webkit-box-pack: center;
+  justify-content: center;
+  opacity: 0;
+  background: url(../img/product-shadow.png) no-repeat bottom;
+  user-select: none;
+  transition: 0.5s ease;
+}
+.products_preview_7 .productdetail_container .product_image_7 img {
+  height: 80%;
+  object-fit: contain;
+  transform-origin: 50% 33%;
+}
+.products_preview_7 .productdetail_container .product_image_7 .img_preview_7 {
+  width: 0;
+  opacity: 0;
+}
+
+.products_preview_8 {
+  position: fixed;
+  width: 0;
+  height: fit-content;
+  background-color: #cb2b43;
+  z-index: -1;
+  top: 57px;
+  left: 0px;
+  transition: all 1s ease;
+}
+.products_preview_8 ion-icon {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  color: white;
+  font-size: 40px;
+  opacity: 1;
+}
+.products_preview_8 ion-icon:hover {
+  cursor: pointer;
+}
+.products_preview_8 .productdetail_container {
+  display: flex;
+  width: 80%;
+  height: 100vh;
+  margin: auto;
+  transition: 1s ease;
+}
+.products_preview_8 .productdetail_container .nutrition_detail_8 {
+  width: 50%;
+  max-width: 48rem;
+  height: 57.6rem;
+  position: relative;
+  margin: 40px auto;
+  font-family: "Poppins";
+  font-size: 1.4rem;
+  opacity: 0;
+  transition: 0.5s ease;
+}
+.products_preview_8 .productdetail_container .nutrition_detail_8 .nutrition__border_8 {
+  display: none;
+  border: 1px solid #fff;
+  padding: 6px;
+  background-color: white;
+}
+.products_preview_8 .productdetail_container .nutrition_detail_8 .nutrition__border_8 .nutrition__table {
+  width: 100%;
+  padding: 4px;
+  border-collapse: collapse;
+  line-height: 1;
+}
+.products_preview_8 .productdetail_container .nutrition_detail_8 .nutrition__border_8 .nutrition__table tr {
+  border: 1px solid #000;
+}
+.products_preview_8 .productdetail_container .nutrition_detail_8 .nutrition__border_8 .nutrition__table td {
+  padding: 0.4em 0.5em !important;
+}
+.products_preview_8 .productdetail_container .nutrition_detail_8 .nutrition__border_8 .nutrition__table .title {
+  font-size: 38px;
+  padding: 0;
+  padding-bottom: 24px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+.products_preview_8 .productdetail_container .nutrition_detail_8 .nutrition__border_8 .nutrition__table .line3 {
+  border-bottom: 11px solid #000 !important;
+}
+.products_preview_8 .productdetail_container .nutrition_detail_8 .nutrition__border_8 .nutrition__table .line3 .subtitle {
+  font-size: 21px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+.products_preview_8 .productdetail_container .nutrition_detail_8 .nutrition__border_8 .nutrition__table .line2 {
+  border-bottom: 1px solid #000 !important;
+}
+.products_preview_8 .productdetail_container .nutrition_detail_8 .nutrition__border_8 .nutrition__table .line2 .right {
+  text-align: right;
+}
+.products_preview_8 .productdetail_container .nutrition_detail_8 .nutrition__border_8 .nutrition__table .right {
+  text-align: right;
+}
+.products_preview_8 .productdetail_container .nutrition_detail_8 .nutrition__border_8 .nutrition__table .line5 {
+  border-bottom: 5px solid #000 !important;
+}
+.products_preview_8 .productdetail_container .nutrition_detail_8 .nutrition__border_8 .nutrition__table .line8 {
+  border-bottom: 5px solid #000 !important;
+}
+.products_preview_8 .productdetail_container .nutrition_detail_8 .nutrition__border_8 .nutrition__table > * {
+  color: #000;
+}
+.products_preview_8 .productdetail_container .nutrition_detail_8 .nutrition__border_8 .nutrition__ingredients {
+  width: 100%;
+  max-width: 48rem;
+  margin: 1rem auto;
+}
+.products_preview_8 .productdetail_container .nutrition_detail_8 .nutrition__border_8 .nutrition__ingredients .nutrition__ingredient {
+  display: inline-block;
+  text-transform: uppercase;
+  margin: 0;
+  margin-right: 0.25rem;
+  padding-bottom: 1px;
+  border-bottom: 1px solid;
+  font-size: 10px;
+  opacity: 0.8;
+  color: #000;
+}
+.products_preview_8 .productdetail_container .nutrition_detail_8 .nutrition__border_8 .nutrition__lastupdated {
+  text-align: right;
+  font-size: 10px;
+  margin: auto;
+  opacity: 0;
+}
+.products_preview_8 .productdetail_container .nutrition_detail_8 .buttons {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.products_preview_8 .productdetail_container .nutrition_detail_8 .buttons .blob-btn {
+  font-size: 14px;
+}
+.products_preview_8 .productdetail_container .nutrition_detail_8 .buttons .blob-btn:hover {
+  color: #cb2b43;
+}
+.products_preview_8 .productdetail_container .nutrition_detail_8 .buttons a {
+  transition: opacity 0.2s ease-out;
+  cursor: pointer;
+  color: white;
+  font-family: "Poppins";
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 26px;
+}
+.products_preview_8 .productdetail_container .nutrition_detail_8 .buttons a:hover {
+  opacity: 0.8;
+}
+.products_preview_8 .productdetail_container .nutrition_detail_8 .btn-8 {
+  display: none;
+}
+.products_preview_8 .productdetail_container .product_image_8 {
+  width: 50%;
+  max-width: 48rem;
+  height: 57.6rem;
+  margin: 40px auto;
+  position: relative;
+  display: flex;
+  -webkit-box-align: start;
+  align-items: flex-start;
+  -webkit-box-pack: center;
+  justify-content: center;
+  opacity: 0;
+  background: url(../img/product-shadow.png) no-repeat bottom;
+  user-select: none;
+  transition: 0.5s ease;
+}
+.products_preview_8 .productdetail_container .product_image_8 img {
+  height: 80%;
+  object-fit: contain;
+  transform-origin: 50% 33%;
+}
+.products_preview_8 .productdetail_container .product_image_8 .img_preview_8 {
+  width: 0;
+  opacity: 0;
+}
+
+.products_preview_9 {
+  position: fixed;
+  width: 0;
+  height: fit-content;
+  background-color: #939393;
+  z-index: -1;
+  top: 57px;
+  left: 0px;
+  transition: all 1s ease;
+}
+.products_preview_9 ion-icon {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  color: white;
+  font-size: 40px;
+  opacity: 1;
+}
+.products_preview_9 ion-icon:hover {
+  cursor: pointer;
+}
+.products_preview_9 .productdetail_container {
+  display: flex;
+  width: 80%;
+  height: 100vh;
+  margin: auto;
+  transition: 1s ease;
+}
+.products_preview_9 .productdetail_container .nutrition_detail_9 {
+  width: 50%;
+  max-width: 48rem;
+  height: 57.6rem;
+  position: relative;
+  margin: 40px auto;
+  font-family: "Poppins";
+  font-size: 1.4rem;
+  opacity: 0;
+  transition: 0.5s ease;
+}
+.products_preview_9 .productdetail_container .nutrition_detail_9 .nutrition__border_9 {
+  display: none;
+  border: 1px solid #fff;
+  padding: 6px;
+  background-color: white;
+}
+.products_preview_9 .productdetail_container .nutrition_detail_9 .nutrition__border_9 .nutrition__table {
+  width: 100%;
+  padding: 4px;
+  border-collapse: collapse;
+  line-height: 1;
+}
+.products_preview_9 .productdetail_container .nutrition_detail_9 .nutrition__border_9 .nutrition__table tr {
+  border: 1px solid #000;
+}
+.products_preview_9 .productdetail_container .nutrition_detail_9 .nutrition__border_9 .nutrition__table td {
+  padding: 0.4em 0.5em !important;
+}
+.products_preview_9 .productdetail_container .nutrition_detail_9 .nutrition__border_9 .nutrition__table .title {
+  font-size: 34px;
+  padding: 0;
+  padding-bottom: 24px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+.products_preview_9 .productdetail_container .nutrition_detail_9 .nutrition__border_9 .nutrition__table .line3 {
+  border-bottom: 11px solid #000 !important;
+}
+.products_preview_9 .productdetail_container .nutrition_detail_9 .nutrition__border_9 .nutrition__table .line3 .subtitle {
+  font-size: 21px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+.products_preview_9 .productdetail_container .nutrition_detail_9 .nutrition__border_9 .nutrition__table .line2 {
+  border-bottom: 1px solid #000 !important;
+}
+.products_preview_9 .productdetail_container .nutrition_detail_9 .nutrition__border_9 .nutrition__table .line2 .right {
+  text-align: right;
+}
+.products_preview_9 .productdetail_container .nutrition_detail_9 .nutrition__border_9 .nutrition__table .right {
+  text-align: right;
+}
+.products_preview_9 .productdetail_container .nutrition_detail_9 .nutrition__border_9 .nutrition__table .line5 {
+  border-bottom: 5px solid #000 !important;
+}
+.products_preview_9 .productdetail_container .nutrition_detail_9 .nutrition__border_9 .nutrition__table .line8 {
+  border-bottom: 5px solid #000 !important;
+}
+.products_preview_9 .productdetail_container .nutrition_detail_9 .nutrition__border_9 .nutrition__table > * {
+  color: #000;
+}
+.products_preview_9 .productdetail_container .nutrition_detail_9 .nutrition__border_9 .nutrition__ingredients {
+  width: 100%;
+  max-width: 48rem;
+  margin: 1rem auto;
+}
+.products_preview_9 .productdetail_container .nutrition_detail_9 .nutrition__border_9 .nutrition__ingredients .nutrition__ingredient {
+  display: inline-block;
+  text-transform: uppercase;
+  margin: 0;
+  margin-right: 0.25rem;
+  padding-bottom: 1px;
+  border-bottom: 1px solid;
+  font-size: 10px;
+  opacity: 0.8;
+  color: #000;
+}
+.products_preview_9 .productdetail_container .nutrition_detail_9 .nutrition__border_9 .nutrition__lastupdated {
+  text-align: right;
+  font-size: 10px;
+  margin: auto;
+  opacity: 0;
+}
+.products_preview_9 .productdetail_container .nutrition_detail_9 .buttons {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.products_preview_9 .productdetail_container .nutrition_detail_9 .buttons .blob-btn {
+  font-size: 14px;
+}
+.products_preview_9 .productdetail_container .nutrition_detail_9 .buttons .blob-btn:hover {
+  color: #cd1223;
+}
+.products_preview_9 .productdetail_container .nutrition_detail_9 .buttons a {
+  transition: opacity 0.2s ease-out;
+  cursor: pointer;
+  color: white;
+  font-family: "Poppins";
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 26px;
+}
+.products_preview_9 .productdetail_container .nutrition_detail_9 .buttons a:hover {
+  opacity: 0.8;
+}
+.products_preview_9 .productdetail_container .nutrition_detail_9 .btn-9 {
+  display: none;
+}
+.products_preview_9 .productdetail_container .product_image_9 {
+  width: 50%;
+  max-width: 48rem;
+  height: 57.6rem;
+  margin: 40px auto;
+  position: relative;
+  display: flex;
+  -webkit-box-align: start;
+  align-items: flex-start;
+  -webkit-box-pack: center;
+  justify-content: center;
+  opacity: 0;
+  background: url(../img/product-shadow.png) no-repeat bottom;
+  user-select: none;
+  transition: 0.5s ease;
+}
+.products_preview_9 .productdetail_container .product_image_9 img {
+  height: 80%;
+  object-fit: contain;
+  transform-origin: 50% 33%;
+}
+.products_preview_9 .productdetail_container .product_image_9 .img_preview_9 {
+  width: 0;
+  opacity: 0;
+}
+
+.products_preview_10 {
+  position: fixed;
+  width: 0;
+  height: fit-content;
+  background-color: #d74389;
+  z-index: -1;
+  top: 57px;
+  left: 0px;
+  transition: all 1s ease;
+}
+.products_preview_10 ion-icon {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  color: white;
+  font-size: 40px;
+  opacity: 1;
+}
+.products_preview_10 ion-icon:hover {
+  cursor: pointer;
+}
+.products_preview_10 .productdetail_container {
+  display: flex;
+  width: 80%;
+  height: 100vh;
+  margin: auto;
+  transition: 1s ease;
+}
+.products_preview_10 .productdetail_container .nutrition_detail_10 {
+  width: 50%;
+  max-width: 48rem;
+  height: 57.6rem;
+  position: relative;
+  margin: 40px auto;
+  font-family: "Poppins";
+  font-size: 1.4rem;
+  opacity: 0;
+  transition: 0.5s ease;
+}
+.products_preview_10 .productdetail_container .nutrition_detail_10 .nutrition__border_10 {
+  display: none;
+  border: 1px solid #fff;
+  padding: 6px;
+  padding-bottom: 1px;
+  background-color: white;
+}
+.products_preview_10 .productdetail_container .nutrition_detail_10 .nutrition__border_10 .nutrition__table {
+  width: 100%;
+  padding: 4px;
+  border-collapse: collapse;
+  line-height: 1;
+}
+.products_preview_10 .productdetail_container .nutrition_detail_10 .nutrition__border_10 .nutrition__table tr {
+  border: 1px solid #000;
+}
+.products_preview_10 .productdetail_container .nutrition_detail_10 .nutrition__border_10 .nutrition__table td {
+  padding: 0.4em 0.5em !important;
+}
+.products_preview_10 .productdetail_container .nutrition_detail_10 .nutrition__border_10 .nutrition__table .title {
+  font-size: 27px;
+  padding: 0;
+  padding-bottom: 24px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+.products_preview_10 .productdetail_container .nutrition_detail_10 .nutrition__border_10 .nutrition__table .line3 {
+  border-bottom: 11px solid #000 !important;
+}
+.products_preview_10 .productdetail_container .nutrition_detail_10 .nutrition__border_10 .nutrition__table .line3 .subtitle {
+  font-size: 21px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+.products_preview_10 .productdetail_container .nutrition_detail_10 .nutrition__border_10 .nutrition__table .line2 {
+  border-bottom: 1px solid #000 !important;
+}
+.products_preview_10 .productdetail_container .nutrition_detail_10 .nutrition__border_10 .nutrition__table .line2 .right {
+  text-align: right;
+}
+.products_preview_10 .productdetail_container .nutrition_detail_10 .nutrition__border_10 .nutrition__table .right {
+  text-align: right;
+}
+.products_preview_10 .productdetail_container .nutrition_detail_10 .nutrition__border_10 .nutrition__table .line5 {
+  border-bottom: 5px solid #000 !important;
+}
+.products_preview_10 .productdetail_container .nutrition_detail_10 .nutrition__border_10 .nutrition__table .line8 {
+  border-bottom: 5px solid #000 !important;
+}
+.products_preview_10 .productdetail_container .nutrition_detail_10 .nutrition__border_10 .nutrition__table > * {
+  color: #000;
+}
+.products_preview_10 .productdetail_container .nutrition_detail_10 .nutrition__border_10 .nutrition__ingredients {
+  width: 100%;
+  max-width: 48rem;
+  margin: 1rem auto;
+}
+.products_preview_10 .productdetail_container .nutrition_detail_10 .nutrition__border_10 .nutrition__ingredients .nutrition__ingredient {
+  display: inline-block;
+  text-transform: uppercase;
+  margin: 0;
+  margin-right: 0.25rem;
+  padding-bottom: 1px;
+  border-bottom: 1px solid;
+  font-size: 10px;
+  opacity: 0.8;
+  color: #000;
+}
+.products_preview_10 .productdetail_container .nutrition_detail_10 .nutrition__border_10 .nutrition__lastupdated {
+  text-align: right;
+  font-size: 10px;
+  margin: auto;
+  opacity: 0;
+}
+.products_preview_10 .productdetail_container .nutrition_detail_10 .buttons {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.products_preview_10 .productdetail_container .nutrition_detail_10 .buttons .blob-btn {
+  font-size: 14px;
+}
+.products_preview_10 .productdetail_container .nutrition_detail_10 .buttons .blob-btn:hover {
+  color: #d74389;
+}
+.products_preview_10 .productdetail_container .nutrition_detail_10 .buttons a {
+  transition: opacity 0.2s ease-out;
+  cursor: pointer;
+  color: white;
+  font-family: "Poppins";
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 26px;
+}
+.products_preview_10 .productdetail_container .nutrition_detail_10 .buttons a:hover {
+  opacity: 0.8;
+}
+.products_preview_10 .productdetail_container .nutrition_detail_10 .btn-10 {
+  display: none;
+}
+.products_preview_10 .productdetail_container .product_image_10 {
+  width: 50%;
+  max-width: 48rem;
+  height: 57.6rem;
+  margin: 40px auto;
+  position: relative;
+  display: flex;
+  -webkit-box-align: start;
+  align-items: flex-start;
+  -webkit-box-pack: center;
+  justify-content: center;
+  opacity: 0;
+  background: url(../img/product-shadow.png) no-repeat bottom;
+  user-select: none;
+  transition: 0.5s ease;
+}
+.products_preview_10 .productdetail_container .product_image_10 img {
+  height: 80%;
+  object-fit: contain;
+  transform-origin: 50% 33%;
+}
+.products_preview_10 .productdetail_container .product_image_10 .img_preview_10 {
+  width: 0;
+  opacity: 0;
+}
+
+.products_preview_11 {
+  position: fixed;
+  width: 0;
+  height: fit-content;
+  background-color: #1974c9;
+  z-index: -1;
+  top: 57px;
+  left: 0px;
+  transition: all 1s ease;
+}
+.products_preview_11 ion-icon {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  color: white;
+  font-size: 40px;
+  opacity: 1;
+}
+.products_preview_11 ion-icon:hover {
+  cursor: pointer;
+}
+.products_preview_11 .productdetail_container {
+  display: flex;
+  width: 80%;
+  height: 100vh;
+  margin: auto;
+  transition: 1s ease;
+}
+.products_preview_11 .productdetail_container .nutrition_detail_11 {
+  width: 50%;
+  max-width: 48rem;
+  height: 57.6rem;
+  position: relative;
+  margin: 40px auto;
+  font-family: "Poppins";
+  font-size: 1.4rem;
+  opacity: 0;
+  transition: 0.5s ease;
+}
+.products_preview_11 .productdetail_container .nutrition_detail_11 .nutrition__border_11 {
+  display: none;
+  border: 1px solid #fff;
+  padding: 6px;
+  background-color: white;
+}
+.products_preview_11 .productdetail_container .nutrition_detail_11 .nutrition__border_11 .nutrition__table {
+  width: 100%;
+  padding: 4px;
+  border-collapse: collapse;
+  line-height: 1;
+}
+.products_preview_11 .productdetail_container .nutrition_detail_11 .nutrition__border_11 .nutrition__table tr {
+  border: 1px solid #000;
+}
+.products_preview_11 .productdetail_container .nutrition_detail_11 .nutrition__border_11 .nutrition__table td {
+  padding: 0.4em 0.5em !important;
+}
+.products_preview_11 .productdetail_container .nutrition_detail_11 .nutrition__border_11 .nutrition__table .title {
+  font-size: 38px;
+  padding: 0;
+  padding-bottom: 24px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+.products_preview_11 .productdetail_container .nutrition_detail_11 .nutrition__border_11 .nutrition__table .line3 {
+  border-bottom: 11px solid #000 !important;
+}
+.products_preview_11 .productdetail_container .nutrition_detail_11 .nutrition__border_11 .nutrition__table .line3 .subtitle {
+  font-size: 21px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+.products_preview_11 .productdetail_container .nutrition_detail_11 .nutrition__border_11 .nutrition__table .line2 {
+  border-bottom: 1px solid #000 !important;
+}
+.products_preview_11 .productdetail_container .nutrition_detail_11 .nutrition__border_11 .nutrition__table .line2 .right {
+  text-align: right;
+}
+.products_preview_11 .productdetail_container .nutrition_detail_11 .nutrition__border_11 .nutrition__table .right {
+  text-align: right;
+}
+.products_preview_11 .productdetail_container .nutrition_detail_11 .nutrition__border_11 .nutrition__table .line5 {
+  border-bottom: 5px solid #000 !important;
+}
+.products_preview_11 .productdetail_container .nutrition_detail_11 .nutrition__border_11 .nutrition__table .line8 {
+  border-bottom: 5px solid #000 !important;
+}
+.products_preview_11 .productdetail_container .nutrition_detail_11 .nutrition__border_11 .nutrition__table > * {
+  color: #000;
+}
+.products_preview_11 .productdetail_container .nutrition_detail_11 .nutrition__border_11 .nutrition__ingredients {
+  width: 100%;
+  max-width: 48rem;
+  margin: 1rem auto;
+}
+.products_preview_11 .productdetail_container .nutrition_detail_11 .nutrition__border_11 .nutrition__ingredients .nutrition__ingredient {
+  display: inline-block;
+  text-transform: uppercase;
+  margin: 0;
+  margin-right: 0.25rem;
+  padding-bottom: 1px;
+  border-bottom: 1px solid;
+  font-size: 10px;
+  opacity: 0.8;
+  color: #000;
+}
+.products_preview_11 .productdetail_container .nutrition_detail_11 .nutrition__border_11 .nutrition__lastupdated {
+  text-align: right;
+  font-size: 10px;
+  margin: auto;
+  opacity: 0;
+}
+.products_preview_11 .productdetail_container .nutrition_detail_11 .buttons {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.products_preview_11 .productdetail_container .nutrition_detail_11 .buttons .blob-btn {
+  font-size: 14px;
+}
+.products_preview_11 .productdetail_container .nutrition_detail_11 .buttons .blob-btn:hover {
+  color: #1974c9;
+}
+.products_preview_11 .productdetail_container .nutrition_detail_11 .buttons a {
+  transition: opacity 0.2s ease-out;
+  cursor: pointer;
+  color: white;
+  font-family: "Poppins";
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 26px;
+}
+.products_preview_11 .productdetail_container .nutrition_detail_11 .buttons a:hover {
+  opacity: 0.8;
+}
+.products_preview_11 .productdetail_container .nutrition_detail_11 .btn-11 {
+  display: none;
+}
+.products_preview_11 .productdetail_container .product_image_11 {
+  width: 50%;
+  max-width: 48rem;
+  height: 57.6rem;
+  margin: 40px auto;
+  position: relative;
+  display: flex;
+  -webkit-box-align: start;
+  align-items: flex-start;
+  -webkit-box-pack: center;
+  justify-content: center;
+  opacity: 0;
+  background: url(../img/product-shadow.png) no-repeat bottom;
+  user-select: none;
+  transition: 0.5s ease;
+}
+.products_preview_11 .productdetail_container .product_image_11 img {
+  height: 80%;
+  object-fit: contain;
+  transform-origin: 50% 33%;
+}
+.products_preview_11 .productdetail_container .product_image_11 .img_preview_11 {
+  width: 0;
+  opacity: 0;
+}
+
+.products_preview_12 {
+  position: fixed;
+  width: 0;
+  height: fit-content;
+  background-color: #c9a961;
+  z-index: -1;
+  top: 57px;
+  left: 0px;
+  transition: all 1s ease;
+}
+.products_preview_12 ion-icon {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  color: white;
+  font-size: 40px;
+  opacity: 1;
+}
+.products_preview_12 ion-icon:hover {
+  cursor: pointer;
+}
+.products_preview_12 .productdetail_container {
+  display: flex;
+  width: 80%;
+  height: 100vh;
+  margin: auto;
+  transition: 1s ease;
+}
+.products_preview_12 .productdetail_container .nutrition_detail_12 {
+  width: 50%;
+  max-width: 48rem;
+  height: 57.6rem;
+  position: relative;
+  margin: 40px auto;
+  font-family: "Poppins";
+  font-size: 1.4rem;
+  opacity: 0;
+  transition: 0.5s ease;
+}
+.products_preview_12 .productdetail_container .nutrition_detail_12 .nutrition__border_12 {
+  display: none;
+  border: 1px solid #fff;
+  padding: 6px;
+  background-color: white;
+}
+.products_preview_12 .productdetail_container .nutrition_detail_12 .nutrition__border_12 .nutrition__table {
+  width: 100%;
+  padding: 4px;
+  border-collapse: collapse;
+  line-height: 1;
+}
+.products_preview_12 .productdetail_container .nutrition_detail_12 .nutrition__border_12 .nutrition__table tr {
+  border: 1px solid #000;
+}
+.products_preview_12 .productdetail_container .nutrition_detail_12 .nutrition__border_12 .nutrition__table td {
+  padding: 0.4em 0.5em !important;
+}
+.products_preview_12 .productdetail_container .nutrition_detail_12 .nutrition__border_12 .nutrition__table .title {
+  font-size: 38px;
+  padding: 0;
+  padding-bottom: 24px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+.products_preview_12 .productdetail_container .nutrition_detail_12 .nutrition__border_12 .nutrition__table .line3 {
+  border-bottom: 11px solid #000 !important;
+}
+.products_preview_12 .productdetail_container .nutrition_detail_12 .nutrition__border_12 .nutrition__table .line3 .subtitle {
+  font-size: 21px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+.products_preview_12 .productdetail_container .nutrition_detail_12 .nutrition__border_12 .nutrition__table .line2 {
+  border-bottom: 1px solid #000 !important;
+}
+.products_preview_12 .productdetail_container .nutrition_detail_12 .nutrition__border_12 .nutrition__table .line2 .right {
+  text-align: right;
+}
+.products_preview_12 .productdetail_container .nutrition_detail_12 .nutrition__border_12 .nutrition__table .right {
+  text-align: right;
+}
+.products_preview_12 .productdetail_container .nutrition_detail_12 .nutrition__border_12 .nutrition__table .line5 {
+  border-bottom: 5px solid #000 !important;
+}
+.products_preview_12 .productdetail_container .nutrition_detail_12 .nutrition__border_12 .nutrition__table .line8 {
+  border-bottom: 5px solid #000 !important;
+}
+.products_preview_12 .productdetail_container .nutrition_detail_12 .nutrition__border_12 .nutrition__table > * {
+  color: #000;
+}
+.products_preview_12 .productdetail_container .nutrition_detail_12 .nutrition__border_12 .nutrition__ingredients {
+  width: 100%;
+  max-width: 48rem;
+  margin: 1rem auto;
+}
+.products_preview_12 .productdetail_container .nutrition_detail_12 .nutrition__border_12 .nutrition__ingredients .nutrition__ingredient {
+  display: inline-block;
+  text-transform: uppercase;
+  margin: 0;
+  margin-right: 0.25rem;
+  padding-bottom: 1px;
+  border-bottom: 1px solid;
+  font-size: 10px;
+  opacity: 0.8;
+  color: #000;
+}
+.products_preview_12 .productdetail_container .nutrition_detail_12 .nutrition__border_12 .nutrition__lastupdated {
+  text-align: right;
+  font-size: 10px;
+  margin: auto;
+  opacity: 0;
+}
+.products_preview_12 .productdetail_container .nutrition_detail_12 .buttons {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.products_preview_12 .productdetail_container .nutrition_detail_12 .buttons .blob-btn {
+  font-size: 14px;
+}
+.products_preview_12 .productdetail_container .nutrition_detail_12 .buttons .blob-btn:hover {
+  color: #c9a961;
+}
+.products_preview_12 .productdetail_container .nutrition_detail_12 .buttons a {
+  transition: opacity 0.2s ease-out;
+  cursor: pointer;
+  color: white;
+  font-family: "Poppins";
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 26px;
+}
+.products_preview_12 .productdetail_container .nutrition_detail_12 .buttons a:hover {
+  opacity: 0.8;
+}
+.products_preview_12 .productdetail_container .nutrition_detail_12 .btn-12 {
+  display: none;
+}
+.products_preview_12 .productdetail_container .product_image_12 {
+  width: 50%;
+  max-width: 48rem;
+  height: 57.6rem;
+  margin: 40px auto;
+  position: relative;
+  display: flex;
+  -webkit-box-align: start;
+  align-items: flex-start;
+  -webkit-box-pack: center;
+  justify-content: center;
+  opacity: 0;
+  background: url(../img/product-shadow.png) no-repeat bottom;
+  user-select: none;
+  transition: 0.5s ease;
+}
+.products_preview_12 .productdetail_container .product_image_12 img {
+  height: 80%;
+  object-fit: contain;
+  transform-origin: 50% 33%;
+}
+.products_preview_12 .productdetail_container .product_image_12 .img_preview_12 {
+  width: 0;
+  opacity: 0;
+}
+
+.products_preview_13 {
+  position: fixed;
+  width: 0;
+  height: fit-content;
+  background-color: #cbcbcb;
+  z-index: -1;
+  top: 57px;
+  left: 0px;
+  transition: all 1s ease;
+}
+.products_preview_13 ion-icon {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  color: white;
+  font-size: 40px;
+  opacity: 1;
+}
+.products_preview_13 ion-icon:hover {
+  cursor: pointer;
+}
+.products_preview_13 .productdetail_container {
+  display: flex;
+  width: 80%;
+  height: 100vh;
+  margin: auto;
+  transition: 1s ease;
+}
+.products_preview_13 .productdetail_container .nutrition_detail_13 {
+  width: 50%;
+  max-width: 48rem;
+  height: 57.6rem;
+  position: relative;
+  margin: 40px auto;
+  font-family: "Poppins";
+  font-size: 1.4rem;
+  opacity: 0;
+  transition: 0.5s ease;
+}
+.products_preview_13 .productdetail_container .nutrition_detail_13 .nutrition__border_13 {
+  display: none;
+  border: 1px solid #fff;
+  padding: 6px;
+  background-color: white;
+}
+.products_preview_13 .productdetail_container .nutrition_detail_13 .nutrition__border_13 .nutrition__table {
+  width: 100%;
+  padding: 4px;
+  border-collapse: collapse;
+  line-height: 1;
+}
+.products_preview_13 .productdetail_container .nutrition_detail_13 .nutrition__border_13 .nutrition__table tr {
+  border: 1px solid #000;
+}
+.products_preview_13 .productdetail_container .nutrition_detail_13 .nutrition__border_13 .nutrition__table td {
+  padding: 0.4em 0.5em !important;
+}
+.products_preview_13 .productdetail_container .nutrition_detail_13 .nutrition__border_13 .nutrition__table .title {
+  font-size: 33px;
+  padding: 0;
+  padding-bottom: 24px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+.products_preview_13 .productdetail_container .nutrition_detail_13 .nutrition__border_13 .nutrition__table .line3 {
+  border-bottom: 11px solid #000 !important;
+}
+.products_preview_13 .productdetail_container .nutrition_detail_13 .nutrition__border_13 .nutrition__table .line3 .subtitle {
+  font-size: 21px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+.products_preview_13 .productdetail_container .nutrition_detail_13 .nutrition__border_13 .nutrition__table .line2 {
+  border-bottom: 1px solid #000 !important;
+}
+.products_preview_13 .productdetail_container .nutrition_detail_13 .nutrition__border_13 .nutrition__table .line2 .right {
+  text-align: right;
+}
+.products_preview_13 .productdetail_container .nutrition_detail_13 .nutrition__border_13 .nutrition__table .right {
+  text-align: right;
+}
+.products_preview_13 .productdetail_container .nutrition_detail_13 .nutrition__border_13 .nutrition__table .line5 {
+  border-bottom: 5px solid #000 !important;
+}
+.products_preview_13 .productdetail_container .nutrition_detail_13 .nutrition__border_13 .nutrition__table .line8 {
+  border-bottom: 5px solid #000 !important;
+}
+.products_preview_13 .productdetail_container .nutrition_detail_13 .nutrition__border_13 .nutrition__table > * {
+  color: #000;
+}
+.products_preview_13 .productdetail_container .nutrition_detail_13 .nutrition__border_13 .nutrition__ingredients {
+  width: 100%;
+  max-width: 48rem;
+  margin: 1rem auto;
+}
+.products_preview_13 .productdetail_container .nutrition_detail_13 .nutrition__border_13 .nutrition__ingredients .nutrition__ingredient {
+  display: inline-block;
+  text-transform: uppercase;
+  margin: 0;
+  margin-right: 0.25rem;
+  padding-bottom: 1px;
+  border-bottom: 1px solid;
+  font-size: 10px;
+  opacity: 0.8;
+  color: #000;
+}
+.products_preview_13 .productdetail_container .nutrition_detail_13 .nutrition__border_13 .nutrition__lastupdated {
+  text-align: right;
+  font-size: 10px;
+  margin: auto;
+  opacity: 0;
+}
+.products_preview_13 .productdetail_container .nutrition_detail_13 .buttons {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.products_preview_13 .productdetail_container .nutrition_detail_13 .buttons .blob-btn {
+  font-size: 14px;
+}
+.products_preview_13 .productdetail_container .nutrition_detail_13 .buttons .blob-btn:hover {
+  color: #f1c23c;
+}
+.products_preview_13 .productdetail_container .nutrition_detail_13 .buttons a {
+  transition: opacity 0.2s ease-out;
+  cursor: pointer;
+  color: white;
+  font-family: "Poppins";
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 26px;
+}
+.products_preview_13 .productdetail_container .nutrition_detail_13 .buttons a:hover {
+  opacity: 0.8;
+}
+.products_preview_13 .productdetail_container .nutrition_detail_13 .btn-13 {
+  display: none;
+}
+.products_preview_13 .productdetail_container .product_image_13 {
+  width: 50%;
+  max-width: 48rem;
+  height: 57.6rem;
+  margin: 40px auto;
+  position: relative;
+  display: flex;
+  -webkit-box-align: start;
+  align-items: flex-start;
+  -webkit-box-pack: center;
+  justify-content: center;
+  opacity: 0;
+  background: url(../img/product-shadow.png) no-repeat bottom;
+  user-select: none;
+  transition: 0.5s ease;
+}
+.products_preview_13 .productdetail_container .product_image_13 img {
+  height: 80%;
+  object-fit: contain;
+  transform-origin: 50% 33%;
+}
+.products_preview_13 .productdetail_container .product_image_13 .img_preview_13 {
+  width: 0;
+  opacity: 0;
 }
 
 /* ---------------End Products--------------- */
@@ -2121,6 +4290,146 @@ a {
   }
   #page_6 .social__item-container .social__tiktok {
     grid-column: 1/3;
+  }
+  .products_preview_1 ion-icon {
+    z-index: 22;
+  }
+  .products_preview_1 .productdetail_container {
+    width: 100%;
+    height: 100vh;
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+  }
+  .products_preview_1 .productdetail_container .nutrition_detail_1 {
+    width: 90%;
+    height: fit-content;
+    margin: 5px auto;
+    font-size: 1rem;
+  }
+  .products_preview_1 .productdetail_container .nutrition_detail_1 .nutrition__border_1 {
+    padding: 3px;
+  }
+  .products_preview_1 .productdetail_container .nutrition_detail_1 .nutrition__border_1 .nutrition__table {
+    padding: 2px;
+  }
+  .products_preview_1 .productdetail_container .nutrition_detail_1 .nutrition__border_1 .nutrition__table .line3 {
+    border-bottom: 5px solid #000 !important;
+  }
+  .products_preview_1 .productdetail_container .nutrition_detail_1 .nutrition__border_1 .nutrition__table .line5 {
+    border-bottom: 2px solid #000 !important;
+  }
+  .products_preview_1 .productdetail_container .nutrition_detail_1 .nutrition__border_1 .nutrition__table .line8 {
+    border-bottom: 2px solid #000 !important;
+  }
+  .products_preview_1 .productdetail_container .nutrition_detail_1 .nutrition__border_1 .nutrition__ingredients {
+    margin: 0.5rem auto;
+  }
+  .products_preview_1 .productdetail_container .nutrition_detail_1 .nutrition__border_1 .nutrition__lastupdated {
+    font-size: 5px;
+  }
+  .products_preview_1 .productdetail_container .nutrition_detail_1 .buttons {
+    margin-top: 15px;
+  }
+  .products_preview_1 .productdetail_container .product_image_1 {
+    width: 100%;
+    height: 22rem;
+    margin: 25px auto;
+    margin-bottom: 0px;
+  }
+
+  .products_preview_2 ion-icon {
+    z-index: 22;
+  }
+  .products_preview_2 .productdetail_container {
+    width: 100%;
+    height: 100vh;
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+  }
+  .products_preview_2 .productdetail_container .nutrition_detail_2 {
+    width: 90%;
+    height: fit-content;
+    margin: 5px auto;
+    font-size: 1rem;
+  }
+  .products_preview_2 .productdetail_container .nutrition_detail_2 .nutrition__border_2 {
+    padding: 3px;
+  }
+  .products_preview_2 .productdetail_container .nutrition_detail_2 .nutrition__border_2 .nutrition__table {
+    padding: 2px;
+  }
+  .products_preview_2 .productdetail_container .nutrition_detail_2 .nutrition__border_2 .nutrition__table .title {
+    font-size: 31px;
+  }
+  .products_preview_2 .productdetail_container .nutrition_detail_2 .nutrition__border_2 .nutrition__table .line3 {
+    border-bottom: 5px solid #000 !important;
+  }
+  .products_preview_2 .productdetail_container .nutrition_detail_2 .nutrition__border_2 .nutrition__table .line5 {
+    border-bottom: 2px solid #000 !important;
+  }
+  .products_preview_2 .productdetail_container .nutrition_detail_2 .nutrition__border_2 .nutrition__table .line8 {
+    border-bottom: 2px solid #000 !important;
+  }
+  .products_preview_2 .productdetail_container .nutrition_detail_2 .nutrition__border_2 .nutrition__ingredients {
+    margin: 0.5rem auto;
+  }
+  .products_preview_2 .productdetail_container .nutrition_detail_2 .nutrition__border_2 .nutrition__lastupdated {
+    font-size: 5px;
+  }
+  .products_preview_2 .productdetail_container .nutrition_detail_2 .buttons {
+    margin-top: 15px;
+  }
+  .products_preview_2 .productdetail_container .product_image_2 {
+    width: 100%;
+    height: 22rem;
+    margin: 25px auto;
+    margin-bottom: 0px;
+  }
+
+  .products_preview_3 ion-icon {
+    z-index: 22;
+  }
+  .products_preview_3 .productdetail_container {
+    width: 100%;
+    height: 100vh;
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+  }
+  .products_preview_3 .productdetail_container .nutrition_detail_3 {
+    width: 90%;
+    height: fit-content;
+    margin: 5px auto;
+    font-size: 1rem;
+  }
+  .products_preview_3 .productdetail_container .nutrition_detail_3 .nutrition__border_3 {
+    padding: 3px;
+  }
+  .products_preview_3 .productdetail_container .nutrition_detail_3 .nutrition__border_3 .nutrition__table {
+    padding: 2px;
+  }
+  .products_preview_3 .productdetail_container .nutrition_detail_3 .nutrition__border_3 .nutrition__table .line3 {
+    border-bottom: 5px solid #000 !important;
+  }
+  .products_preview_3 .productdetail_container .nutrition_detail_3 .nutrition__border_3 .nutrition__table .line5 {
+    border-bottom: 2px solid #000 !important;
+  }
+  .products_preview_3 .productdetail_container .nutrition_detail_3 .nutrition__border_3 .nutrition__table .line8 {
+    border-bottom: 2px solid #000 !important;
+  }
+  .products_preview_3 .productdetail_container .nutrition_detail_3 .nutrition__border_3 .nutrition__ingredients {
+    margin: 0.5rem auto;
+  }
+  .products_preview_3 .productdetail_container .nutrition_detail_3 .nutrition__border_3 .nutrition__lastupdated {
+    font-size: 5px;
+  }
+  .products_preview_3 .productdetail_container .nutrition_detail_3 .buttons {
+    margin-top: 15px;
+  }
+  .products_preview_3 .productdetail_container .product_image_3 {
+    width: 100%;
+    height: 22rem;
+    margin: 25px auto;
+    margin-bottom: 0px;
   }
 }
 /* ---------------End Media Query For Mobile----------- */

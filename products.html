@@ -51,13 +51,17 @@
         <div class="products_container">
           <div class="product item-1">
             <h2 class="name">PEPSI</h2>
-            <a href="#" class="buy">BUY NOW</a>
+            <a class="lord" onclick="showPreview_1()">
+              <ion-icon name="information-circle-outline"></ion-icon>
+            </a>
             <div class="circle"></div>
             <img src="img/pepsican/can-pepsi.png" alt="" class="item_prd" />
           </div>
           <div class="product item-2">
             <h2 class="name">PEPSI ZERO SUGAR</h2>
-            <a href="#" class="buy">BUY NOW</a>
+            <a class="lord" onclick="showPreview_2()">
+              <ion-icon name="information-circle-outline"></ion-icon>
+            </a>
             <div class="circle"></div>
             <img
               src="img/pepsican/can-pepsi-zero-sugar.png"
@@ -67,7 +71,9 @@
           </div>
           <div class="product item-3">
             <h2 class="name">DIET PEPSI</h2>
-            <a href="#" class="buy">BUY NOW</a>
+            <a class="lord" onclick="showPreview_3()">
+              <ion-icon name="information-circle-outline"></ion-icon>
+            </a>
             <div class="circle"></div>
             <img
               src="img/pepsican/Diet-Pepsi-v2_12oz.png"
@@ -77,7 +83,9 @@
           </div>
           <div class="product item-4">
             <h2 class="name">NITRO PEPSI VANILLA</h2>
-            <a href="#" class="buy">BUY NOW</a>
+            <a class="lord" onclick="showPreview_4()">
+              <ion-icon name="information-circle-outline"></ion-icon>
+            </a>
             <div class="circle"></div>
             <img
               style="max-width: 96px"
@@ -88,7 +96,9 @@
           </div>
           <div class="product item-5">
             <h2 class="name">NITRO PEPSI</h2>
-            <a href="#" class="buy">BUY NOW</a>
+            <a class="lord" onclick="showPreview_5()">
+              <ion-icon name="information-circle-outline"></ion-icon>
+            </a>
             <div class="circle"></div>
             <img
               style="max-width: 96px"
@@ -99,7 +109,9 @@
           </div>
           <div class="product item-6">
             <h2 class="name">PEPSI MANGO</h2>
-            <a href="#" class="buy">BUY NOW</a>
+            <a class="lord" onclick="showPreview_6()">
+              <ion-icon name="information-circle-outline"></ion-icon>
+            </a>
             <div class="circle"></div>
             <img
               src="img/pepsican/can-pepsi-mango.png"
@@ -109,7 +121,9 @@
           </div>
           <div class="product item-7">
             <h2 class="name">PEPSI ZERO SUGAR MANGO</h2>
-            <a href="#" class="buy">BUY NOW</a>
+            <a class="lord" onclick="showPreview_7()">
+              <ion-icon name="information-circle-outline"></ion-icon>
+            </a>
             <div class="circle"></div>
             <img
               src="img/pepsican/can-pepsi-zero-sugar-mango.png"
@@ -119,7 +133,9 @@
           </div>
           <div class="product item-8">
             <h2 class="name">PEPSI WILD CHERRY</h2>
-            <a href="#" class="buy">BUY NOW</a>
+            <a class="lord" onclick="showPreview_8()">
+              <ion-icon name="information-circle-outline"></ion-icon>
+            </a>
             <div class="circle"></div>
             <img
               src="img/pepsican/can-pepsi-cherry-v2.png"
@@ -129,7 +145,9 @@
           </div>
           <div class="product item-9">
             <h2 class="name">DIET PEPSI WILD CHERRY</h2>
-            <a href="#" class="buy">BUY NOW</a>
+            <a class="lord" onclick="showPreview_9()">
+              <ion-icon name="information-circle-outline"></ion-icon>
+            </a>
             <div class="circle"></div>
             <img
               src="img/pepsican/Diet-Pepsi-Cherry-v3_12oz.png"
@@ -139,7 +157,9 @@
           </div>
           <div class="product item-10">
             <h2 class="name">PEPSI ZERO SUGAR WILD CHERRY</h2>
-            <a href="#" class="buy">BUY NOW</a>
+            <a class="lord" onclick="showPreview_10()">
+              <ion-icon name="information-circle-outline"></ion-icon>
+            </a>
             <div class="circle"></div>
             <img
               src="img/pepsican/Pepsi-Zero-Wild-Cherry-12oz-refreshed-v2.png"
@@ -149,7 +169,9 @@
           </div>
           <div class="product item-11">
             <h2 class="name">PEPSI REAL SUGAR</h2>
-            <a href="#" class="buy">BUY NOW</a>
+            <a class="lord" onclick="showPreview_11()">
+              <ion-icon name="information-circle-outline"></ion-icon>
+            </a>
             <div class="circle"></div>
             <img
               src="img/pepsican/can-real-sugar-reg.png"
@@ -159,7 +181,9 @@
           </div>
           <div class="product item-12">
             <h2 class="name">PEPSI CAFFEINE FREE</h2>
-            <a href="#" class="buy">BUY NOW</a>
+            <a class="lord" onclick="showPreview_12()">
+              <ion-icon name="information-circle-outline"></ion-icon>
+            </a>
             <div class="circle"></div>
             <img
               src="img/pepsican/can-pepsi-caffeine-free.png"
@@ -169,12 +193,1725 @@
           </div>
           <div class="product item13">
             <h2 class="name">DIET PEPSI CAFFEINE FREE</h2>
-            <a href="#" class="buy">BUY NOW</a>
+            <a class="lord" onclick="showPreview_13()">
+              <ion-icon name="information-circle-outline"></ion-icon>
+            </a>
             <div class="circle"></div>
             <img
               src="img/pepsican/Diet-Pepsi-CaffFree-v2_12oz.png"
               alt=""
               class="item_prd"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="products_preview_1" style="user-select: none">
+        <a onclick="hidePreview_1()"
+          ><ion-icon name="apps-outline"></ion-icon
+        ></a>
+        <div class="productdetail_container">
+          <div class="nutrition_detail_1">
+            <div class="nutrition__border_1">
+              <table class="nutrition__table">
+                <tbody>
+                  <tr>
+                    <td colspan="2" class="title">
+                      <span data-js="productTitle">Pepsi</span>
+                    </td>
+                  </tr>
+                  <tr class="line3">
+                    <td colspan="2" class="subtitle">Nutrition Facts</td>
+                  </tr>
+                  <tr>
+                    <td colspan="2">
+                      Serving Size
+                      <span data-js="nutritionServingSize"
+                        >12 fl oz (355 mL)</span
+                      >
+                    </td>
+                  </tr>
+                  <tr>
+                    <td colspan="2" class="padding4">
+                      Servings Per Container 1
+                    </td>
+                  </tr>
+                  <tr>
+                    <td colspan="2"></td>
+                  </tr>
+                  <tr>
+                    <td colspan="2" class="line2">Amount Per Serving</td>
+                  </tr>
+                  <tr>
+                    <td colspan="2" class="line5">
+                      Calories <span data-js="nutritionCalories">150</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td colspan="2" class="line2 right">% Daily Value *</td>
+                  </tr>
+                  <tr class="line2">
+                    <td>Total Fat <span data-js="nutritionFat">0</span>g</td>
+                    <td class="right">
+                      <span data-js="nutritionFatPercentage">0</span>%
+                    </td>
+                  </tr>
+                  <tr class="line2">
+                    <td>Sodium <span data-js="nutritionSodium">30</span>mg</td>
+                    <td class="right">
+                      <span data-js="nutritionSodiumPercentage">1</span>%
+                    </td>
+                  </tr>
+                  <tr class="line2">
+                    <td>
+                      Total Carbohydrate
+                      <span data-js="nutritionCarbs">41</span>g
+                    </td>
+                    <td class="right">
+                      <span data-js="nutritionCarbsPercentage">14</span>%
+                    </td>
+                  </tr>
+                  <tr class="line2">
+                    <td colspan="2" class="indent">
+                      Sugars <span data-js="nutritionSugar">41</span>g
+                    </td>
+                  </tr>
+                  <tr class="line8">
+                    <td colspan="2">
+                      Protein <span data-js="nutritionProtein">0</span>g
+                    </td>
+                  </tr>
+                  <tr class="line2">
+                    <td colspan="2">
+                      Not a significant source of other nutrients.
+                    </td>
+                  </tr>
+                  <tr>
+                    <td colspan="2">
+                      *Percent Daily Values are based on a 2,000 calorie diet.
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <div class="nutrition__ingredients">
+                <span data-js="ingredients"
+                  ><p class="nutrition__ingredient">CARBONATED WATER</p>
+                  <p class="nutrition__ingredient">HIGH FRUCTOSE CORN SYRUP</p>
+                  <p class="nutrition__ingredient">CARAMEL COLOR</p>
+                  <p class="nutrition__ingredient">SUGAR</p>
+                  <p class="nutrition__ingredient">PHOSPHORIC ACID</p>
+                  <p class="nutrition__ingredient">CAFFEINE</p>
+                  <p class="nutrition__ingredient">CITRIC ACID</p>
+                  <p class="nutrition__ingredient">NATURAL FLAVOR</p></span
+                >
+              </div>
+              <div class="nutrition__lastupdated" data-js="lastUpdated">
+                Last updated on January 11, 2018
+              </div>
+            </div>
+
+            <div class="buttons btn-1">
+              <button class="blob-btn">
+                BUY NOW
+                <span class="blob-btn__inner">
+                  <span class="blob-btn__blobs">
+                    <span class="blob-btn__blob"></span>
+                    <span class="blob-btn__blob"></span>
+                    <span class="blob-btn__blob"></span>
+                    <span class="blob-btn__blob"></span>
+                  </span>
+                </span>
+              </button>
+              <a href="#">MORE NUTRITIONAL INFO</a>
+            </div>
+          </div>
+
+          <div class="product_image_1">
+            <img
+              class="img_preview_1"
+              src="img/pepsican/can-pepsi.png"
+              alt=""
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="products_preview_2" style="user-select: none">
+        <a onclick="hidePreview_2()"
+          ><ion-icon name="apps-outline"></ion-icon
+        ></a>
+        <div class="productdetail_container">
+          <div class="nutrition_detail_2">
+            <div class="nutrition__border_2">
+              <table class="nutrition__table">
+                <tbody>
+                  <tr>
+                    <td colspan="2" class="title">
+                      <span data-js="productTitle">Pepsi Zero Sugar</span>
+                    </td>
+                  </tr>
+                  <tr class="line3">
+                    <td colspan="2" class="subtitle">Nutrition Facts</td>
+                  </tr>
+                  <tr>
+                    <td colspan="2">
+                      Serving Size
+                      <span data-js="nutritionServingSize"
+                        >12 fl oz (355 mL)</span
+                      >
+                    </td>
+                  </tr>
+                  <tr>
+                    <td colspan="2" class="padding4">
+                      Servings Per Container 1
+                    </td>
+                  </tr>
+                  <tr>
+                    <td colspan="2"></td>
+                  </tr>
+                  <tr>
+                    <td colspan="2" class="line2">Amount Per Serving</td>
+                  </tr>
+                  <tr>
+                    <td colspan="2" class="line5">
+                      Calories <span data-js="nutritionCalories">0</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td colspan="2" class="line2 right">% Daily Value *</td>
+                  </tr>
+                  <tr class="line2">
+                    <td>Total Fat <span data-js="nutritionFat">0</span>g</td>
+                    <td class="right">
+                      <span data-js="nutritionFatPercentage">0</span>%
+                    </td>
+                  </tr>
+                  <tr class="line2">
+                    <td>Sodium <span data-js="nutritionSodium">40</span>mg</td>
+                    <td class="right">
+                      <span data-js="nutritionSodiumPercentage">2</span>%
+                    </td>
+                  </tr>
+                  <tr class="line2">
+                    <td>
+                      Total Carbohydrate
+                      <span data-js="nutritionCarbs">0</span>g
+                    </td>
+                    <td class="right">
+                      <span data-js="nutritionCarbsPercentage">0</span>%
+                    </td>
+                  </tr>
+                  <tr class="line2">
+                    <td colspan="2" class="indent">
+                      Sugars <span data-js="nutritionSugar">0</span>g
+                    </td>
+                  </tr>
+                  <tr class="line8">
+                    <td colspan="2">
+                      Protein <span data-js="nutritionProtein">0</span>g
+                    </td>
+                  </tr>
+                  <tr class="line2">
+                    <td colspan="2">
+                      Not a significant source of other nutrients.
+                    </td>
+                  </tr>
+                  <tr>
+                    <td colspan="2">
+                      *Percent Daily Values are based on a 2,000 calorie diet.
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <div class="nutrition__ingredients">
+                <span data-js="ingredients"
+                  ><p class="nutrition__ingredient">CARBONATED WATER</p>
+                  <p class="nutrition__ingredient">CARAMEL COLOR</p>
+                  <p class="nutrition__ingredient">PHOSPHORIC ACID</p>
+                  <p class="nutrition__ingredient">ASPARTAME</p>
+                  <p class="nutrition__ingredient">
+                    POTASSIUM BENZOATE (PRESERVES FRESHNESS)
+                  </p>
+                  <p class="nutrition__ingredient">CAFFEINE</p>
+                  <p class="nutrition__ingredient">NATURAL FLAVOR</p>
+                </span>
+              </div>
+              <div class="nutrition__lastupdated" data-js="lastUpdated">
+                Last updated on January 11, 2018
+              </div>
+            </div>
+
+            <div class="buttons btn-2">
+              <button class="blob-btn">
+                BUY NOW
+                <span class="blob-btn__inner">
+                  <span class="blob-btn__blobs">
+                    <span class="blob-btn__blob"></span>
+                    <span class="blob-btn__blob"></span>
+                    <span class="blob-btn__blob"></span>
+                    <span class="blob-btn__blob"></span>
+                  </span>
+                </span>
+              </button>
+              <a href="#">MORE NUTRITIONAL INFO</a>
+            </div>
+          </div>
+
+          <div class="product_image_2">
+            <img
+              class="img_preview_2"
+              src="img/pepsican/can-pepsi-zero-sugar.png"
+              alt=""
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="products_preview_3" style="user-select: none">
+        <a onclick="hidePreview_3()"
+          ><ion-icon name="apps-outline"></ion-icon
+        ></a>
+        <div class="productdetail_container">
+          <div class="nutrition_detail_3">
+            <div class="nutrition__border_3">
+              <table class="nutrition__table">
+                <tbody>
+                  <tr>
+                    <td colspan="2" class="title">
+                      <span data-js="productTitle">Diet Pepsi</span>
+                    </td>
+                  </tr>
+                  <tr class="line3">
+                    <td colspan="2" class="subtitle">Nutrition Facts</td>
+                  </tr>
+                  <tr>
+                    <td colspan="2">
+                      Serving Size
+                      <span data-js="nutritionServingSize"
+                        >12 fl oz (355 mL)</span
+                      >
+                    </td>
+                  </tr>
+                  <tr>
+                    <td colspan="2" class="padding4">
+                      Servings Per Container 1
+                    </td>
+                  </tr>
+                  <tr>
+                    <td colspan="2"></td>
+                  </tr>
+                  <tr>
+                    <td colspan="2" class="line2">Amount Per Serving</td>
+                  </tr>
+                  <tr>
+                    <td colspan="2" class="line5">
+                      Calories <span data-js="nutritionCalories">0</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td colspan="2" class="line2 right">% Daily Value *</td>
+                  </tr>
+                  <tr class="line2">
+                    <td>Total Fat <span data-js="nutritionFat">0</span>g</td>
+                    <td class="right">
+                      <span data-js="nutritionFatPercentage">0</span>%
+                    </td>
+                  </tr>
+                  <tr class="line2">
+                    <td>Sodium <span data-js="nutritionSodium">35</span>mg</td>
+                    <td class="right">
+                      <span data-js="nutritionSodiumPercentage">1</span>%
+                    </td>
+                  </tr>
+                  <tr class="line2">
+                    <td>
+                      Total Carbohydrate
+                      <span data-js="nutritionCarbs">0</span>g
+                    </td>
+                    <td class="right">
+                      <span data-js="nutritionCarbsPercentage">0</span>%
+                    </td>
+                  </tr>
+                  <tr class="line2">
+                    <td colspan="2" class="indent">
+                      Sugars <span data-js="nutritionSugar">0</span>g
+                    </td>
+                  </tr>
+                  <tr class="line8">
+                    <td colspan="2">
+                      Protein <span data-js="nutritionProtein">0</span>g
+                    </td>
+                  </tr>
+                  <tr class="line2">
+                    <td colspan="2">
+                      Not a significant source of other nutrients.
+                    </td>
+                  </tr>
+                  <tr>
+                    <td colspan="2">
+                      *Percent Daily Values are based on a 2,000 calorie diet.
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <div class="nutrition__ingredients">
+                <span data-js="ingredients"
+                  ><p class="nutrition__ingredient">CARBONATED WATER</p>
+                  <p class="nutrition__ingredient">CARAMEL COLOR</p>
+                  <p class="nutrition__ingredient">ASPARTAME</p>
+                  <p class="nutrition__ingredient">PHOSPHORIC ACID</p>
+                  <p class="nutrition__ingredient">
+                    POTASSIUM BENZOATE (PRESERVES FRESHNESS)
+                  </p>
+                  <p class="nutrition__ingredient">CAFFEINE</p>
+                  <p class="nutrition__ingredient">CITRIC ACID</p>
+                  <p class="nutrition__ingredient">NATURAL FLAVOR</p>
+                </span>
+              </div>
+              <div class="nutrition__lastupdated" data-js="lastUpdated">
+                Last updated on August 13, 2018
+              </div>
+            </div>
+
+            <div class="buttons btn-3">
+              <button class="blob-btn">
+                BUY NOW
+                <span class="blob-btn__inner">
+                  <span class="blob-btn__blobs">
+                    <span class="blob-btn__blob"></span>
+                    <span class="blob-btn__blob"></span>
+                    <span class="blob-btn__blob"></span>
+                    <span class="blob-btn__blob"></span>
+                  </span>
+                </span>
+              </button>
+              <a href="#">MORE NUTRITIONAL INFO</a>
+            </div>
+          </div>
+
+          <div class="product_image_3">
+            <img
+              class="img_preview_3"
+              src="img/pepsican/Diet-Pepsi-v2_12oz.png"
+              alt=""
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="products_preview_4" style="user-select: none">
+        <a onclick="hidePreview_4()"
+          ><ion-icon name="apps-outline"></ion-icon
+        ></a>
+        <div class="productdetail_container">
+          <div class="nutrition_detail_4">
+            <div class="nutrition__border_4">
+              <table class="nutrition__table">
+                <tbody>
+                  <tr>
+                    <td colspan="2" class="title">
+                      <span data-js="productTitle">Nitro Pepsi Vanilla</span>
+                    </td>
+                  </tr>
+                  <tr class="line3">
+                    <td colspan="2" class="subtitle">Nutrition Facts</td>
+                  </tr>
+                  <tr>
+                    <td colspan="2">
+                      Serving Size
+                      <span data-js="nutritionServingSize"
+                        >12 fl oz (404 mL)</span
+                      >
+                    </td>
+                  </tr>
+                  <tr>
+                    <td colspan="2" class="padding4">
+                      Servings Per Container 1
+                    </td>
+                  </tr>
+                  <tr>
+                    <td colspan="2"></td>
+                  </tr>
+                  <tr>
+                    <td colspan="2" class="line2">Amount Per Serving</td>
+                  </tr>
+                  <tr>
+                    <td colspan="2" class="line5">
+                      Calories <span data-js="nutritionCalories">230</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td colspan="2" class="line2 right">% Daily Value *</td>
+                  </tr>
+                  <tr class="line2">
+                    <td>Total Fat <span data-js="nutritionFat">0</span>g</td>
+                    <td class="right">
+                      <span data-js="nutritionFatPercentage">0</span>%
+                    </td>
+                  </tr>
+                  <tr class="line2">
+                    <td>Sodium <span data-js="nutritionSodium">140</span>mg</td>
+                    <td class="right">
+                      <span data-js="nutritionSodiumPercentage">6</span>%
+                    </td>
+                  </tr>
+                  <tr class="line2">
+                    <td>
+                      Total Carbohydrate
+                      <span data-js="nutritionCarbs">63</span>g
+                    </td>
+                    <td class="right">
+                      <span data-js="nutritionCarbsPercentage">21</span>%
+                    </td>
+                  </tr>
+                  <tr class="line2">
+                    <td colspan="2" class="indent">
+                      Sugars <span data-js="nutritionSugar">63</span>g
+                    </td>
+                  </tr>
+                  <tr class="line8">
+                    <td colspan="2">
+                      Protein <span data-js="nutritionProtein">0</span>g
+                    </td>
+                  </tr>
+                  <tr class="line2">
+                    <td colspan="2">
+                      Not a significant source of other nutrients.
+                    </td>
+                  </tr>
+                  <tr>
+                    <td colspan="2">
+                      *Percent Daily Values are based on a 2,000 calorie diet.
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <div class="nutrition__ingredients">
+                <span data-js="ingredients"
+                  ><p class="nutrition__ingredient">CARBONATED WATER</p>
+                  <p class="nutrition__ingredient">HIGH FRUCTOSE CORN SYRUP</p>
+                  <p class="nutrition__ingredient">CARAMEL COLOR</p>
+                  <p class="nutrition__ingredient">
+                    NATURAL AND ARTIFICIAL FLAVOR
+                  </p>
+                  <p class="nutrition__ingredient">
+                    SODIUM POLYPHOSPHATES (TO PROTECT FLAVOR)
+                  </p>
+                </span>
+              </div>
+              <div class="nutrition__lastupdated" data-js="lastUpdated">
+                Last updated on March 17, 2022
+              </div>
+            </div>
+
+            <div class="buttons btn-4">
+              <button class="blob-btn">
+                BUY NOW
+                <span class="blob-btn__inner">
+                  <span class="blob-btn__blobs">
+                    <span class="blob-btn__blob"></span>
+                    <span class="blob-btn__blob"></span>
+                    <span class="blob-btn__blob"></span>
+                    <span class="blob-btn__blob"></span>
+                  </span>
+                </span>
+              </button>
+              <a href="#">MORE NUTRITIONAL INFO</a>
+            </div>
+          </div>
+
+          <div class="product_image_4">
+            <img
+              class="img_preview_4"
+              src="img/pepsican/PEP_NItro_DraftCola_Can_Vanilla.png"
+              alt=""
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="products_preview_5" style="user-select: none">
+        <a onclick="hidePreview_5()"
+          ><ion-icon name="apps-outline"></ion-icon
+        ></a>
+        <div class="productdetail_container">
+          <div class="nutrition_detail_5">
+            <div class="nutrition__border_5">
+              <table class="nutrition__table">
+                <tbody>
+                  <tr>
+                    <td colspan="2" class="title">
+                      <span data-js="productTitle">Nitro Pepsi</span>
+                    </td>
+                  </tr>
+                  <tr class="line3">
+                    <td colspan="2" class="subtitle">Nutrition Facts</td>
+                  </tr>
+                  <tr>
+                    <td colspan="2">
+                      Serving Size
+                      <span data-js="nutritionServingSize"
+                        >13.65 fl oz (404 mL)</span
+                      >
+                    </td>
+                  </tr>
+                  <tr>
+                    <td colspan="2" class="padding4">
+                      Servings Per Container 1
+                    </td>
+                  </tr>
+                  <tr>
+                    <td colspan="2"></td>
+                  </tr>
+                  <tr>
+                    <td colspan="2" class="line2">Amount Per Serving</td>
+                  </tr>
+                  <tr>
+                    <td colspan="2" class="line5">
+                      Calories <span data-js="nutritionCalories">230</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td colspan="2" class="line2 right">% Daily Value *</td>
+                  </tr>
+                  <tr class="line2">
+                    <td>Total Fat <span data-js="nutritionFat">0</span>g</td>
+                    <td class="right">
+                      <span data-js="nutritionFatPercentage">0</span>%
+                    </td>
+                  </tr>
+                  <tr class="line2">
+                    <td>Sodium <span data-js="nutritionSodium">140</span>mg</td>
+                    <td class="right">
+                      <span data-js="nutritionSodiumPercentage">6</span>%
+                    </td>
+                  </tr>
+                  <tr class="line2">
+                    <td>
+                      Total Carbohydrate
+                      <span data-js="nutritionCarbs">62</span>g
+                    </td>
+                    <td class="right">
+                      <span data-js="nutritionCarbsPercentage">21</span>%
+                    </td>
+                  </tr>
+                  <tr class="line2">
+                    <td colspan="2" class="indent">
+                      Sugars <span data-js="nutritionSugar">62</span>g
+                    </td>
+                  </tr>
+                  <tr class="line8">
+                    <td colspan="2">
+                      Protein <span data-js="nutritionProtein">0</span>g
+                    </td>
+                  </tr>
+                  <tr class="line2">
+                    <td colspan="2">
+                      Not a significant source of other nutrients.
+                    </td>
+                  </tr>
+                  <tr>
+                    <td colspan="2">
+                      *Percent Daily Values are based on a 2,000 calorie diet.
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <div class="nutrition__ingredients">
+                <span data-js="ingredients"
+                  ><p class="nutrition__ingredient">CARBONATED WATER</p>
+                  <p class="nutrition__ingredient">HIGH FRUCTOSE CORN SYRUP</p>
+                  <p class="nutrition__ingredient">CARAMEL COLOR</p>
+                  <p class="nutrition__ingredient">NATURAL FLAVOR</p>
+                  <p class="nutrition__ingredient">
+                    SODIUM POLYPHOSPHATES (TO PROTECT FLAVOR)
+                  </p>
+                  <p class="nutrition__ingredient">PHOSPHORIC ACID</p>
+                  <p class="nutrition__ingredient">CAFFEINE</p>
+                </span>
+              </div>
+              <div class="nutrition__lastupdated" data-js="lastUpdated">
+                Last updated on March 17, 2022
+              </div>
+            </div>
+
+            <div class="buttons btn-5">
+              <button class="blob-btn">
+                BUY NOW
+                <span class="blob-btn__inner">
+                  <span class="blob-btn__blobs">
+                    <span class="blob-btn__blob"></span>
+                    <span class="blob-btn__blob"></span>
+                    <span class="blob-btn__blob"></span>
+                    <span class="blob-btn__blob"></span>
+                  </span>
+                </span>
+              </button>
+              <a href="#">MORE NUTRITIONAL INFO</a>
+            </div>
+          </div>
+
+          <div class="product_image_5">
+            <img
+              class="img_preview_5"
+              src="img/pepsican/PEP_NItro_DraftCola_Can.png"
+              alt=""
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="products_preview_6" style="user-select: none">
+        <a onclick="hidePreview_6()"
+          ><ion-icon name="apps-outline"></ion-icon
+        ></a>
+        <div class="productdetail_container">
+          <div class="nutrition_detail_6">
+            <div class="nutrition__border_6">
+              <table class="nutrition__table">
+                <tbody>
+                  <tr>
+                    <td colspan="2" class="title">
+                      <span data-js="productTitle">Pepsi Mango</span>
+                    </td>
+                  </tr>
+                  <tr class="line3">
+                    <td colspan="2" class="subtitle">Nutrition Facts</td>
+                  </tr>
+                  <tr>
+                    <td colspan="2">
+                      Serving Size
+                      <span data-js="nutritionServingSize"
+                        >12 fl oz (355 mL)</span
+                      >
+                    </td>
+                  </tr>
+                  <tr>
+                    <td colspan="2" class="padding4">
+                      Servings Per Container 1
+                    </td>
+                  </tr>
+                  <tr>
+                    <td colspan="2"></td>
+                  </tr>
+                  <tr>
+                    <td colspan="2" class="line2">Amount Per Serving</td>
+                  </tr>
+                  <tr>
+                    <td colspan="2" class="line5">
+                      Calories <span data-js="nutritionCalories">150</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td colspan="2" class="line2 right">% Daily Value *</td>
+                  </tr>
+                  <tr class="line2">
+                    <td>Total Fat <span data-js="nutritionFat">0</span>g</td>
+                    <td class="right">
+                      <span data-js="nutritionFatPercentage">0</span>%
+                    </td>
+                  </tr>
+                  <tr class="line2">
+                    <td>Sodium <span data-js="nutritionSodium">95</span>mg</td>
+                    <td class="right">
+                      <span data-js="nutritionSodiumPercentage">4</span>%
+                    </td>
+                  </tr>
+                  <tr class="line2">
+                    <td>
+                      Total Carbohydrate
+                      <span data-js="nutritionCarbs">41</span>g
+                    </td>
+                    <td class="right">
+                      <span data-js="nutritionCarbsPercentage">14</span>%
+                    </td>
+                  </tr>
+                  <tr class="line2">
+                    <td colspan="2" class="indent">
+                      Sugars <span data-js="nutritionSugar">41</span>g
+                    </td>
+                  </tr>
+                  <tr class="line8">
+                    <td colspan="2">
+                      Protein <span data-js="nutritionProtein">0</span>g
+                    </td>
+                  </tr>
+                  <tr class="line2">
+                    <td colspan="2">
+                      Not a significant source of other nutrients.
+                    </td>
+                  </tr>
+                  <tr>
+                    <td colspan="2">
+                      *Percent Daily Values are based on a 2,000 calorie diet.
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <div class="nutrition__ingredients">
+                <span data-js="ingredients"
+                  ><p class="nutrition__ingredient">CARBONATED WATER</p>
+                  <p class="nutrition__ingredient">HIGH FRUCTOSE CORN SYRUP</p>
+                  <p class="nutrition__ingredient">
+                    CLARIFIED MANGO JUICE CONCENTRATE
+                  </p>
+                  <p class="nutrition__ingredient">CARAMEL COLOR</p>
+                  <p class="nutrition__ingredient">
+                    SODIUM POLYPHOSPHATES (TO PROTECT FLAVOR)
+                  </p>
+                  <p class="nutrition__ingredient">PHOSPHORIC ACID</p>
+                </span>
+              </div>
+              <div class="nutrition__lastupdated" data-js="lastUpdated">
+                Last updated on January 11, 2018
+              </div>
+            </div>
+
+            <div class="buttons btn-6">
+              <button class="blob-btn">
+                BUY NOW
+                <span class="blob-btn__inner">
+                  <span class="blob-btn__blobs">
+                    <span class="blob-btn__blob"></span>
+                    <span class="blob-btn__blob"></span>
+                    <span class="blob-btn__blob"></span>
+                    <span class="blob-btn__blob"></span>
+                  </span>
+                </span>
+              </button>
+              <a href="#">MORE NUTRITIONAL INFO</a>
+            </div>
+          </div>
+
+          <div class="product_image_6">
+            <img
+              class="img_preview_6"
+              src="img/pepsican/can-pepsi-mango.png"
+              alt=""
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="products_preview_7" style="user-select: none">
+        <a onclick="hidePreview_7()"
+          ><ion-icon name="apps-outline"></ion-icon
+        ></a>
+        <div class="productdetail_container">
+          <div class="nutrition_detail_7">
+            <div class="nutrition__border_7">
+              <table class="nutrition__table">
+                <tbody>
+                  <tr>
+                    <td colspan="2" class="title">
+                      <span data-js="productTitle">Pepsi Zero Sugar Mango</span>
+                    </td>
+                  </tr>
+                  <tr class="line3">
+                    <td colspan="2" class="subtitle">Nutrition Facts</td>
+                  </tr>
+                  <tr>
+                    <td colspan="2">
+                      Serving Size
+                      <span data-js="nutritionServingSize"
+                        >12 fl oz (355 mL)</span
+                      >
+                    </td>
+                  </tr>
+                  <tr>
+                    <td colspan="2" class="padding4">
+                      Servings Per Container 1
+                    </td>
+                  </tr>
+                  <tr>
+                    <td colspan="2"></td>
+                  </tr>
+                  <tr>
+                    <td colspan="2" class="line2">Amount Per Serving</td>
+                  </tr>
+                  <tr>
+                    <td colspan="2" class="line5">
+                      Calories <span data-js="nutritionCalories">0</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td colspan="2" class="line2 right">% Daily Value *</td>
+                  </tr>
+                  <tr class="line2">
+                    <td>Total Fat <span data-js="nutritionFat">0</span>g</td>
+                    <td class="right">
+                      <span data-js="nutritionFatPercentage">0</span>%
+                    </td>
+                  </tr>
+                  <tr class="line2">
+                    <td>Sodium <span data-js="nutritionSodium">35</span>mg</td>
+                    <td class="right">
+                      <span data-js="nutritionSodiumPercentage">1</span>%
+                    </td>
+                  </tr>
+                  <tr class="line2">
+                    <td>
+                      Total Carbohydrate
+                      <span data-js="nutritionCarbs">0</span>g
+                    </td>
+                    <td class="right">
+                      <span data-js="nutritionCarbsPercentage">0</span>%
+                    </td>
+                  </tr>
+                  <tr class="line2">
+                    <td colspan="2" class="indent">
+                      Sugars <span data-js="nutritionSugar">0</span>g
+                    </td>
+                  </tr>
+                  <tr class="line8">
+                    <td colspan="2">
+                      Protein <span data-js="nutritionProtein">0</span>g
+                    </td>
+                  </tr>
+                  <tr class="line2">
+                    <td colspan="2">
+                      Not a significant source of other nutrients.
+                    </td>
+                  </tr>
+                  <tr>
+                    <td colspan="2">
+                      *Percent Daily Values are based on a 2,000 calorie diet.
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <div class="nutrition__ingredients">
+                <span data-js="ingredients"
+                  ><p class="nutrition__ingredient">CARBONATED WATER</p>
+                  <p class="nutrition__ingredient">CARAMEL COLOR</p>
+                  <p class="nutrition__ingredient">PHOSPHORIC ACID</p>
+                  <p class="nutrition__ingredient">ASPARTAME</p>
+                  <p class="nutrition__ingredient">NATURAL FLAVOR</p>
+                  <p class="nutrition__ingredient">CAFFEINE</p>
+                  <p class="nutrition__ingredient">
+                    POTASSIUM SORBATE (PRESERVES FRESHNESS)
+                  </p>
+                  <p class="nutrition__ingredient">POTASSIUM CITRATE</p>
+                  <p class="nutrition__ingredient">ACESULFAME POTASSIUM</p>
+                  <p class="nutrition__ingredient">CITRIC ACID</p>
+                  <p class="nutrition__ingredient">
+                    PHENYLKETONURICS: CONTAINS PHENYLALANINE
+                  </p></span
+                >
+              </div>
+              <div class="nutrition__lastupdated" data-js="lastUpdated">
+                Last updated on April 03, 2018
+              </div>
+            </div>
+
+            <div class="buttons btn-7">
+              <button class="blob-btn">
+                BUY NOW
+                <span class="blob-btn__inner">
+                  <span class="blob-btn__blobs">
+                    <span class="blob-btn__blob"></span>
+                    <span class="blob-btn__blob"></span>
+                    <span class="blob-btn__blob"></span>
+                    <span class="blob-btn__blob"></span>
+                  </span>
+                </span>
+              </button>
+              <a href="#">MORE NUTRITIONAL INFO</a>
+            </div>
+          </div>
+
+          <div class="product_image_7">
+            <img
+              class="img_preview_7"
+              src="img/pepsican/can-pepsi-zero-sugar-mango.png"
+              alt=""
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="products_preview_8" style="user-select: none">
+        <a onclick="hidePreview_8()"
+          ><ion-icon name="apps-outline"></ion-icon
+        ></a>
+        <div class="productdetail_container">
+          <div class="nutrition_detail_8">
+            <div class="nutrition__border_8">
+              <table class="nutrition__table">
+                <tbody>
+                  <tr>
+                    <td colspan="2" class="title">
+                      <span data-js="productTitle">Pepsi Wild Cherry</span>
+                    </td>
+                  </tr>
+                  <tr class="line3">
+                    <td colspan="2" class="subtitle">Nutrition Facts</td>
+                  </tr>
+                  <tr>
+                    <td colspan="2">
+                      Serving Size
+                      <span data-js="nutritionServingSize"
+                        >12 fl oz (355 mL)</span
+                      >
+                    </td>
+                  </tr>
+                  <tr>
+                    <td colspan="2" class="padding4">
+                      Servings Per Container 1
+                    </td>
+                  </tr>
+                  <tr>
+                    <td colspan="2"></td>
+                  </tr>
+                  <tr>
+                    <td colspan="2" class="line2">Amount Per Serving</td>
+                  </tr>
+                  <tr>
+                    <td colspan="2" class="line5">
+                      Calories <span data-js="nutritionCalories">160</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td colspan="2" class="line2 right">% Daily Value *</td>
+                  </tr>
+                  <tr class="line2">
+                    <td>Total Fat <span data-js="nutritionFat">0</span>g</td>
+                    <td class="right">
+                      <span data-js="nutritionFatPercentage">0</span>%
+                    </td>
+                  </tr>
+                  <tr class="line2">
+                    <td>Sodium <span data-js="nutritionSodium">30</span>mg</td>
+                    <td class="right">
+                      <span data-js="nutritionSodiumPercentage">1</span>%
+                    </td>
+                  </tr>
+                  <tr class="line2">
+                    <td>
+                      Total Carbohydrate
+                      <span data-js="nutritionCarbs">42</span>g
+                    </td>
+                    <td class="right">
+                      <span data-js="nutritionCarbsPercentage">14</span>%
+                    </td>
+                  </tr>
+                  <tr class="line2">
+                    <td colspan="2" class="indent">
+                      Sugars <span data-js="nutritionSugar">42</span>g
+                    </td>
+                  </tr>
+                  <tr class="line8">
+                    <td colspan="2">
+                      Protein <span data-js="nutritionProtein">0</span>g
+                    </td>
+                  </tr>
+                  <tr class="line2">
+                    <td colspan="2">
+                      Not a significant source of other nutrients.
+                    </td>
+                  </tr>
+                  <tr>
+                    <td colspan="2">
+                      *Percent Daily Values are based on a 2,000 calorie diet.
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <div class="nutrition__ingredients">
+                <span data-js="ingredients"
+                  ><p class="nutrition__ingredient">CARBONATED WATER</p>
+                  <p class="nutrition__ingredient">HIGH FRUCTOSE CORN SYRUP</p>
+                  <p class="nutrition__ingredient">CARAMEL COLOR</p>
+                  <p class="nutrition__ingredient">SUGAR</p>
+                  <p class="nutrition__ingredient">PHOSPHORIC ACID</p>
+                  <p class="nutrition__ingredient">NATURAL FLAVOR</p>
+                  <p class="nutrition__ingredient">CAFFEINE</p>
+                  <p class="nutrition__ingredient">CITRIC ACID</p></span
+                >
+              </div>
+              <div class="nutrition__lastupdated" data-js="lastUpdated">
+                Last updated on January 11, 2018
+              </div>
+            </div>
+
+            <div class="buttons btn-8">
+              <button class="blob-btn">
+                BUY NOW
+                <span class="blob-btn__inner">
+                  <span class="blob-btn__blobs">
+                    <span class="blob-btn__blob"></span>
+                    <span class="blob-btn__blob"></span>
+                    <span class="blob-btn__blob"></span>
+                    <span class="blob-btn__blob"></span>
+                  </span>
+                </span>
+              </button>
+              <a href="#">MORE NUTRITIONAL INFO</a>
+            </div>
+          </div>
+
+          <div class="product_image_8">
+            <img
+              class="img_preview_8"
+              src="img/pepsican/can-pepsi-cherry-v2.png"
+              alt=""
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="products_preview_9" style="user-select: none">
+        <a onclick="hidePreview_9()"
+          ><ion-icon name="apps-outline"></ion-icon
+        ></a>
+        <div class="productdetail_container">
+          <div class="nutrition_detail_9">
+            <div class="nutrition__border_9">
+              <table class="nutrition__table">
+                <tbody>
+                  <tr>
+                    <td colspan="2" class="title">
+                      <span data-js="productTitle">Diet Pepsi Wild Cherry</span>
+                    </td>
+                  </tr>
+                  <tr class="line3">
+                    <td colspan="2" class="subtitle">Nutrition Facts</td>
+                  </tr>
+                  <tr>
+                    <td colspan="2">
+                      Serving Size
+                      <span data-js="nutritionServingSize"
+                        >12 fl oz (355 mL)</span
+                      >
+                    </td>
+                  </tr>
+                  <tr>
+                    <td colspan="2" class="padding4">
+                      Servings Per Container 1
+                    </td>
+                  </tr>
+                  <tr>
+                    <td colspan="2"></td>
+                  </tr>
+                  <tr>
+                    <td colspan="2" class="line2">Amount Per Serving</td>
+                  </tr>
+                  <tr>
+                    <td colspan="2" class="line5">
+                      Calories <span data-js="nutritionCalories">0</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td colspan="2" class="line2 right">% Daily Value *</td>
+                  </tr>
+                  <tr class="line2">
+                    <td>Total Fat <span data-js="nutritionFat">0</span>g</td>
+                    <td class="right">
+                      <span data-js="nutritionFatPercentage">0</span>%
+                    </td>
+                  </tr>
+                  <tr class="line2">
+                    <td>Sodium <span data-js="nutritionSodium">35</span>mg</td>
+                    <td class="right">
+                      <span data-js="nutritionSodiumPercentage">1</span>%
+                    </td>
+                  </tr>
+                  <tr class="line2">
+                    <td>
+                      Total Carbohydrate
+                      <span data-js="nutritionCarbs">0</span>g
+                    </td>
+                    <td class="right">
+                      <span data-js="nutritionCarbsPercentage">0</span>%
+                    </td>
+                  </tr>
+                  <tr class="line2">
+                    <td colspan="2" class="indent">
+                      Sugars <span data-js="nutritionSugar">0</span>g
+                    </td>
+                  </tr>
+                  <tr class="line8">
+                    <td colspan="2">
+                      Protein <span data-js="nutritionProtein">0</span>g
+                    </td>
+                  </tr>
+                  <tr class="line2">
+                    <td colspan="2">
+                      Not a significant source of other nutrients.
+                    </td>
+                  </tr>
+                  <tr>
+                    <td colspan="2">
+                      *Percent Daily Values are based on a 2,000 calorie diet.
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <div class="nutrition__ingredients">
+                <span data-js="ingredients"
+                  ><p class="nutrition__ingredient">CARBONATED WATER</p>
+                  <p class="nutrition__ingredient">CARAMEL COLOR</p>
+                  <p class="nutrition__ingredient">PHOSPHORIC ACID</p>
+                  <p class="nutrition__ingredient">NATURAL FLAVOR</p>
+                  <p class="nutrition__ingredient">ASPARTAME</p>
+                  <p class="nutrition__ingredient">
+                    POTASSIUM BENZOATE (PRESERVES FRESHNESS)
+                  </p>
+                  <p class="nutrition__ingredient">POTASSIUM CITRATE</p>
+                  <p class="nutrition__ingredient">CITRIC ACID</p>
+                  <p class="nutrition__ingredient">CAFFEINE</p>
+                </span>
+              </div>
+              <div class="nutrition__lastupdated" data-js="lastUpdated">
+                Last updated on August 13, 2018
+              </div>
+            </div>
+
+            <div class="buttons btn-9">
+              <button class="blob-btn">
+                BUY NOW
+                <span class="blob-btn__inner">
+                  <span class="blob-btn__blobs">
+                    <span class="blob-btn__blob"></span>
+                    <span class="blob-btn__blob"></span>
+                    <span class="blob-btn__blob"></span>
+                    <span class="blob-btn__blob"></span>
+                  </span>
+                </span>
+              </button>
+              <a href="#">MORE NUTRITIONAL INFO</a>
+            </div>
+          </div>
+
+          <div class="product_image_9">
+            <img
+              class="img_preview_9"
+              src="img/pepsican/Diet-Pepsi-Cherry-v3_12oz.png"
+              alt=""
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="products_preview_10" style="user-select: none">
+        <a onclick="hidePreview_10()"
+          ><ion-icon name="apps-outline"></ion-icon
+        ></a>
+        <div class="productdetail_container">
+          <div class="nutrition_detail_10">
+            <div class="nutrition__border_10">
+              <table class="nutrition__table">
+                <tbody>
+                  <tr>
+                    <td colspan="2" class="title">
+                      <span data-js="productTitle"
+                        >Pepsi Zero Sugar Wild Cherry</span
+                      >
+                    </td>
+                  </tr>
+                  <tr class="line3">
+                    <td colspan="2" class="subtitle">Nutrition Facts</td>
+                  </tr>
+                  <tr>
+                    <td colspan="2">
+                      Serving Size
+                      <span data-js="nutritionServingSize"
+                        >12 fl oz (355 mL)</span
+                      >
+                    </td>
+                  </tr>
+                  <tr>
+                    <td colspan="2" class="padding4">
+                      Servings Per Container 1
+                    </td>
+                  </tr>
+                  <tr>
+                    <td colspan="2"></td>
+                  </tr>
+                  <tr>
+                    <td colspan="2" class="line2">Amount Per Serving</td>
+                  </tr>
+                  <tr>
+                    <td colspan="2" class="line5">
+                      Calories <span data-js="nutritionCalories">0</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td colspan="2" class="line2 right">% Daily Value *</td>
+                  </tr>
+                  <tr class="line2">
+                    <td>Total Fat <span data-js="nutritionFat">0</span>g</td>
+                    <td class="right">
+                      <span data-js="nutritionFatPercentage">0</span>%
+                    </td>
+                  </tr>
+                  <tr class="line2">
+                    <td>Sodium <span data-js="nutritionSodium">35</span>mg</td>
+                    <td class="right">
+                      <span data-js="nutritionSodiumPercentage">1</span>%
+                    </td>
+                  </tr>
+                  <tr class="line2">
+                    <td>
+                      Total Carbohydrate
+                      <span data-js="nutritionCarbs">0</span>g
+                    </td>
+                    <td class="right">
+                      <span data-js="nutritionCarbsPercentage">0</span>%
+                    </td>
+                  </tr>
+                  <tr class="line2">
+                    <td colspan="2" class="indent">
+                      Sugars <span data-js="nutritionSugar">0</span>g
+                    </td>
+                  </tr>
+                  <tr class="line8">
+                    <td colspan="2">
+                      Protein <span data-js="nutritionProtein">0</span>g
+                    </td>
+                  </tr>
+                  <tr class="line2">
+                    <td colspan="2">
+                      Not a significant source of other nutrients.
+                    </td>
+                  </tr>
+                  <tr>
+                    <td colspan="2">
+                      *Percent Daily Values are based on a 2,000 calorie diet.
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <div class="nutrition__ingredients">
+                <span data-js="ingredients"
+                  ><p class="nutrition__ingredient">CARBONATED WATER</p>
+                  <p class="nutrition__ingredient">CARAMEL COLOR</p>
+                  <p class="nutrition__ingredient">PHOSPHORIC ACID</p>
+                  <p class="nutrition__ingredient">NATURAL FLAVOR</p>
+                  <p class="nutrition__ingredient">ASPARTAME</p>
+                  <p class="nutrition__ingredient">CAFFEINE</p>
+                  <p class="nutrition__ingredient">
+                    POTASSIUM SORBATE (PRESERVES FRESHNESS)
+                  </p>
+                  <p class="nutrition__ingredient">POTASSIUM CITRATE</p>
+                </span>
+              </div>
+              <div class="nutrition__lastupdated" data-js="lastUpdated">
+                Last updated on April 03, 2018
+              </div>
+            </div>
+
+            <div class="buttons btn-10">
+              <button class="blob-btn">
+                BUY NOW
+                <span class="blob-btn__inner">
+                  <span class="blob-btn__blobs">
+                    <span class="blob-btn__blob"></span>
+                    <span class="blob-btn__blob"></span>
+                    <span class="blob-btn__blob"></span>
+                    <span class="blob-btn__blob"></span>
+                  </span>
+                </span>
+              </button>
+              <a href="#">MORE NUTRITIONAL INFO</a>
+            </div>
+          </div>
+
+          <div class="product_image_10">
+            <img
+              class="img_preview_10"
+              src="img/pepsican/Pepsi-Zero-Wild-Cherry-12oz-refreshed-v2.png"
+              alt=""
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="products_preview_11" style="user-select: none">
+        <a onclick="hidePreview_11()"
+          ><ion-icon name="apps-outline"></ion-icon
+        ></a>
+        <div class="productdetail_container">
+          <div class="nutrition_detail_11">
+            <div class="nutrition__border_11">
+              <table class="nutrition__table">
+                <tbody>
+                  <tr>
+                    <td colspan="2" class="title">
+                      <span data-js="productTitle">Pepsi Real Sugar</span>
+                    </td>
+                  </tr>
+                  <tr class="line3">
+                    <td colspan="2" class="subtitle">Nutrition Facts</td>
+                  </tr>
+                  <tr>
+                    <td colspan="2">
+                      Serving Size
+                      <span data-js="nutritionServingSize"
+                        >12 fl oz (355 mL)</span
+                      >
+                    </td>
+                  </tr>
+                  <tr>
+                    <td colspan="2" class="padding4">
+                      Servings Per Container 1
+                    </td>
+                  </tr>
+                  <tr>
+                    <td colspan="2"></td>
+                  </tr>
+                  <tr>
+                    <td colspan="2" class="line2">Amount Per Serving</td>
+                  </tr>
+                  <tr>
+                    <td colspan="2" class="line5">
+                      Calories <span data-js="nutritionCalories">150</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td colspan="2" class="line2 right">% Daily Value *</td>
+                  </tr>
+                  <tr class="line2">
+                    <td>Total Fat <span data-js="nutritionFat">0</span>g</td>
+                    <td class="right">
+                      <span data-js="nutritionFatPercentage">0</span>%
+                    </td>
+                  </tr>
+                  <tr class="line2">
+                    <td>Sodium <span data-js="nutritionSodium">30</span>mg</td>
+                    <td class="right">
+                      <span data-js="nutritionSodiumPercentage">1</span>%
+                    </td>
+                  </tr>
+                  <tr class="line2">
+                    <td>
+                      Total Carbohydrate
+                      <span data-js="nutritionCarbs">40</span>g
+                    </td>
+                    <td class="right">
+                      <span data-js="nutritionCarbsPercentage">13</span>%
+                    </td>
+                  </tr>
+                  <tr class="line2">
+                    <td colspan="2" class="indent">
+                      Sugars <span data-js="nutritionSugar">40</span>g
+                    </td>
+                  </tr>
+                  <tr class="line8">
+                    <td colspan="2">
+                      Protein <span data-js="nutritionProtein">0</span>g
+                    </td>
+                  </tr>
+                  <tr class="line2">
+                    <td colspan="2">
+                      Not a significant source of other nutrients.
+                    </td>
+                  </tr>
+                  <tr>
+                    <td colspan="2">
+                      *Percent Daily Values are based on a 2,000 calorie diet.
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <div class="nutrition__ingredients">
+                <span data-js="ingredients"
+                  ><p class="nutrition__ingredient">CARBONATED WATER</p>
+                  <p class="nutrition__ingredient">SUGAR</p>
+                  <p class="nutrition__ingredient">CARAMEL COLOR</p>
+                  <p class="nutrition__ingredient">PHOSPHORIC ACID</p>
+                  <p class="nutrition__ingredient">CAFFEINE</p>
+                  <p class="nutrition__ingredient">NATURAL FLAVOR</p></span
+                >
+              </div>
+              <div class="nutrition__lastupdated" data-js="lastUpdated">
+                Last updated on January 11, 2018
+              </div>
+            </div>
+
+            <div class="buttons btn-11">
+              <button class="blob-btn">
+                BUY NOW
+                <span class="blob-btn__inner">
+                  <span class="blob-btn__blobs">
+                    <span class="blob-btn__blob"></span>
+                    <span class="blob-btn__blob"></span>
+                    <span class="blob-btn__blob"></span>
+                    <span class="blob-btn__blob"></span>
+                  </span>
+                </span>
+              </button>
+              <a href="#">MORE NUTRITIONAL INFO</a>
+            </div>
+          </div>
+
+          <div class="product_image_11">
+            <img
+              class="img_preview_11"
+              src="img/pepsican/can-real-sugar-reg.png"
+              alt=""
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="products_preview_12" style="user-select: none">
+        <a onclick="hidePreview_12()"
+          ><ion-icon name="apps-outline"></ion-icon
+        ></a>
+        <div class="productdetail_container">
+          <div class="nutrition_detail_12">
+            <div class="nutrition__border_12">
+              <table class="nutrition__table">
+                <tbody>
+                  <tr>
+                    <td colspan="2" class="title">
+                      <span data-js="productTitle">Pepsi Caffeine Free</span>
+                    </td>
+                  </tr>
+                  <tr class="line3">
+                    <td colspan="2" class="subtitle">Nutrition Facts</td>
+                  </tr>
+                  <tr>
+                    <td colspan="2">
+                      Serving Size
+                      <span data-js="nutritionServingSize"
+                        >12 fl oz (355 mL)</span
+                      >
+                    </td>
+                  </tr>
+                  <tr>
+                    <td colspan="2" class="padding4">
+                      Servings Per Container 1
+                    </td>
+                  </tr>
+                  <tr>
+                    <td colspan="2"></td>
+                  </tr>
+                  <tr>
+                    <td colspan="2" class="line2">Amount Per Serving</td>
+                  </tr>
+                  <tr>
+                    <td colspan="2" class="line5">
+                      Calories <span data-js="nutritionCalories">150</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td colspan="2" class="line2 right">% Daily Value *</td>
+                  </tr>
+                  <tr class="line2">
+                    <td>Total Fat <span data-js="nutritionFat">0</span>g</td>
+                    <td class="right">
+                      <span data-js="nutritionFatPercentage">0</span>%
+                    </td>
+                  </tr>
+                  <tr class="line2">
+                    <td>Sodium <span data-js="nutritionSodium">30</span>mg</td>
+                    <td class="right">
+                      <span data-js="nutritionSodiumPercentage">1</span>%
+                    </td>
+                  </tr>
+                  <tr class="line2">
+                    <td>
+                      Total Carbohydrate
+                      <span data-js="nutritionCarbs">41</span>g
+                    </td>
+                    <td class="right">
+                      <span data-js="nutritionCarbsPercentage">14</span>%
+                    </td>
+                  </tr>
+                  <tr class="line2">
+                    <td colspan="2" class="indent">
+                      Sugars <span data-js="nutritionSugar">41</span>g
+                    </td>
+                  </tr>
+                  <tr class="line8">
+                    <td colspan="2">
+                      Protein <span data-js="nutritionProtein">0</span>g
+                    </td>
+                  </tr>
+                  <tr class="line2">
+                    <td colspan="2">
+                      Not a significant source of other nutrients.
+                    </td>
+                  </tr>
+                  <tr>
+                    <td colspan="2">
+                      *Percent Daily Values are based on a 2,000 calorie diet.
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <div class="nutrition__ingredients">
+                <span data-js="ingredients"
+                  ><p class="nutrition__ingredient">CARBONATED WATER</p>
+                  <p class="nutrition__ingredient">HIGH FRUCTOSE CORN SYRUP</p>
+                  <p class="nutrition__ingredient">CARAMEL COLOR</p>
+                  <p class="nutrition__ingredient">SUGAR</p>
+                  <p class="nutrition__ingredient">PHOSPHORIC ACID</p>
+                  <p class="nutrition__ingredient">CITRIC ACID</p>
+                  <p class="nutrition__ingredient">NATURAL FLAVOR</p></span
+                >
+              </div>
+              <div class="nutrition__lastupdated" data-js="lastUpdated">
+                Last updated on January 11, 2018
+              </div>
+            </div>
+
+            <div class="buttons btn-12">
+              <button class="blob-btn">
+                BUY NOW
+                <span class="blob-btn__inner">
+                  <span class="blob-btn__blobs">
+                    <span class="blob-btn__blob"></span>
+                    <span class="blob-btn__blob"></span>
+                    <span class="blob-btn__blob"></span>
+                    <span class="blob-btn__blob"></span>
+                  </span>
+                </span>
+              </button>
+              <a href="#">MORE NUTRITIONAL INFO</a>
+            </div>
+          </div>
+
+          <div class="product_image_12">
+            <img
+              class="img_preview_12"
+              src="img/pepsican/can-pepsi-caffeine-free.png"
+              alt=""
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="products_preview_13" style="user-select: none">
+        <a onclick="hidePreview_13()"
+          ><ion-icon name="apps-outline"></ion-icon
+        ></a>
+        <div class="productdetail_container">
+          <div class="nutrition_detail_13">
+            <div class="nutrition__border_13">
+              <table class="nutrition__table">
+                <tbody>
+                  <tr>
+                    <td colspan="2" class="title">
+                      <span data-js="productTitle"
+                        >Diet Pepsi Caffeine Free</span
+                      >
+                    </td>
+                  </tr>
+                  <tr class="line3">
+                    <td colspan="2" class="subtitle">Nutrition Facts</td>
+                  </tr>
+                  <tr>
+                    <td colspan="2">
+                      Serving Size
+                      <span data-js="nutritionServingSize"
+                        >12 fl oz (355 mL)</span
+                      >
+                    </td>
+                  </tr>
+                  <tr>
+                    <td colspan="2" class="padding4">
+                      Servings Per Container 1
+                    </td>
+                  </tr>
+                  <tr>
+                    <td colspan="2"></td>
+                  </tr>
+                  <tr>
+                    <td colspan="2" class="line2">Amount Per Serving</td>
+                  </tr>
+                  <tr>
+                    <td colspan="2" class="line5">
+                      Calories <span data-js="nutritionCalories">0</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td colspan="2" class="line2 right">% Daily Value *</td>
+                  </tr>
+                  <tr class="line2">
+                    <td>Total Fat <span data-js="nutritionFat">0</span>g</td>
+                    <td class="right">
+                      <span data-js="nutritionFatPercentage">0</span>%
+                    </td>
+                  </tr>
+                  <tr class="line2">
+                    <td>Sodium <span data-js="nutritionSodium">50</span>mg</td>
+                    <td class="right">
+                      <span data-js="nutritionSodiumPercentage">2</span>%
+                    </td>
+                  </tr>
+                  <tr class="line2">
+                    <td>
+                      Total Carbohydrate
+                      <span data-js="nutritionCarbs">0</span>g
+                    </td>
+                    <td class="right">
+                      <span data-js="nutritionCarbsPercentage">0</span>%
+                    </td>
+                  </tr>
+                  <tr class="line2">
+                    <td colspan="2" class="indent">
+                      Sugars <span data-js="nutritionSugar">0</span>g
+                    </td>
+                  </tr>
+                  <tr class="line8">
+                    <td colspan="2">
+                      Protein <span data-js="nutritionProtein">0</span>g
+                    </td>
+                  </tr>
+                  <tr class="line2">
+                    <td colspan="2">
+                      Not a significant source of other nutrients.
+                    </td>
+                  </tr>
+                  <tr>
+                    <td colspan="2">
+                      *Percent Daily Values are based on a 2,000 calorie diet.
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <div class="nutrition__ingredients">
+                <span data-js="ingredients"
+                  ><p class="nutrition__ingredient">CARBONATED WATER</p>
+                  <p class="nutrition__ingredient">CARAMEL COLOR</p>
+                  <p class="nutrition__ingredient">ASPARTAME</p>
+                  <p class="nutrition__ingredient">PHOSPHORIC ACID</p>
+                  <p class="nutrition__ingredient">
+                    POTASSIUM BENZOATE (PRESERVES FRESHNESS)
+                  </p>
+                  <p class="nutrition__ingredient">CITRIC ACID</p>
+                  <p class="nutrition__ingredient">NATURAL FLAVOR</p>
+                </span>
+              </div>
+              <div class="nutrition__lastupdated" data-js="lastUpdated">
+                Last updated on August 13, 2018
+              </div>
+            </div>
+
+            <div class="buttons btn-13">
+              <button class="blob-btn">
+                BUY NOW
+                <span class="blob-btn__inner">
+                  <span class="blob-btn__blobs">
+                    <span class="blob-btn__blob"></span>
+                    <span class="blob-btn__blob"></span>
+                    <span class="blob-btn__blob"></span>
+                    <span class="blob-btn__blob"></span>
+                  </span>
+                </span>
+              </button>
+              <a href="#">MORE NUTRITIONAL INFO</a>
+            </div>
+          </div>
+
+          <div class="product_image_13">
+            <img
+              class="img_preview_13"
+              src="img/pepsican/Diet-Pepsi-CaffFree-v2_12oz.png"
+              alt=""
             />
           </div>
         </div>
@@ -318,11 +2055,11 @@
     <!-- --------------------End Footer--------------------- -->
 
     <!-- --------------------Cursor------------------------- -->
-    <div id="app">
+    <!-- <div id="app">
       <div :class="[ 'g-cursor']">
         <div :style="cursorCircle" class="g-cursor__circle"></div>
       </div>
-    </div>
+    </div> -->
     <!-- --------------------End Cursor--------------------- -->
 
     <!-- --------------------Link Script-------------------- -->
@@ -331,6 +2068,21 @@
     <!-- Vanilla JS -->
     <script type="text/javascript" src="./js/vanilla-tilt.min.js"></script>
     <!--End Vanilla JS -->
+
+    <!-- Lord-icon -->
+    <script src="https://cdn.lordicon.com/xdjxvujz.js"></script>
+    <!--End Lord-icon -->
+
+    <!-- Ion-icon -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <!--End Ion-icon -->
 
     <script src="./js/products.js"></script>
     <!-- --------------------End Link Script---------------- -->
