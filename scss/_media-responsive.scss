@@ -365,6 +365,59 @@
       }
     }
   }
+
+  .products_preview_1 {
+    ion-icon {
+      z-index: 22;
+    }
+
+    .productdetail_container {
+      width: 100%;
+      flex-direction: column-reverse;
+      justify-content: flex-end;
+
+      .nutrition_detail_1 {
+        width: 90%;
+        height: fit-content;
+        margin-top: 0px;
+
+        .nutrition__border_1 {
+
+          .nutrition__table {
+
+            td {
+            }
+
+            .line3 {
+            }
+
+            .line5 {
+            }
+
+            .line8 {
+            }
+          }
+
+          .nutrition__ingredients {
+          }
+
+          .nutrition__lastupdated {
+            font-size: 5px;
+          }
+        }
+
+        .buttons {
+        }
+      }
+
+      .product_image_1 {
+        width: 100%;
+        height: 28rem;
+        margin: 25px auto;
+        margin-bottom: 0px;
+      }
+    }
+  }
 }
 /* --------------End Media Query For Tablet------------ */
 
@@ -775,7 +828,7 @@
       .nutrition_detail_1 {
         width: 90%;
         height: fit-content;
-        margin: 5px auto;
+        margin: 0px auto;
         font-size: 1rem;
 
         .nutrition__border_1 {
@@ -783,6 +836,10 @@
 
           .nutrition__table {
             padding: 2px;
+
+            td {
+              padding: 0.2em 0.25em !important;
+            }
 
             .line3 {
               border-bottom: 5px solid #000 !important;
@@ -834,7 +891,7 @@
       .nutrition_detail_2 {
         width: 90%;
         height: fit-content;
-        margin: 5px auto;
+        margin: 0px auto;
         font-size: 1rem;
 
         .nutrition__border_2 {
@@ -842,6 +899,10 @@
 
           .nutrition__table {
             padding: 2px;
+
+            td {
+              padding: 0.2em 0.25em !important;
+            }
 
             .title {
               font-size: 31px;
@@ -897,7 +958,7 @@
       .nutrition_detail_3 {
         width: 90%;
         height: fit-content;
-        margin: 5px auto;
+        margin: 0px auto;
         font-size: 1rem;
 
         .nutrition__border_3 {
@@ -905,6 +966,10 @@
 
           .nutrition__table {
             padding: 2px;
+
+            td {
+              padding: 0.2em 0.25em !important;
+            }
 
             .line3 {
               border-bottom: 5px solid #000 !important;
@@ -934,6 +999,668 @@
       }
 
       .product_image_3 {
+        width: 100%;
+        height: 22rem;
+        margin: 25px auto;
+        margin-bottom: 0px;
+      }
+    }
+  }
+
+  .products_preview_4 {
+    ion-icon {
+      z-index: 22;
+    }
+
+    .productdetail_container {
+      width: 100%;
+      height: 100vh;
+      flex-direction: column-reverse;
+      justify-content: flex-end;
+
+      .nutrition_detail_4 {
+        width: 90%;
+        height: fit-content;
+        margin: 0px auto;
+        font-size: 1rem;
+
+        .nutrition__border_4 {
+          padding: 3px;
+
+          .nutrition__table {
+            padding: 2px;
+
+            td {
+              padding: 0.2em 0.25em !important;
+            }
+
+            .title {
+              font-size: 31px;
+            }
+
+            .line3 {
+              border-bottom: 5px solid #000 !important;
+            }
+
+            .line5 {
+              border-bottom: 2px solid #000 !important;
+            }
+
+            .line8 {
+              border-bottom: 2px solid #000 !important;
+            }
+          }
+
+          .nutrition__ingredients {
+            margin: 0.5rem auto;
+          }
+
+          .nutrition__lastupdated {
+            font-size: 5px;
+          }
+        }
+
+        .buttons {
+          margin-top: 15px;
+        }
+      }
+
+      .product_image_4 {
+        width: 100%;
+        height: 22rem;
+        margin: 25px auto;
+        margin-bottom: 0px;
+      }
+    }
+  }
+
+  .products_preview_5 {
+    ion-icon {
+      z-index: 22;
+    }
+
+    .productdetail_container {
+      width: 100%;
+      height: 100vh;
+      flex-direction: column-reverse;
+      justify-content: flex-end;
+
+      .nutrition_detail_5 {
+        width: 90%;
+        height: fit-content;
+        margin: 0px auto;
+        font-size: 1rem;
+
+        .nutrition__border_5 {
+          padding: 3px;
+
+          .nutrition__table {
+            padding: 2px;
+
+            td {
+              padding: 0.2em 0.25em !important;
+            }
+
+            .line3 {
+              border-bottom: 5px solid #000 !important;
+            }
+
+            .line5 {
+              border-bottom: 2px solid #000 !important;
+            }
+
+            .line8 {
+              border-bottom: 2px solid #000 !important;
+            }
+          }
+
+          .nutrition__ingredients {
+            margin: 0.5rem auto;
+          }
+
+          .nutrition__lastupdated {
+            font-size: 5px;
+          }
+        }
+
+        .buttons {
+          margin-top: 15px;
+        }
+      }
+
+      .product_image_5 {
+        width: 100%;
+        height: 22rem;
+        margin: 25px auto;
+        margin-bottom: 0px;
+      }
+    }
+  }
+
+  .products_preview_6 {
+    ion-icon {
+      z-index: 22;
+    }
+
+    .productdetail_container {
+      width: 100%;
+      height: 100vh;
+      flex-direction: column-reverse;
+      justify-content: flex-end;
+
+      .nutrition_detail_6 {
+        width: 90%;
+        height: fit-content;
+        margin: 0px auto;
+        font-size: 1rem;
+
+        .nutrition__border_6 {
+          padding: 3px;
+
+          .nutrition__table {
+            padding: 2px;
+
+            td {
+              padding: 0.2em 0.25em !important;
+            }
+
+            .line3 {
+              border-bottom: 5px solid #000 !important;
+            }
+
+            .line5 {
+              border-bottom: 2px solid #000 !important;
+            }
+
+            .line8 {
+              border-bottom: 2px solid #000 !important;
+            }
+          }
+
+          .nutrition__ingredients {
+            margin: 0.5rem auto;
+          }
+
+          .nutrition__lastupdated {
+            font-size: 5px;
+          }
+        }
+
+        .buttons {
+          margin-top: 15px;
+        }
+      }
+
+      .product_image_6 {
+        width: 100%;
+        height: 22rem;
+        margin: 25px auto;
+        margin-bottom: 0px;
+      }
+    }
+  }
+
+  .products_preview_7 {
+    ion-icon {
+      z-index: 22;
+    }
+
+    .productdetail_container {
+      width: 100%;
+      height: 100vh;
+      flex-direction: column-reverse;
+      justify-content: flex-end;
+
+      .nutrition_detail_7 {
+        width: 90%;
+        height: fit-content;
+        margin: 0px auto;
+        font-size: 1rem;
+
+        .nutrition__border_7 {
+          padding: 3px;
+
+          .nutrition__table {
+            padding: 2px;
+
+            td {
+              padding: 0.2em 0.25em !important;
+            }
+
+            .title {
+              font-size: 25px;
+            }
+
+            .line3 {
+              border-bottom: 5px solid #000 !important;
+            }
+
+            .line5 {
+              border-bottom: 2px solid #000 !important;
+            }
+
+            .line8 {
+              border-bottom: 2px solid #000 !important;
+            }
+          }
+
+          .nutrition__ingredients {
+            margin: 0.5rem auto;
+          }
+
+          .nutrition__lastupdated {
+            font-size: 5px;
+          }
+        }
+
+        .buttons {
+          margin-top: 15px;
+        }
+      }
+
+      .product_image_7 {
+        width: 100%;
+        height: 22rem;
+        margin: 25px auto;
+        margin-bottom: 0px;
+      }
+    }
+  }
+
+  .products_preview_8 {
+    ion-icon {
+      z-index: 22;
+    }
+
+    .productdetail_container {
+      width: 100%;
+      height: 100vh;
+      flex-direction: column-reverse;
+      justify-content: flex-end;
+
+      .nutrition_detail_8 {
+        width: 90%;
+        height: fit-content;
+        margin: 0px auto;
+        font-size: 1rem;
+
+        .nutrition__border_8 {
+          padding: 3px;
+
+          .nutrition__table {
+            padding: 2px;
+
+            td {
+              padding: 0.2em 0.25em !important;
+            }
+
+            .title {
+              font-size: 34px;
+            }
+
+            .line3 {
+              border-bottom: 5px solid #000 !important;
+            }
+
+            .line5 {
+              border-bottom: 2px solid #000 !important;
+            }
+
+            .line8 {
+              border-bottom: 2px solid #000 !important;
+            }
+          }
+
+          .nutrition__ingredients {
+            margin: 0.5rem auto;
+          }
+
+          .nutrition__lastupdated {
+            font-size: 5px;
+          }
+        }
+
+        .buttons {
+          margin-top: 15px;
+        }
+      }
+
+      .product_image_8 {
+        width: 100%;
+        height: 22rem;
+        margin: 25px auto;
+        margin-bottom: 0px;
+      }
+    }
+  }
+
+  .products_preview_9 {
+    ion-icon {
+      z-index: 22;
+    }
+
+    .productdetail_container {
+      width: 100%;
+      height: 100vh;
+      flex-direction: column-reverse;
+      justify-content: flex-end;
+
+      .nutrition_detail_9 {
+        width: 90%;
+        height: fit-content;
+        margin: 0px auto;
+        font-size: 1rem;
+
+        .nutrition__border_9 {
+          padding: 3px;
+
+          .nutrition__table {
+            padding: 2px;
+
+            td {
+              padding: 0.2em 0.25em !important;
+            }
+
+            .title {
+              font-size: 25px;
+            }
+
+            .line3 {
+              border-bottom: 5px solid #000 !important;
+            }
+
+            .line5 {
+              border-bottom: 2px solid #000 !important;
+            }
+
+            .line8 {
+              border-bottom: 2px solid #000 !important;
+            }
+          }
+
+          .nutrition__ingredients {
+            margin: 0.5rem auto;
+          }
+
+          .nutrition__lastupdated {
+            font-size: 5px;
+          }
+        }
+
+        .buttons {
+          margin-top: 15px;
+        }
+      }
+
+      .product_image_9 {
+        width: 100%;
+        height: 22rem;
+        margin: 25px auto;
+        margin-bottom: 0px;
+      }
+    }
+  }
+
+  .products_preview_10 {
+    ion-icon {
+      z-index: 22;
+    }
+
+    .productdetail_container {
+      width: 100%;
+      height: 100vh;
+      flex-direction: column-reverse;
+      justify-content: flex-end;
+
+      .nutrition_detail_10 {
+        width: 90%;
+        height: fit-content;
+        margin: 0px auto;
+        font-size: 1rem;
+
+        .nutrition__border_10 {
+          padding: 3px;
+
+          .nutrition__table {
+            padding: 2px;
+
+            td {
+              padding: 0.2em 0.25em !important;
+            }
+
+            .title {
+              font-size: 21px;
+            }
+
+            .line3 {
+              border-bottom: 5px solid #000 !important;
+            }
+
+            .line5 {
+              border-bottom: 2px solid #000 !important;
+            }
+
+            .line8 {
+              border-bottom: 2px solid #000 !important;
+            }
+          }
+
+          .nutrition__ingredients {
+            margin: 0.5rem auto;
+          }
+
+          .nutrition__lastupdated {
+            font-size: 5px;
+          }
+        }
+
+        .buttons {
+          margin-top: 15px;
+        }
+      }
+
+      .product_image_10 {
+        width: 100%;
+        height: 22rem;
+        margin: 25px auto;
+        margin-bottom: 0px;
+      }
+    }
+  }
+
+  .products_preview_11 {
+    ion-icon {
+      z-index: 22;
+    }
+
+    .productdetail_container {
+      width: 100%;
+      height: 100vh;
+      flex-direction: column-reverse;
+      justify-content: flex-end;
+
+      .nutrition_detail_11 {
+        width: 90%;
+        height: fit-content;
+        margin: 0px auto;
+        font-size: 1rem;
+
+        .nutrition__border_11 {
+          padding: 3px;
+
+          .nutrition__table {
+            padding: 2px;
+
+            td {
+              padding: 0.2em 0.25em !important;
+            }
+
+            .title {
+              font-size: 34px;
+            }
+
+            .line3 {
+              border-bottom: 5px solid #000 !important;
+            }
+
+            .line5 {
+              border-bottom: 2px solid #000 !important;
+            }
+
+            .line8 {
+              border-bottom: 2px solid #000 !important;
+            }
+          }
+
+          .nutrition__ingredients {
+            margin: 0.5rem auto;
+          }
+
+          .nutrition__lastupdated {
+            font-size: 5px;
+          }
+        }
+
+        .buttons {
+          margin-top: 15px;
+        }
+      }
+
+      .product_image_11 {
+        width: 100%;
+        height: 22rem;
+        margin: 25px auto;
+        margin-bottom: 0px;
+      }
+    }
+  }
+
+  .products_preview_12 {
+    ion-icon {
+      z-index: 22;
+    }
+
+    .productdetail_container {
+      width: 100%;
+      height: 100vh;
+      flex-direction: column-reverse;
+      justify-content: flex-end;
+
+      .nutrition_detail_12 {
+        width: 90%;
+        height: fit-content;
+        margin: 0px auto;
+        font-size: 1rem;
+
+        .nutrition__border_12 {
+          padding: 3px;
+
+          .nutrition__table {
+            padding: 2px;
+
+            td {
+              padding: 0.2em 0.25em !important;
+            }
+
+            .title {
+              font-size: 31px;
+            }
+
+            .line3 {
+              border-bottom: 5px solid #000 !important;
+            }
+
+            .line5 {
+              border-bottom: 2px solid #000 !important;
+            }
+
+            .line8 {
+              border-bottom: 2px solid #000 !important;
+            }
+          }
+
+          .nutrition__ingredients {
+            margin: 0.5rem auto;
+          }
+
+          .nutrition__lastupdated {
+            font-size: 5px;
+          }
+        }
+
+        .buttons {
+          margin-top: 15px;
+        }
+      }
+
+      .product_image_12 {
+        width: 100%;
+        height: 22rem;
+        margin: 25px auto;
+        margin-bottom: 0px;
+      }
+    }
+  }
+
+  .products_preview_13 {
+    ion-icon {
+      z-index: 22;
+    }
+
+    .productdetail_container {
+      width: 100%;
+      height: 100vh;
+      flex-direction: column-reverse;
+      justify-content: flex-end;
+
+      .nutrition_detail_13 {
+        width: 90%;
+        height: fit-content;
+        margin: 0px auto;
+        font-size: 1rem;
+
+        .nutrition__border_13 {
+          padding: 3px;
+
+          .nutrition__table {
+            padding: 2px;
+
+            td {
+              padding: 0.2em 0.25em !important;
+            }
+
+            .title {
+              font-size: 25px;
+            }
+
+            .line3 {
+              border-bottom: 5px solid #000 !important;
+            }
+
+            .line5 {
+              border-bottom: 2px solid #000 !important;
+            }
+
+            .line8 {
+              border-bottom: 2px solid #000 !important;
+            }
+          }
+
+          .nutrition__ingredients {
+            margin: 0.5rem auto;
+          }
+
+          .nutrition__lastupdated {
+            font-size: 5px;
+          }
+        }
+
+        .buttons {
+          margin-top: 15px;
+        }
+      }
+
+      .product_image_13 {
         width: 100%;
         height: 22rem;
         margin: 25px auto;
