@@ -116,6 +116,7 @@
         opacity: 0;
         z-index: 10;
         font-size: 17px;
+        pointer-events: none;
       }
       &:hover {
         .name {
@@ -480,7 +481,7 @@
           margin-bottom: 26px;
 
           &:hover {
-            opacity: 0.8;
+            opacity: 0.6;
           }
         }
       }
@@ -636,7 +637,7 @@
             padding-bottom: 1px;
             border-bottom: 1px solid;
             font-size: 10px;
-            opacity: 0.8;
+            opacity: 0.6;
             color: #000;
           }
         }
@@ -673,7 +674,7 @@
           margin-bottom: 26px;
 
           &:hover {
-            opacity: 0.8;
+            opacity: 0.6;
           }
         }
       }
@@ -829,7 +830,7 @@
             padding-bottom: 1px;
             border-bottom: 1px solid;
             font-size: 10px;
-            opacity: 0.8;
+            opacity: 0.6;
             color: #000;
           }
         }
@@ -866,7 +867,7 @@
           margin-bottom: 26px;
 
           &:hover {
-            opacity: 0.8;
+            opacity: 0.6;
           }
         }
       }
@@ -1022,7 +1023,7 @@
             padding-bottom: 1px;
             border-bottom: 1px solid;
             font-size: 10px;
-            opacity: 0.8;
+            opacity: 0.6;
             color: #000;
           }
         }
@@ -1059,7 +1060,7 @@
           margin-bottom: 26px;
 
           &:hover {
-            opacity: 0.8;
+            opacity: 0.6;
           }
         }
       }
@@ -1215,7 +1216,7 @@
             padding-bottom: 1px;
             border-bottom: 1px solid;
             font-size: 10px;
-            opacity: 0.8;
+            opacity: 0.6;
             color: #000;
           }
         }
@@ -1252,7 +1253,7 @@
           margin-bottom: 26px;
 
           &:hover {
-            opacity: 0.8;
+            opacity: 0.6;
           }
         }
       }
@@ -1408,7 +1409,7 @@
             padding-bottom: 1px;
             border-bottom: 1px solid;
             font-size: 10px;
-            opacity: 0.8;
+            opacity: 0.6;
             color: #000;
           }
         }
@@ -1445,7 +1446,7 @@
           margin-bottom: 26px;
 
           &:hover {
-            opacity: 0.8;
+            opacity: 0.6;
           }
         }
       }
@@ -1601,7 +1602,7 @@
             padding-bottom: 1px;
             border-bottom: 1px solid;
             font-size: 10px;
-            opacity: 0.8;
+            opacity: 0.6;
             color: #000;
           }
         }
@@ -1638,7 +1639,7 @@
           margin-bottom: 26px;
 
           &:hover {
-            opacity: 0.8;
+            opacity: 0.6;
           }
         }
       }
@@ -1794,7 +1795,7 @@
             padding-bottom: 1px;
             border-bottom: 1px solid;
             font-size: 10px;
-            opacity: 0.8;
+            opacity: 0.6;
             color: #000;
           }
         }
@@ -1831,7 +1832,7 @@
           margin-bottom: 26px;
 
           &:hover {
-            opacity: 0.8;
+            opacity: 0.6;
           }
         }
       }
@@ -1987,7 +1988,7 @@
             padding-bottom: 1px;
             border-bottom: 1px solid;
             font-size: 10px;
-            opacity: 0.8;
+            opacity: 0.6;
             color: #000;
           }
         }
@@ -2024,7 +2025,7 @@
           margin-bottom: 26px;
 
           &:hover {
-            opacity: 0.8;
+            opacity: 0.6;
           }
         }
       }
@@ -2181,7 +2182,7 @@
             padding-bottom: 1px;
             border-bottom: 1px solid;
             font-size: 10px;
-            opacity: 0.8;
+            opacity: 0.6;
             color: #000;
           }
         }
@@ -2218,7 +2219,7 @@
           margin-bottom: 26px;
 
           &:hover {
-            opacity: 0.8;
+            opacity: 0.6;
           }
         }
       }
@@ -2374,7 +2375,7 @@
             padding-bottom: 1px;
             border-bottom: 1px solid;
             font-size: 10px;
-            opacity: 0.8;
+            opacity: 0.6;
             color: #000;
           }
         }
@@ -2411,7 +2412,7 @@
           margin-bottom: 26px;
 
           &:hover {
-            opacity: 0.8;
+            opacity: 0.6;
           }
         }
       }
@@ -2567,7 +2568,7 @@
             padding-bottom: 1px;
             border-bottom: 1px solid;
             font-size: 10px;
-            opacity: 0.8;
+            opacity: 0.6;
             color: #000;
           }
         }
@@ -2604,7 +2605,7 @@
           margin-bottom: 26px;
 
           &:hover {
-            opacity: 0.8;
+            opacity: 0.6;
           }
         }
       }
@@ -2647,7 +2648,7 @@
   position: fixed;
   width: 0;
   height: fit-content;
-  background-color: #cbcbcb;
+  background-color: #b7b7b7;
   z-index: -1;
   top: 57px;
   left: 0px;
@@ -2760,7 +2761,7 @@
             padding-bottom: 1px;
             border-bottom: 1px solid;
             font-size: 10px;
-            opacity: 0.8;
+            opacity: 0.6;
             color: #000;
           }
         }
@@ -2797,7 +2798,7 @@
           margin-bottom: 26px;
 
           &:hover {
-            opacity: 0.8;
+            opacity: 0.6;
           }
         }
       }
