@@ -232,6 +232,20 @@ a {
   transition: 0.3s ease;
   border-radius: 25px;
 }
+#header .nav-list ul .stand-hov a {
+  color: white;
+}
+#header .nav-list ul .stand-hov::before {
+  content: "";
+  position: absolute;
+  background: #adddf3;
+  width: 100%;
+  height: 3px;
+  bottom: 0px;
+  left: 0px;
+  transition: 0.3s ease;
+  border-radius: 25px;
+}
 #header .nav-list ul.active {
   left: 0%;
 }
@@ -267,10 +281,6 @@ a {
 #header .nav-list ul li:hover a::after {
   transform: translate(-50%, -50%) scale(1);
   letter-spacing: initial;
-}
-
-#header .nav-list ul li:hover a {
-  color: #20186d;
 }
 
 #header .hamburger .bar::after,
@@ -3503,6 +3513,7 @@ a {
 /* ---------------About---------------------- */
 #info {
   margin-top: 120px;
+  animation: 0.9s cubic-bezier(0.455, 0.03, 0.515, 0.955) 0.5s forwards elastic-ease-out-right, 0.9s cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s forwards linear-fade-in;
 }
 #info h3 {
   color: #20186d;
@@ -3567,6 +3578,137 @@ a {
 }
 
 /* ---------------End About------------------ */
+/* ---------------Contact---------------------- */
+#header .nav-list ul li:hover #ct-hov {
+  color: white;
+}
+
+#contact {
+  font-family: "mediasansextended-black";
+  font-family: sans-serif;
+  padding: 0 120px;
+  overflow: hidden;
+  animation: 0.9s cubic-bezier(0.455, 0.03, 0.515, 0.955) 0.5s forwards elastic-ease-out-left, 0.9s cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s forwards linear-fade-in;
+}
+#contact .contact_container h1 {
+  max-width: 1140px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 100px 0 100px;
+  color: #fff;
+  font-size: 92px;
+  letter-spacing: -0.5px;
+  font-family: "mediasansextended-black";
+  text-transform: uppercase;
+}
+#contact .contact_container .main_contact {
+  display: flex;
+  flex-wrap: wrap;
+  color: #fff;
+}
+#contact .contact_container .main_contact .headquarters {
+  width: 100%;
+  max-width: 1140px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+#contact .contact_container .main_contact .headquarters h2 {
+  font-size: 15px;
+  letter-spacing: 0.73px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #fff;
+  line-height: 1em;
+  font-family: "mediasansextended-black";
+  text-transform: uppercase;
+}
+#contact .contact_container .main_contact .headquarters .address_contact {
+  padding: 40px 0 90px;
+}
+#contact .contact_container .main_contact .headquarters .address_contact h3 {
+  font-size: 50px;
+  letter-spacing: 2.06px;
+  margin-bottom: 10px;
+  font-family: "mediasansextended-black";
+  text-transform: uppercase;
+}
+#contact .contact_container .main_contact .headquarters .address_contact p {
+  font-size: 27px;
+  line-height: 31px;
+  letter-spacing: -0.23px;
+  margin-bottom: 20px;
+  font-family: "Poppins";
+  font-weight: 500;
+}
+#contact .contact_container .main_contact .headquarters .address_contact .direction .dir {
+  color: #fff;
+  margin-right: 5px;
+  font-size: 19px;
+  letter-spacing: -0.2px;
+  border-bottom: 2px solid #fff;
+}
+#contact .contact_container .main_contact .headquarters .address_contact .direction i {
+  font-size: 20px;
+  color: #ff00ea;
+}
+#contact .contact_container .main_contact .satellites {
+  width: 100%;
+  max-width: 1140px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+#contact .contact_container .main_contact .satellites h2 {
+  font-size: 15px;
+  letter-spacing: 0.73px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #fff;
+  line-height: 1em;
+  font-family: "mediasansextended-black";
+  text-transform: uppercase;
+}
+#contact .contact_container .main_contact .satellites .list_address {
+  padding: 0 0 90px;
+}
+#contact .contact_container .main_contact .satellites .list_address .list__address {
+  list-style: none;
+  column-count: 3;
+  column-gap: 3rem;
+}
+#contact .contact_container .main_contact .satellites .list_address .list__address .item_addr {
+  padding: 50px 0px;
+}
+#contact .contact_container .main_contact .satellites .list_address .list__address .item_addr h3 {
+  font-size: 25px;
+  letter-spacing: 1.03px;
+  margin-bottom: 20px;
+  font-family: "mediasansextended-black";
+  text-transform: uppercase;
+}
+#contact .contact_container .main_contact .satellites .list_address .list__address .item_addr p {
+  font-size: 19px;
+  line-height: 28px;
+  letter-spacing: -0.21px;
+  margin-bottom: 20px;
+  color: #fff;
+  font-family: "Poppins";
+  font-weight: 500;
+}
+#contact .contact_container .main_contact .satellites .list_address .list__address .item_addr .direction .dir {
+  color: #fff;
+  margin-right: 5px;
+  font-size: 19px;
+  letter-spacing: -0.2px;
+  border-bottom: 2px solid #fff;
+}
+#contact .contact_container .main_contact .satellites .list_address .list__address .item_addr .direction i {
+  font-size: 20px;
+  color: #ff00ea;
+}
+
+/* ---------------End Contact------------------ */
 /* ---------------Footer Content--------------- */
 /* ---------------Footer Content--------------- */
 .footer {
@@ -4023,6 +4165,66 @@ a {
     margin: 25px auto;
     margin-bottom: 0px;
   }
+
+  #contact {
+    padding: 0 40px;
+  }
+  #contact .contact_container h1 {
+    font-size: 40px;
+  }
+  #contact .contact_container .main_contact {
+    display: flex;
+    flex-wrap: wrap;
+    color: #fff;
+  }
+  #contact .contact_container .main_contact .headquarters .address_contact h3 {
+    font-size: 30px;
+  }
+  #contact .contact_container .main_contact .headquarters .address_contact p {
+    font-size: 16px;
+  }
+  #contact .contact_container .main_contact .headquarters .address_contact .direction .dir {
+    font-size: 14px;
+  }
+  #contact .contact_container .main_contact .headquarters .address_contact .direction i {
+    font-size: 16px;
+    color: #ff00ea;
+  }
+  #contact .contact_container .main_contact .satellites {
+    width: 100%;
+    max-width: 1140px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  #contact .contact_container .main_contact .satellites .list_address {
+    padding: 20px 0 60px;
+  }
+  #contact .contact_container .main_contact .satellites .list_address .list__address {
+    list-style: none;
+    column-count: 2;
+    column-gap: 3rem;
+  }
+  #contact .contact_container .main_contact .satellites .list_address .list__address .item_addr h3 {
+    font-size: 25px;
+    margin-bottom: 15px;
+  }
+  #contact .contact_container .main_contact .satellites .list_address .list__address .item_addr p {
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+  #contact .contact_container .main_contact .satellites .list_address .list__address .item_addr .direction .dir {
+    color: #fff;
+    margin-right: 5px;
+    font-size: 19px;
+    letter-spacing: -0.2px;
+    border-bottom: 2px solid #fff;
+  }
+  #contact .contact_container .main_contact .satellites .list_address .list__address .item_addr .direction i {
+    font-size: 20px;
+    color: #ff00ea;
+  }
 }
 /* --------------End Media Query For Tablet------------ */
 /* ---------------Media Query For Mobile--------------- */
@@ -4261,7 +4463,7 @@ a {
   }
 
   #page_5 h1 {
-    font-size: 29px;
+    font-size: 28px;
     margin: 10px 20px 10px 20px;
   }
   #page_5 .content_5 {
@@ -4285,11 +4487,13 @@ a {
   #page_5 .content_5 .active-right {
     display: grid;
   }
-  #page_5 .content_5 .swiper-button-next {
-    color: white;
+  #page_5 .content_5 span.swiper-pagination-bullet.swiper-pagination-bullet-active {
+    background: white;
+    opacity: 1;
   }
-  #page_5 .content_5 .swiper-button-prev {
-    color: white;
+  #page_5 .content_5 span.swiper-pagination-bullet {
+    background: white;
+    opacity: 0.5;
   }
 
   #page_6 .title_content {
@@ -4639,7 +4843,7 @@ a {
     padding: 0.2em 0.25em !important;
   }
   .products_preview_7 .productdetail_container .nutrition_detail_7 .nutrition__border_7 .nutrition__table .title {
-    font-size: 25px;
+    font-size: 24px;
   }
   .products_preview_7 .productdetail_container .nutrition_detail_7 .nutrition__border_7 .nutrition__table .line3 {
     border-bottom: 5px solid #000 !important;
@@ -4795,7 +4999,7 @@ a {
     padding: 0.2em 0.25em !important;
   }
   .products_preview_10 .productdetail_container .nutrition_detail_10 .nutrition__border_10 .nutrition__table .title {
-    font-size: 21px;
+    font-size: 20px;
   }
   .products_preview_10 .productdetail_container .nutrition_detail_10 .nutrition__border_10 .nutrition__table .line3 {
     border-bottom: 5px solid #000 !important;
@@ -4976,6 +5180,66 @@ a {
     height: 22rem;
     margin: 25px auto;
     margin-bottom: 0px;
+  }
+
+  #contact {
+    padding: 0 20px;
+  }
+  #contact .contact_container h1 {
+    font-size: 32px;
+  }
+  #contact .contact_container .main_contact {
+    display: flex;
+    flex-wrap: wrap;
+    color: #fff;
+  }
+  #contact .contact_container .main_contact .headquarters .address_contact {
+    padding: 30px 0 60px;
+  }
+  #contact .contact_container .main_contact .headquarters .address_contact h3 {
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+  #contact .contact_container .main_contact .headquarters .address_contact p {
+    font-size: 16px;
+    line-height: 25px;
+    letter-spacing: -0.23px;
+  }
+  #contact .contact_container .main_contact .headquarters .address_contact .direction .dir {
+    color: #fff;
+    margin-right: 5px;
+    font-size: 14px;
+    letter-spacing: -0.2px;
+    border-bottom: 2px solid #fff;
+  }
+  #contact .contact_container .main_contact .headquarters .address_contact .direction i {
+    font-size: 16px;
+    color: #ff00ea;
+  }
+  #contact .contact_container .main_contact .satellites .list_address {
+    padding: 20px 0 60px;
+  }
+  #contact .contact_container .main_contact .satellites .list_address .list__address {
+    list-style: none;
+    column-count: 1;
+    column-gap: 3rem;
+  }
+  #contact .contact_container .main_contact .satellites .list_address .list__address .item_addr {
+    padding: 10px 0px;
+  }
+  #contact .contact_container .main_contact .satellites .list_address .list__address .item_addr h3 {
+    font-size: 25px;
+    margin-bottom: 15px;
+  }
+  #contact .contact_container .main_contact .satellites .list_address .list__address .item_addr p {
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+  #contact .contact_container .main_contact .satellites .list_address .list__address .item_addr .direction .dir {
+    font-size: 16px;
+  }
+  #contact .contact_container .main_contact .satellites .list_address .list__address .item_addr .direction i {
+    font-size: 17px;
   }
 }
 /* ---------------End Media Query For Mobile----------- */
