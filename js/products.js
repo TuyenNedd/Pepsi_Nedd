@@ -17,7 +17,7 @@ document.addEventListener("scroll", () => {
   if (scroll_position > 1) {
     header.style.backgroundColor = "#ffff";
   } else {
-    header.style.backgroundColor = "transparent";
+    header.style.backgroundColor = "#ffff";
   }
 });
 
@@ -81,12 +81,10 @@ function showPreview_1() {
     (document.querySelector(".nutrition_detail_1").style.opacity = "1"),
     (document.querySelector(".product_image_1").style.opacity = "1"),
     (document.querySelector(".products_preview_1").style.zIndex = "20"),
-
     (document.querySelector(".img_preview_1").style.opacity = "1"),
     (document.querySelector(".img_preview_1").style.width = "100%"),
     (document.querySelector(".nutrition__border_1").style.display = "block"),
     (document.querySelector(".btn-1").style.display = "flex"),
-
     (document.getElementById("body_product").style.overflowY = "hidden");
 }
 function hidePreview_1() {
@@ -94,10 +92,8 @@ function hidePreview_1() {
     (document.querySelector(".products_preview_1").style.width = "0%"),
     (document.querySelector(".products_preview_1").style.transition = "1s"),
     (document.querySelector(".nutrition_detail_1").style.opacity = "0"),
-
     (document.querySelector(".nutrition__border_1").style.display = "none"),
     (document.querySelector(".btn-1").style.display = "none"),
-
     (document.querySelector(".product_image_1").style.opacity = "0");
 }
 
@@ -108,7 +104,6 @@ function showPreview_2() {
     (document.querySelector(".nutrition_detail_2").style.opacity = "1"),
     (document.querySelector(".product_image_2").style.opacity = "1"),
     (document.querySelector(".products_preview_2").style.zIndex = "20"),
-
     (document.querySelector(".img_preview_2").style.opacity = "1"),
     (document.querySelector(".img_preview_2").style.width = "100%"),
     (document.querySelector(".nutrition__border_2").style.display = "block"),
@@ -120,7 +115,6 @@ function hidePreview_2() {
     (document.querySelector(".products_preview_2").style.width = "0%"),
     (document.querySelector(".products_preview_2").style.transition = "1s"),
     (document.querySelector(".nutrition_detail_2").style.opacity = "0"),
-
     (document.querySelector(".nutrition__border_2").style.display = "none"),
     (document.querySelector(".btn-2").style.display = "none"),
     (document.querySelector(".product_image_2").style.opacity = "0");
@@ -133,7 +127,6 @@ function showPreview_3() {
     (document.querySelector(".nutrition_detail_3").style.opacity = "1"),
     (document.querySelector(".product_image_3").style.opacity = "1"),
     (document.querySelector(".products_preview_3").style.zIndex = "20"),
-
     (document.querySelector(".img_preview_3").style.opacity = "1"),
     (document.querySelector(".img_preview_3").style.width = "100%"),
     (document.querySelector(".nutrition__border_3").style.display = "block"),
@@ -145,7 +138,6 @@ function hidePreview_3() {
     (document.querySelector(".products_preview_3").style.width = "0%"),
     (document.querySelector(".products_preview_3").style.transition = "1s"),
     (document.querySelector(".nutrition_detail_3").style.opacity = "0"),
-
     (document.querySelector(".nutrition__border_3").style.display = "none"),
     (document.querySelector(".btn-3").style.display = "none"),
     (document.querySelector(".product_image_3").style.opacity = "0");
@@ -158,7 +150,6 @@ function showPreview_4() {
     (document.querySelector(".nutrition_detail_4").style.opacity = "1"),
     (document.querySelector(".product_image_4").style.opacity = "1"),
     (document.querySelector(".products_preview_4").style.zIndex = "20"),
-
     (document.querySelector(".img_preview_4").style.opacity = "1"),
     (document.querySelector(".img_preview_4").style.width = "100%"),
     (document.querySelector(".nutrition__border_4").style.display = "block"),
@@ -170,7 +161,6 @@ function hidePreview_4() {
     (document.querySelector(".products_preview_4").style.width = "0%"),
     (document.querySelector(".products_preview_4").style.transition = "1s"),
     (document.querySelector(".nutrition_detail_4").style.opacity = "0"),
-
     (document.querySelector(".nutrition__border_4").style.display = "none"),
     (document.querySelector(".btn-4").style.display = "none"),
     (document.querySelector(".product_image_4").style.opacity = "0");
@@ -183,7 +173,6 @@ function showPreview_5() {
     (document.querySelector(".nutrition_detail_5").style.opacity = "1"),
     (document.querySelector(".product_image_5").style.opacity = "1"),
     (document.querySelector(".products_preview_5").style.zIndex = "20"),
-
     (document.querySelector(".img_preview_5").style.opacity = "1"),
     (document.querySelector(".img_preview_5").style.width = "100%"),
     (document.querySelector(".nutrition__border_5").style.display = "block"),
@@ -195,7 +184,6 @@ function hidePreview_5() {
     (document.querySelector(".products_preview_5").style.width = "0%"),
     (document.querySelector(".products_preview_5").style.transition = "1s"),
     (document.querySelector(".nutrition_detail_5").style.opacity = "0"),
-
     (document.querySelector(".nutrition__border_5").style.display = "none"),
     (document.querySelector(".btn-5").style.display = "none"),
     (document.querySelector(".product_image_5").style.opacity = "0");
@@ -208,7 +196,6 @@ function showPreview_6() {
     (document.querySelector(".nutrition_detail_6").style.opacity = "1"),
     (document.querySelector(".product_image_6").style.opacity = "1"),
     (document.querySelector(".products_preview_6").style.zIndex = "20"),
-
     (document.querySelector(".img_preview_6").style.opacity = "1"),
     (document.querySelector(".img_preview_6").style.width = "100%"),
     (document.querySelector(".nutrition__border_6").style.display = "block"),
@@ -220,7 +207,6 @@ function hidePreview_6() {
     (document.querySelector(".products_preview_6").style.width = "0%"),
     (document.querySelector(".products_preview_6").style.transition = "1s"),
     (document.querySelector(".nutrition_detail_6").style.opacity = "0"),
-
     (document.querySelector(".nutrition__border_6").style.display = "none"),
     (document.querySelector(".btn-6").style.display = "none"),
     (document.querySelector(".product_image_6").style.opacity = "0");
@@ -233,7 +219,6 @@ function showPreview_7() {
     (document.querySelector(".nutrition_detail_7").style.opacity = "1"),
     (document.querySelector(".product_image_7").style.opacity = "1"),
     (document.querySelector(".products_preview_7").style.zIndex = "20"),
-
     (document.querySelector(".img_preview_7").style.opacity = "1"),
     (document.querySelector(".img_preview_7").style.width = "100%"),
     (document.querySelector(".nutrition__border_7").style.display = "block"),
@@ -245,7 +230,6 @@ function hidePreview_7() {
     (document.querySelector(".products_preview_7").style.width = "0%"),
     (document.querySelector(".products_preview_7").style.transition = "1s"),
     (document.querySelector(".nutrition_detail_7").style.opacity = "0"),
-
     (document.querySelector(".nutrition__border_7").style.display = "none"),
     (document.querySelector(".btn-7").style.display = "none"),
     (document.querySelector(".product_image_7").style.opacity = "0");
@@ -258,7 +242,6 @@ function showPreview_8() {
     (document.querySelector(".nutrition_detail_8").style.opacity = "1"),
     (document.querySelector(".product_image_8").style.opacity = "1"),
     (document.querySelector(".products_preview_8").style.zIndex = "20"),
-
     (document.querySelector(".img_preview_8").style.opacity = "1"),
     (document.querySelector(".img_preview_8").style.width = "100%"),
     (document.querySelector(".nutrition__border_8").style.display = "block"),
@@ -270,7 +253,6 @@ function hidePreview_8() {
     (document.querySelector(".products_preview_8").style.width = "0%"),
     (document.querySelector(".products_preview_8").style.transition = "1s"),
     (document.querySelector(".nutrition_detail_8").style.opacity = "0"),
-
     (document.querySelector(".nutrition__border_8").style.display = "none"),
     (document.querySelector(".btn-8").style.display = "none"),
     (document.querySelector(".product_image_8").style.opacity = "0");
@@ -283,7 +265,6 @@ function showPreview_9() {
     (document.querySelector(".nutrition_detail_9").style.opacity = "1"),
     (document.querySelector(".product_image_9").style.opacity = "1"),
     (document.querySelector(".products_preview_9").style.zIndex = "20"),
-
     (document.querySelector(".img_preview_9").style.opacity = "1"),
     (document.querySelector(".img_preview_9").style.width = "100%"),
     (document.querySelector(".nutrition__border_9").style.display = "block"),
@@ -295,7 +276,6 @@ function hidePreview_9() {
     (document.querySelector(".products_preview_9").style.width = "0%"),
     (document.querySelector(".products_preview_9").style.transition = "1s"),
     (document.querySelector(".nutrition_detail_9").style.opacity = "0"),
-
     (document.querySelector(".nutrition__border_9").style.display = "none"),
     (document.querySelector(".btn-9").style.display = "none"),
     (document.querySelector(".product_image_9").style.opacity = "0");
@@ -308,7 +288,6 @@ function showPreview_10() {
     (document.querySelector(".nutrition_detail_10").style.opacity = "1"),
     (document.querySelector(".product_image_10").style.opacity = "1"),
     (document.querySelector(".products_preview_10").style.zIndex = "20"),
-
     (document.querySelector(".img_preview_10").style.opacity = "1"),
     (document.querySelector(".img_preview_10").style.width = "100%"),
     (document.querySelector(".nutrition__border_10").style.display = "block"),
@@ -330,7 +309,6 @@ function showPreview_11() {
     (document.querySelector(".nutrition_detail_11").style.opacity = "1"),
     (document.querySelector(".product_image_11").style.opacity = "1"),
     (document.querySelector(".products_preview_11").style.zIndex = "20"),
-
     (document.querySelector(".img_preview_11").style.opacity = "1"),
     (document.querySelector(".img_preview_11").style.width = "100%"),
     (document.querySelector(".nutrition__border_11").style.display = "block"),
@@ -342,7 +320,6 @@ function hidePreview_11() {
     (document.querySelector(".products_preview_11").style.width = "0%"),
     (document.querySelector(".products_preview_11").style.transition = "1s"),
     (document.querySelector(".nutrition_detail_11").style.opacity = "0"),
-
     (document.querySelector(".nutrition__border_11").style.display = "none"),
     (document.querySelector(".btn-11").style.display = "none"),
     (document.querySelector(".product_image_11").style.opacity = "0");
@@ -355,7 +332,6 @@ function showPreview_12() {
     (document.querySelector(".nutrition_detail_12").style.opacity = "1"),
     (document.querySelector(".product_image_12").style.opacity = "1"),
     (document.querySelector(".products_preview_12").style.zIndex = "20"),
-
     (document.querySelector(".img_preview_12").style.opacity = "1"),
     (document.querySelector(".img_preview_12").style.width = "100%"),
     (document.querySelector(".nutrition__border_12").style.display = "block"),
@@ -367,7 +343,6 @@ function hidePreview_12() {
     (document.querySelector(".products_preview_12").style.width = "0%"),
     (document.querySelector(".products_preview_12").style.transition = "1s"),
     (document.querySelector(".nutrition_detail_12").style.opacity = "0"),
-
     (document.querySelector(".nutrition__border_12").style.display = "none"),
     (document.querySelector(".btn-12").style.display = "none"),
     (document.querySelector(".product_image_12").style.opacity = "0");
@@ -380,7 +355,6 @@ function showPreview_13() {
     (document.querySelector(".nutrition_detail_13").style.opacity = "1"),
     (document.querySelector(".product_image_13").style.opacity = "1"),
     (document.querySelector(".products_preview_13").style.zIndex = "20"),
-
     (document.querySelector(".img_preview_13").style.opacity = "1"),
     (document.querySelector(".img_preview_13").style.width = "100%"),
     (document.querySelector(".nutrition__border_13").style.display = "block"),
@@ -392,7 +366,6 @@ function hidePreview_13() {
     (document.querySelector(".products_preview_13").style.width = "0%"),
     (document.querySelector(".products_preview_13").style.transition = "1s"),
     (document.querySelector(".nutrition_detail_13").style.opacity = "0"),
-
     (document.querySelector(".nutrition__border_13").style.display = "none"),
     (document.querySelector(".btn-13").style.display = "none"),
     (document.querySelector(".product_image_13").style.opacity = "0");
