@@ -138,6 +138,24 @@
           border-radius: 25px;
         }
       }
+
+      .stand-hov {
+        a {
+          color: white;
+        }
+
+        &::before {
+          content: "";
+          position: absolute;
+          background: #adddf3;
+          width: 100%;
+          height: 3px;
+          bottom: 0px;
+          left: 0px;
+          transition: 0.3s ease;
+          border-radius: 25px;
+        }
+      }
     }
 
     ul.active {
@@ -184,10 +202,9 @@
   letter-spacing: initial;
 }
 
-#header .nav-list ul li:hover a {
-  // color: rgb(20, 80, 220);
-  color: #20186d;
-}
+// #header .nav-list ul li:hover a {
+//   color: #20186d;
+// }
 
 #header .hamburger .bar::after,
 #header .hamburger .bar::before {
