@@ -382,9 +382,7 @@
         margin-top: 0px;
 
         .nutrition__border_1 {
-
           .nutrition__table {
-
             td {
             }
 
@@ -415,6 +413,95 @@
         height: 28rem;
         margin: 25px auto;
         margin-bottom: 0px;
+      }
+    }
+  }
+
+  #contact {
+    padding: 0 40px;
+    .contact_container {
+      h1 {
+        font-size: 40px;
+      }
+
+      .main_contact {
+        display: flex;
+        flex-wrap: wrap;
+        color: #fff;
+
+        .headquarters {
+          h2 {
+          }
+
+          .address_contact {
+            h3 {
+              font-size: 30px;
+            }
+
+            p {
+              font-size: 16px;
+            }
+
+            .direction {
+              .dir {
+                font-size: 14px;
+              }
+
+              i {
+                font-size: 16px;
+                color: #ff00ea;
+              }
+            }
+          }
+        }
+
+        .satellites {
+          width: 100%;
+          max-width: 1140px;
+          padding-right: 15px;
+          padding-left: 15px;
+          margin-right: auto;
+          margin-left: auto;
+
+          h2 {
+          }
+
+          .list_address {
+            padding: 20px 0 60px;
+            .list__address {
+              list-style: none;
+              column-count: 2;
+              column-gap: 3rem;
+
+              .item_addr {
+                h3 {
+                  font-size: 25px;
+                  margin-bottom: 15px;
+                }
+
+                p {
+                  font-size: 16px;
+                  margin-bottom: 15px;
+                }
+
+                .direction {
+                  .dir {
+                    color: #fff;
+                    margin-right: 5px;
+                    font-size: 19px;
+                    letter-spacing: -0.2px;
+                    border-bottom: 2px solid #fff;
+                  }
+
+                  i {
+                    font-size: 20px;
+                    color: #ff00ea;
+                  }
+                }
+              }
+            }
+          }
+        }
       }
     }
   }
@@ -722,7 +809,7 @@
 
   #page_5 {
     h1 {
-      font-size: 29px;
+      font-size: 28px;
       margin: 10px 20px 10px 20px;
     }
 
@@ -763,11 +850,20 @@
         display: grid;
       }
 
-      .swiper-button-next {
-        color: white;
+      // .swiper-button-next {
+      //   color: white;
+      // }
+      // .swiper-button-prev {
+      //   color: white;
+      // }
+
+      span.swiper-pagination-bullet.swiper-pagination-bullet-active {
+        background: white;
+        opacity: 1;
       }
-      .swiper-button-prev {
-        color: white;
+      span.swiper-pagination-bullet {
+        background: white;
+        opacity: 0.5;
       }
     }
   }
@@ -1228,7 +1324,7 @@
             }
 
             .title {
-              font-size: 25px;
+              font-size: 24px;
             }
 
             .line3 {
@@ -1429,7 +1525,7 @@
             }
 
             .title {
-              font-size: 21px;
+              font-size: 20px;
             }
 
             .line3 {
@@ -1665,6 +1761,92 @@
         height: 22rem;
         margin: 25px auto;
         margin-bottom: 0px;
+      }
+    }
+  }
+
+  #contact {
+    padding: 0 20px;
+    .contact_container {
+      h1 {
+        font-size: 32px;
+      }
+
+      .main_contact {
+        display: flex;
+        flex-wrap: wrap;
+        color: #fff;
+
+        .headquarters {
+          h2 {
+          }
+
+          .address_contact {
+            padding: 30px 0 60px;
+            h3 {
+              font-size: 30px;
+              margin-bottom: 10px;
+            }
+
+            p {
+              font-size: 16px;
+              line-height: 25px;
+              letter-spacing: -0.23px;
+            }
+
+            .direction {
+              .dir {
+                color: #fff;
+                margin-right: 5px;
+                font-size: 14px;
+                letter-spacing: -0.2px;
+                border-bottom: 2px solid #fff;
+              }
+
+              i {
+                font-size: 16px;
+                color: #ff00ea;
+              }
+            }
+          }
+        }
+
+        .satellites {
+          h2 {
+          }
+
+          .list_address {
+            padding: 20px 0 60px;
+            .list__address {
+              list-style: none;
+              column-count: 1;
+              column-gap: 3rem;
+
+              .item_addr {
+                padding: 10px 0px;
+                h3 {
+                  font-size: 25px;
+                  margin-bottom: 15px;
+                }
+
+                p {
+                  font-size: 16px;
+                  margin-bottom: 15px;
+                }
+
+                .direction {
+                  .dir {
+                    font-size: 16px;
+                  }
+
+                  i {
+                    font-size: 17px;
+                  }
+                }
+              }
+            }
+          }
+        }
       }
     }
   }
