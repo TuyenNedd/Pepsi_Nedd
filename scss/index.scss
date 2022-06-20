@@ -554,13 +554,12 @@ a {
     grid-auto-rows: minmax(354px, auto);
     overflow: hidden;
 
-    .bright{
+    .bright {
       transition: 0.3s linear;
       &:hover {
         filter: brightness(1.7);
         cursor: pointer;
-    }
-    
+      }
     }
 
     .left-1 {
@@ -824,8 +823,12 @@ a {
 /* ---------------End Products--------------- */
 
 /* ---------------About---------------------- */
-@import "about";
+@import "agency";
 /* ---------------End About------------------ */
+
+/* ---------------Contact---------------------- */
+@import "contact";
+/* ---------------End Contact------------------ */
 
 /* ---------------Footer Content--------------- */
 @import "footer";
