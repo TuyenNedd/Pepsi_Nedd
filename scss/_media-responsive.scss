@@ -26,11 +26,6 @@
   }
 
   /* End header */
-
-  #services .service-bottom .service-item {
-    flex-basis: 22%;
-    margin: 1.5%;
-  }
 }
 /* ---------------End Media Query For Desktop----------- */
 
@@ -315,11 +310,20 @@
         display: grid;
       }
 
-      .swiper-button-next {
-        color: white;
+      // .swiper-button-next {
+      //   color: white;
+      // }
+      // .swiper-button-prev {
+      //   color: white;
+      // }
+
+      span.swiper-pagination-bullet.swiper-pagination-bullet-active {
+        background: white;
+        opacity: 1;
       }
-      .swiper-button-prev {
-        color: white;
+      span.swiper-pagination-bullet {
+        background: white;
+        opacity: 0.5;
       }
     }
   }
@@ -510,11 +514,6 @@
 
 /* ---------------Media Query For Mobile--------------- */
 @media only screen and (max-width: 767px) {
-  .cta {
-    font-size: 2.5rem;
-    padding: 20px 60px;
-  }
-
   h1.section-title {
     font-size: 6rem;
   }
@@ -655,6 +654,15 @@
 
           .buttons {
             margin: 30px 105px 0px 105px;
+
+            .btn-mobile {
+              margin-bottom: 15px;
+              font-size: 12px;
+            }
+          }
+
+          .buttons-mobile {
+            margin: 30px 105px 0px 124px;
           }
         }
       }
