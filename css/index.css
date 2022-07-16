@@ -1,6 +1,24 @@
-/* --------------- CSS Reset ----------------- */
+/* -----------------Setup fonts------------------ */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,900&family=Ubuntu:wght@300;400;500;700&display=swap");
+/* ----------------\/\/\/\/\/\/------------------ */
+/* -----------------Setup FontFace------------------ */
+@font-face {
+  font-family: "mediasansextended-bold";
+  src: url("../fonts/mediasansextended-bold-TRIAL.otf") format("opentype");
+}
+@font-face {
+  font-family: "mediasansextended-black";
+  src: url("../fonts/mediasansextended-black-TRIAL.otf") format("opentype");
+}
+@font-face {
+  font-family: "maisonneueextended-extrabold";
+  src: url("../fonts/MaisonNeueExtendedExtra-Bold.otf") format("opentype");
+}
+/* -----------------End Setup FontFace--------------- */
+/* --------------Variable--------------- */
+/* --------------End Variable----------- */
+/* --------------- CSS Reset ----------------- */
 *,
 *::before,
 *::after {
@@ -10,6 +28,10 @@
 * {
   margin: 0;
   padding: 0;
+}
+*::selection {
+  background-color: #0065c3;
+  color: #ffffff;
 }
 
 html,
@@ -46,24 +68,6 @@ h6 {
 }
 
 /* ---------------------------------------------- */
-/* -----------------Setup fonts------------------ */
-/* ----------------\/\/\/\/\/\/------------------ */
-/* -----------------Setup FontFace------------------ */
-@font-face {
-  font-family: "mediasansextended-bold";
-  src: url("../fonts/mediasansextended-bold-TRIAL.otf") format("opentype");
-}
-@font-face {
-  font-family: "mediasansextended-black";
-  src: url("../fonts/mediasansextended-black-TRIAL.otf") format("opentype");
-}
-@font-face {
-  font-family: "maisonneueextended-extrabold";
-  src: url("../fonts/MaisonNeueExtendedExtra-Bold.otf") format("opentype");
-}
-/* -----------------End Setup FontFace--------------- */
-/* --------------Variable--------------- */
-/* --------------End Variable----------- */
 body::-webkit-scrollbar {
   width: 10px;
 }
@@ -3718,7 +3722,7 @@ a {
   height: 29rem;
   flex-direction: column;
   background-color: #0065c3;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 .footer .footer_logo img {
   widows: 101px;
@@ -3941,9 +3945,9 @@ a {
   }
 
   .footer {
-    height: 60%;
+    height: 75%;
     min-height: 29rem;
-    justify-content: space-around;
+    justify-content: center;
   }
   .footer .footer_logo img {
     width: 40px;
@@ -4222,6 +4226,10 @@ a {
   #contact .contact_container .main_contact .satellites .list_address .list__address .item_addr .direction i {
     font-size: 20px;
     color: #ff00ea;
+  }
+
+  #app {
+    display: none;
   }
 }
 /* --------------End Media Query For Tablet------------ */
@@ -5253,6 +5261,10 @@ a {
   }
   #contact .contact_container .main_contact .satellites .list_address .list__address .item_addr .direction i {
     font-size: 17px;
+  }
+
+  #app {
+    display: none;
   }
 }
 /* ---------------End Media Query For Mobile----------- */
