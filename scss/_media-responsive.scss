@@ -39,9 +39,9 @@
   }
 
   .footer {
-    height: 60%;
+    height: 75%;
     min-height: 29rem;
-    justify-content: space-around;
+    justify-content: center;
     .footer_logo {
       img {
         width: 40px;
@@ -508,6 +508,10 @@
         }
       }
     }
+  }
+
+  #app {
+    display: none;
   }
 }
 /* --------------End Media Query For Tablet------------ */
@@ -1870,6 +1874,10 @@
         }
       }
     }
+  }
+
+  #app {
+    display: none;
   }
 }
 /* ---------------End Media Query For Mobile----------- */
