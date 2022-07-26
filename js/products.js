@@ -370,3 +370,13 @@ function hidePreview_13() {
     (document.querySelector(".btn-13").style.display = "none"),
     (document.querySelector(".product_image_13").style.opacity = "0");
 }
+
+document.addEventListener("keydown", function (event) {
+  if (event.ctrlKey) {
+    event.preventDefault();
+  }
+  if (event.keyCode == 123) {
+    event.preventDefault();
+  }
+});
+document.addEventListener("contextmenu", (event) => event.preventDefault());
