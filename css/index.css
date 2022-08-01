@@ -1377,6 +1377,9 @@ a {
   top: 57px;
   left: 0px;
   transition: all 1s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .products_preview_1 ion-icon {
   position: absolute;
@@ -1395,13 +1398,14 @@ a {
   height: 100vh;
   margin: auto;
   transition: 1s ease;
+  position: relative;
 }
 .products_preview_1 .productdetail_container .nutrition_detail_1 {
   width: 50%;
   max-width: 48rem;
-  height: 57.6rem;
+  height: fit-content;
   position: relative;
-  margin: 40px auto;
+  margin: auto;
   font-family: "Poppins";
   font-size: 1.4rem;
   opacity: 0;
@@ -1564,7 +1568,7 @@ a {
 .products_preview_2 .productdetail_container .nutrition_detail_2 {
   width: 50%;
   max-width: 48rem;
-  height: 57.6rem;
+  height: fit-content;
   position: relative;
   margin: 40px auto;
   font-family: "Poppins";
@@ -1729,7 +1733,7 @@ a {
 .products_preview_3 .productdetail_container .nutrition_detail_3 {
   width: 50%;
   max-width: 48rem;
-  height: 57.6rem;
+  height: fit-content;
   position: relative;
   margin: 40px auto;
   font-family: "Poppins";
@@ -1894,7 +1898,7 @@ a {
 .products_preview_4 .productdetail_container .nutrition_detail_4 {
   width: 50%;
   max-width: 48rem;
-  height: 57.6rem;
+  height: fit-content;
   position: relative;
   margin: 40px auto;
   font-family: "Poppins";
@@ -2059,7 +2063,7 @@ a {
 .products_preview_5 .productdetail_container .nutrition_detail_5 {
   width: 50%;
   max-width: 48rem;
-  height: 57.6rem;
+  height: fit-content;
   position: relative;
   margin: 40px auto;
   font-family: "Poppins";
@@ -2224,7 +2228,7 @@ a {
 .products_preview_6 .productdetail_container .nutrition_detail_6 {
   width: 50%;
   max-width: 48rem;
-  height: 57.6rem;
+  height: fit-content;
   position: relative;
   margin: 40px auto;
   font-family: "Poppins";
@@ -2389,7 +2393,7 @@ a {
 .products_preview_7 .productdetail_container .nutrition_detail_7 {
   width: 50%;
   max-width: 48rem;
-  height: 57.6rem;
+  height: fit-content;
   position: relative;
   margin: 40px auto;
   font-family: "Poppins";
@@ -2554,7 +2558,7 @@ a {
 .products_preview_8 .productdetail_container .nutrition_detail_8 {
   width: 50%;
   max-width: 48rem;
-  height: 57.6rem;
+  height: fit-content;
   position: relative;
   margin: 40px auto;
   font-family: "Poppins";
@@ -2719,7 +2723,7 @@ a {
 .products_preview_9 .productdetail_container .nutrition_detail_9 {
   width: 50%;
   max-width: 48rem;
-  height: 57.6rem;
+  height: fit-content;
   position: relative;
   margin: 40px auto;
   font-family: "Poppins";
@@ -2884,7 +2888,7 @@ a {
 .products_preview_10 .productdetail_container .nutrition_detail_10 {
   width: 50%;
   max-width: 48rem;
-  height: 57.6rem;
+  height: fit-content;
   position: relative;
   margin: 40px auto;
   font-family: "Poppins";
@@ -3050,7 +3054,7 @@ a {
 .products_preview_11 .productdetail_container .nutrition_detail_11 {
   width: 50%;
   max-width: 48rem;
-  height: 57.6rem;
+  height: fit-content;
   position: relative;
   margin: 40px auto;
   font-family: "Poppins";
@@ -3215,7 +3219,7 @@ a {
 .products_preview_12 .productdetail_container .nutrition_detail_12 {
   width: 50%;
   max-width: 48rem;
-  height: 57.6rem;
+  height: fit-content;
   position: relative;
   margin: 40px auto;
   font-family: "Poppins";
@@ -3380,7 +3384,7 @@ a {
 .products_preview_13 .productdetail_container .nutrition_detail_13 {
   width: 50%;
   max-width: 48rem;
-  height: 57.6rem;
+  height: fit-content;
   position: relative;
   margin: 40px auto;
   font-family: "Poppins";
